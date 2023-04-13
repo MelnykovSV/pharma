@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <!--change mobile browser color too custom-->
+    <meta name="theme-color" content="#00929e" />
+    <!--favicon WM-->
+    <meta name="msapplication-TileColor" content="#00929e" />
+    <meta
+      name="msapplication-TileImage"
+      content="img/mstile_144x144.png?v=NmYO8WoKWA" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    <!--favicon android-->
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/favicon_16x16.png"
+      sizes="16x16" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/favicon_32x32.png"
+      sizes="32x32" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/favicon_96x96.png"
+      sizes="96x96" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/favicon_192x192.png"
+      sizes="192x192" />
+    <!--favicon iOs-->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="img/apple-touch-icon_57x57.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="img/apple-touch-icon_60x60.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="img/apple-touch-icon_72x72.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="img/apple-touch-icon_76x76.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="img/apple-touch-icon_114x114.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="img/apple-touch-icon_120x120.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="img/apple-touch-icon_144x144.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="img/apple-touch-icon_152x152.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon_180x180.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <!--my own styles-->
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="css/icomoon.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/jquery.arcticmodal-0.3.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/media.css" /> -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css-new/new-styles.css" />
+    <title>Картка товару</title>
+  </head>
+
+  <body>
+    <div class="content product__card">
+      <div class="container">
+        <nav class="catalog__breadcrumb breadcrumb">
+          <ul>
+            <li class="catalog__breadcrumb-item">
+              <a class="catalog__breadcrumb-link" href="#">Головна</a>
+            </li>
+            <li class="catalog__breadcrumb-item">
+              <a class="catalog__breadcrumb-link" href="#">Лікарські засоби</a>
+            </li>
+            <li class="catalog__breadcrumb-item">
+              <span>Фервекс для дорослих (з вітаміном С) №8</span>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="products__body">
+          <div class="tabs-bar">
+            <div class="tabs-bar__wrapp">
+              <a class="tabs-bar__tab button" data-country="l0"
+                >Все про товар</a
+              >
+              <a class="tabs-bar__tab button" data-country="l2">фарм опіка</a>
+              <a class="tabs-bar__tab button" data-country="l3">інструкція</a>
+              <a class="tabs-bar__tab button" data-country="l4">аналоги</a>
+            </div>
+            <!-- <div class="products__tabs-wrapp">
+                     <button class="products__info-tab tablinks tabs-active" data-country="l0">Все про товар</button>
+                     <button class="products__info-tab tablinks" data-country="l1">Все про товар</button>
+                     <button class="products__info-tab tablinks" data-country="l2">фарм опіка</button>
+                     <button class="products__info-tab tablinks" data-country="l3">інструкція</button>
+                     <button class="products__info-tab tablinks" data-country="l4">аналоги</button>
+                  </div> -->
+          </div>
+          <!-- <div class="products__wrapp product-info">
+                  <div class="products__card">
+      
+                     <div class="content__productCard__img">
+                        <ul id="slideshowNav" class="slideshowNav">
+                           <li><img src="img/products/no_shpa.jpg" alt=""></li>
+                           <li><img src="img/products/no_shpa.jpg" alt=""></li>
+                        </ul>
+                        <ul id="slideshow" class="slideshow slider-card">
+                           <li><img src="img/products/no_shpa.jpg" alt=""></li>
+                           <li><img src="img/products/no_shpa.jpg" alt=""></li>
+                        </ul>
+         
+                     </div>
+                  </div>
+         
+                  <div class="product__info">
+                     <div class="content__productCard__packagingOptions">
+                        <div class="products__info">
+                           <div class="products__info-item">
+                              <h2 class="products__info-title">
+                                 Фервекс для дорослих (з вітаміном С) №8, саше
+                              </h2>
+                              <div class="products__info-descr">
+                                 <div class="products__info-text">Виробник: <span>BMS (Франція)</span></div>
+                                 <div class="products__info-text">Код товару: <span>734</span></div>
+                                 <a href="#" class="products__info-link">В наявності</a>
+                              </div>
+                           </div>
+                           <div class="products__info-item">
+                              <div class="products__info-price">
+                                 206,70 грн <span>256,70 грн</span>
+                              </div>
+                              <div class="products__info-button">
+                                 <button type="button" class="products__info-btn">
+                                    <img src="img/basket.svg" alt="">до кошика
+            
+                                 </button>
+                                 <button type="button" class="products__info-btn products__info-btn--blue">
+                                    <img src="img/like.svg" alt="">до обраного
+            
+                                 </button>
+                              </div>
+                           </div>
+                           <div class="products__info-information">
+                              <div class="products__info-tabs">
+                                 <a data-tabs='one' class="products__info-tab" href="#">Характеристики</a>
+                                 <a data-tabs='two' class="products__info-tab" href="#">інші форми випуску</a>
+                                 <a data-tabs='three' class="products__info-tab tabs-active" href="#">Доставка і оплата</a>
+                              </div>
+                              <div data-tabs='three' class="products__info-description show">
+                                 <h4 class="products__info-description--title">
+                                    Доставка
+                                 </h4>
+                                 <div class="products__info-box">
+                                    <ul class="products__info-list">
+                                       <li class="products__info-point">Кур’єром</li>
+                                       <li class="products__info-point">Самовивіз</li>
+                                       <li class="products__info-point">Нова пошта</li>
+                                       <li class="products__info-point">Укрпошта</li>
+                                    </ul>
+                                    <ul class="products__info-list">
+                                       <li class="products__info-point products__info-point--item">
+                                          <a href="#" class="products__info-links">безкоштовно від 500 грн</a>
+                                       </li>
+                                       <li class="products__info-point products__info-point--item">
+                                          <a href="#" class="products__info-links">безкоштовно</a>
+                                       </li>
+                                       <li class="products__info-point products__info-point--item">
+                                          <span>від 50 грн</span>
+                                       </li>
+                                       <li class="products__info-point products__info-point--item">
+                                          <span>від 70 грн</span>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div data-tabs='three' class="products__info-description show">
+                                 <h4 class="products__info-description--title">
+                                    Оплата
+                                 </h4>
+                                 <div class="products__info-box">
+                                    <ul class="products__info-list">
+                                       <li class="products__info-point">На сайті</li>
+                                       <li class="products__info-point">При отриманні</li>
+                                    </ul>
+                                    <ul class="products__info-list">
+                                       <li class="products__info-point products__info-point--item">
+                                          <a href="#" class="products__info-links ">безкоштовна доставка</a>
+                                       </li>
+                                       <li class="products__info-point products__info-point--item">
+                                          <a href="#" class="products__info-links">за рахунок отримувача</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div data-tabs='two' class="products__info-description">
+                                 <h4 class="products__info-description--title">
+                                    Доставка
+                                 </h4>
+                                 <div class="products__info-box">
+                                    <ul class="products__info-list">
+                                       <li class="products__info-point">Код АТС</li>
+                                       <li class="products__info-point">Категорія</li>
+                                       <li class="products__info-point">Торгова назва</li>
+                                       <li class="products__info-point">Діючі речорини</li>
+                                       <li class="products__info-point">Форма випуску</li>
+                                       <li class="products__info-point">Дозування</li>
+                                    </ul>
+                                    <ul class="products__info-list">
+                                       <li class="products__info-point products__info-point--item">
+                                          <span>123</span>
+                                       </li>
+                                       <li class="products__info-point products__info-point--item">
+                                          <span>Лікарські засоби</span>
+                                       </li>
+                                       <li class="products__info-point products__info-point--item">
+                                          <span>Фервекс для дорослих</span>
+                                       </li>
+                                       <li class="products__info-point products__info-point--item">
+                                          <span>Парацетамол фенірамін, аскорбінова кислота</span>
+                                       </li>
+                                       <li class="products__info-point products__info-point--item">
+                                          <span>Порошок д/ор. р-ну</span>
+                                       </li>
+                                       <li class="products__info-point products__info-point--item">
+                                          <span>Парацетамол: 500мг, фенірамін: 25 мг, аскорбінова кислота: 200 мг</span>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div data-tabs='one' class="catalog__card cards__card products__info-description">
+                                 <a href="product_card.html" class="cards__card-wrap">
+                                    <div class="cards__card-left">
+                                       <img class="catalog__card-img" src="img/products/card-1.jpg" alt="">
+                                    </div>
+                                    <div class="cards__card-right">
+                                       <p class="catalog__card-title">Нокспрей 0.05% спрей назальний 10 мл</p>
+                                       <p class="catalog__card-descr">Сперко Україна СП ТОВ (Україна)</p>
+                                       <div class="catalog__card-price">
+                                          206,70 грн
+                                          <button type="button" class="products__info-btn">
+                                             до кошика
+                                          </button>
+            
+                                       </div>
+                                    </div>
+         
+                                 </a>
+            
+                              </div>
+            
+            
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div> 
+               <div class="products__wrapp  farm-care"></div> -->
+
+          <div class="products__wrapp instruction">
+            <div class="instruction__body">
+              <h2 class="instruction__title">
+                Інструкція до Фервекс для дорослих (з вітаміном С) №8, саше
+              </h2>
+
+              <b class="instruction__body-subtitle">Склад</b>
+              <p class="instruction__body-paragraph">
+                <i>діючі речовини:</i> парацетамол, кислота аскорбінова (вітамін
+                С), феніраміну малеат;
+              </p>
+              <p class="instruction__body-paragraph">1 саше містить:</p>
+              <ul class="instruction__body-list">
+                <li>парацетамолу 500 мг,</li>
+                <li>кислоти аскорбінової (вітаміну С) 200 мг,</li>
+                <li>феніраміну малеату 25 мг;</li>
+              </ul>
+
+              <p class="instruction__body-paragraph">
+                допоміжні речовини: сахароза, кислота лимонна безводна, акація,
+                сахарин натрію, смакова добавка антильська, до складу якої
+                входять мальтодекстрин, акація, α-пінен, β-пінен, лімонен,
+                γ-терпінен, ліналол, нераль, α-терпінеол, гераніаль.
+              </p>
+
+              <b class="instruction__body-subtitle">Лікарська форма</b>
+
+              <p class="instruction__body-paragraph">
+                Порошок для орального розчину.
+              </p>
+
+              <b class="instruction__body-subtitle"
+                >Основні фізико-хімічні властивості</b
+              >
+
+              <p class="instruction__body-paragraph">
+                гранульований порошок світло-бежевого кольору.
+              </p>
+
+              <b class="instruction__body-subtitle"
+                >Фармакотерапевтична група
+              </b>
+
+              <p class="instruction__body-paragraph">
+                Інші комбіновані лікарські засоби, що застосовуються при
+                застудних захворюваннях.
+              </p>
+
+              <p class="instruction__body-paragraph">Код АТХ N02B E51.</p>
+
+              <b class="instruction__body-subtitle"
+                >Фармакологічні властивості
+              </b>
+
+              <p class="instruction__body-paragraph">Фармакодинаміка.</p>
+
+              <b class="instruction__body-subtitle"
+                >Фармакологічні ефекти, зумовлені компонентами препарату</b
+              >
+              <ul class="instruction__body-list">
+                <li>
+                  феніраміну малеат – блокатор Н1-гістамінових рецепторів,
+                  забезпечує десенсибілізуючу дію, що проявляється зменшенням
+                  запальної реакції слизових оболонок верхніх дихальних шляхів
+                  (поліпшується носове дихання, зменшується нежить, чхання та
+                  сльозотеча);
+                </li>
+                <li>
+                  парацетамол чинить жарознижувальну і знеболювальну дію, що
+                  полегшує біль та пропасницю (головний біль, міалгія);
+                </li>
+                <li>
+                  кислота аскорбінова компенсує потреби організму у вітаміні С.
+                </li>
+              </ul>
+            </div>
+            <div class="instruction__content">
+              <ul class="instruction__content-list">
+                <li class="instruction__content-list-item">
+                  <a href="" class="instruction__content-link">Склад</a>
+                </li>
+                <li class="instruction__content-list-item">
+                  <a href="" class="instruction__content-link"
+                    >Лікарська форма</a
+                  >
+                </li>
+                <li class="instruction__content-list-item">
+                  <a href="" class="instruction__content-link"
+                    >Фармакотерапевтична група</a
+                  >
+                </li>
+                <li class="instruction__content-list-item">
+                  <a href="" class="instruction__content-link"
+                    >Фармакологічні властивості</a
+                  >
+                </li>
+                <li class="instruction__content-list-item">
+                  <a href="" class="instruction__content-link">Показання</a>
+                </li>
+                <li class="instruction__content-list-item">
+                  <a href="" class="instruction__content-link"
+                    >Протипоказання</a
+                  >
+                </li>
+                <li class="instruction__content-list-item">
+                  <a href="" class="instruction__content-link"
+                    >Особливості застосування</a
+                  >
+                </li>
+                <li class="instruction__content-list-item">
+                  <a href="" class="instruction__content-link"
+                    >Спосіб застосування та дози</a
+                  >
+                </li>
+                <li class="instruction__content-list-item">
+                  <a href="" class="instruction__content-link">Передозування</a>
+                </li>
+                <li class="instruction__content-list-item">
+                  <a href="" class="instruction__content-link"
+                    >Побічні реакції</a
+                  >
+                </li>
+                <li class="instruction__content-list-item">
+                  <a href="" class="instruction__content-link"
+                    >Термін придатності</a
+                  >
+                </li>
+                <li class="instruction__content-list-item">
+                  <a href="" class="instruction__content-link"
+                    >Умови зберігання</a
+                  >
+                </li>
+                <li class="instruction__content-list-item">
+                  <a href="" class="instruction__content-link">Упаковка</a>
+                </li>
+                <li class="instruction__content-list-item">
+                  <a href="" class="instruction__content-link"
+                    >Категоря відпуску з аптеки</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- <div class="products__wrapp  analogs"></div> -->
+        </div>
+
+        <!-- <div id="descrTabs" class="content__productCard__analogue">
+            <ul class="productCard__descr">
+               <li><a href="#tabs-1">Фарм опіка</a></li>
+               <li><a href="#tabs-2">Інструкція</a></li>
+               <li><a href="#tabs-3">Аналоги</a></li>
+               <li><a href="#tabs-4">Відеоогляд</a></li>
+            </ul>
+            <div id="tabs-1" class="farmCare">
+               <p>"Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam, quis
+                  nostrud exercitation ullamco laboris nisi ut aliquip ex
+                  ea commodo consequat. Duis aute irure dolor in
+                  reprehenderit in voluptate velit esse cillum dolore eu
+                  fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia
+                  deserunt mollit anim id est laborum."</p>
+            </div>
+            <div id="tabs-2" class="manual">
+               <p>"Sed ut perspiciatis unde omnis iste natus error sit
+                  voluptatem accusantium doloremque laudantium, totam rem
+                  aperiam, eaque ipsa quae ab illo inventore veritatis et
+                  quasi architecto beatae vitae dicta sunt explicabo.
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur
+                  aut odit aut fugit, sed quia consequuntur magni dolores
+                  eos qui ratione voluptatem sequi nesciunt. Neque porro
+                  quisquam est, qui dolorem ipsum quia dolor sit amet,
+                  consectetur, adipisci velit, sed quia non numquam eius
+                  modi tempora incidunt ut labore et dolore magnam
+                  aliquam quaerat voluptatem. Ut enim ad minima veniam,
+                  quis nostrum exercitationem ullam corporis suscipit
+                  laboriosam, nisi ut aliquid ex ea commodi consequatur?
+                  Quis autem vel eum iure reprehenderit qui in ea
+                  voluptate velit esse quam nihil molestiae consequatur,
+                  vel illum qui dolorem eum fugiat quo voluptas nulla
+                  pariatur?"</p>
+            </div>
+            <div id="tabs-3" class="therapeuticEffect">
+               <div class="completeAnalogue">
+                  <h6>Повний аналог</h6><span>(полное совпадение состава действующих веществ, их
+                     дозировки и формы выпуска)</span>
+                  <ul>
+                     <li><a href="#"><img src="img/products/atoksil.jpg" alt="">
+                           <p>Тивортин аспартат р-р<br>оральный фл. 100мл</p>
+                           <p class="price">181.76<span>грн</span></p>
+                        </a>
+                        <div class="hover"><button title="Додати в корзину" class="addBusket"><i
+                                 class="icon-shopping-cart"></i><span>В корзину</span></button><button
+                              title="Додати в обране" class="addFavorite"><i class="icon-heart"></i></button></div>
+                     </li>
+                     <li><a href="#"><img src="img/products/atoksil.jpg" alt="">
+                           <p>Тивортин аспартат р-р<br>оральный фл. 100мл</p>
+                           <p class="price">181.76<span>грн</span></p>
+                        </a>
+                        <div class="hover"><button title="Додати в корзину" class="addBusket"><i
+                                 class="icon-shopping-cart"></i><span>В корзину</span></button><button
+                              title="Додати в обране" class="addFavorite"><i class="icon-heart"></i></button></div>
+                     </li>
+                     <li><a href="#"><img src="img/products/tivortin.jpg" alt="">
+                           <p>Тивортин аспартат р-р<br>оральный фл. 100мл</p>
+                           <p class="price">181.76<span>грн</span></p>
+                        </a>
+                        <div class="hover"><button title="Додати в корзину" class="addBusket"><i
+                                 class="icon-shopping-cart"></i><span>В корзину</span></button><button
+                              title="Додати в обране" class="addFavorite"><i class="icon-heart"></i></button></div>
+                     </li>
+                  </ul>
+               </div>
+               <div class="otherReleseForm">
+                  <h6>Аналог в інших формах випуску</h6><span>(совпадение состава действующих веществ и их
+                     дозировки)</span>
+                  <ul>
+                     <li><a href="#"><img src="img/products/atoksil.jpg" alt="">
+                           <p>Тивортин аспартат р-р<br>оральный фл. 100мл</p>
+                           <p class="price">181.76<span>грн</span></p>
+                        </a>
+                        <div class="hover"><button title="Додати в корзину" class="addBusket"><i
+                                 class="icon-shopping-cart"></i><span>В корзину</span></button><button
+                              title="Додати в обране" class="addFavorite"><i class="icon-heart"></i></button></div>
+                     </li>
+                     <li><a href="#"><img src="img/products/tivortin.jpg" alt="">
+                           <p>Тивортин аспартат р-р<br>оральный фл. 100мл</p>
+                           <p class="price">181.76<span>грн</span></p>
+                        </a>
+                        <div class="hover"><button title="Додати в корзину" class="addBusket"><i
+                                 class="icon-shopping-cart"></i><span>В корзину</span></button><button
+                              title="Додати в обране" class="addFavorite"><i class="icon-heart"></i></button></div>
+                     </li>
+                  </ul>
+               </div>
+               <div class="similarEffect">
+                  <h6>Подібний терапевтичний ефект</h6><span>(препараты входящие в одну классификационную группу
+                     АТС)</span>
+                  <ul>
+                     <li><a href="#"><img src="img/products/atoksil.jpg" alt="">
+                           <p>Тивортин аспартат р-р<br>оральный фл. 100мл</p>
+                           <p class="price">181.76<span>грн</span></p>
+                        </a>
+                        <div class="hover"><button title="Додати в корзину" class="addBusket"><i
+                                 class="icon-shopping-cart"></i><span>В корзину</span></button><button
+                              title="Додати в обране" class="addFavorite"><i class="icon-heart"></i></button></div>
+                     </li>
+                     <li><a href="#"><img src="img/products/tivortin.jpg" alt="">
+                           <p>Тивортин аспартат р-р<br>оральный фл. 100мл</p>
+                           <p class="price">181.76<span>грн</span></p>
+                        </a>
+                        <div class="hover"><button title="Додати в корзину" class="addBusket"><i
+                                 class="icon-shopping-cart"></i><span>В корзину</span></button><button
+                              title="Додати в обране" class="addFavorite"><i class="icon-heart"></i></button></div>
+                     </li>
+                     <li><a href="#"><img src="img/products/atoksil.jpg" alt="">
+                           <p>Тивортин аспартат р-р<br>оральный фл. 100мл</p>
+                           <p class="price">181.76<span>грн</span></p>
+                        </a>
+                        <div class="hover"><button title="Додати в корзину" class="addBusket"><i
+                                 class="icon-shopping-cart"></i><span>В корзину</span></button><button
+                              title="Додати в обране" class="addFavorite"><i class="icon-heart"></i></button></div>
+                     </li>
+                     <li><a href="#"><img src="img/products/atoksil.jpg" alt="">
+                           <p>Тивортин аспартат р-р<br>оральный фл. 100мл</p>
+                           <p class="price">181.76<span>грн</span></p>
+                        </a>
+                        <div class="hover"><button title="Додати в корзину" class="addBusket"><i
+                                 class="icon-shopping-cart"></i><span>В корзину</span></button><button
+                              title="Додати в обране" class="addFavorite"><i class="icon-heart"></i></button></div>
+                     </li>
+                     <li><a href="#"><img src="img/products/tivortin.jpg" alt="">
+                           <p>Тивортин аспартат р-р<br>оральный фл. 100мл</p>
+                           <p class="price">181.76<span>грн</span></p>
+                        </a>
+                        <div class="hover"><button title="Додати в корзину" class="addBusket"><i
+                                 class="icon-shopping-cart"></i><span>В корзину</span></button><button
+                              title="Додати в обране" class="addFavorite"><i class="icon-heart"></i></button></div>
+                     </li>
+                     <li><a href="#"><img src="img/products/atoksil.jpg" alt="">
+                           <p>Тивортин аспартат р-р<br>оральный фл. 100мл</p>
+                           <p class="price">181.76<span>грн</span></p>
+                        </a>
+                        <div class="hover"><button title="Додати в корзину" class="addBusket"><i
+                                 class="icon-shopping-cart"></i><span>В корзину</span></button><button
+                              title="Додати в обране" class="addFavorite"><i class="icon-heart"></i></button></div>
+                     </li>
+                     <li><a href="#"><img src="img/products/atoksil.jpg" alt="">
+                           <p>Тивортин аспартат р-р<br>оральный фл. 100мл</p>
+                           <p class="price">181.76<span>грн</span></p>
+                        </a>
+                        <div class="hover"><button title="Додати в корзину" class="addBusket"><i
+                                 class="icon-shopping-cart"></i><span>В корзину</span></button><button
+                              title="Додати в обране" class="addFavorite"><i class="icon-heart"></i></button></div>
+                     </li>
+                     <li><a href="#"><img src="img/products/tivortin.jpg" alt="">
+                           <p>Тивортин аспартат р-р<br>оральный фл. 100мл</p>
+                           <p class="price">181.76<span>грн</span></p>
+                        </a>
+                        <div class="hover"><button title="Додати в корзину" class="addBusket"><i
+                                 class="icon-shopping-cart"></i><span>В корзину</span></button><button
+                              title="Додати в обране" class="addFavorite"><i class="icon-heart"></i></button></div>
+                     </li>
+                     <li><a href="#"><img src="img/products/atoksil.jpg" alt="">
+                           <p>Тивортин аспартат р-р<br>оральный фл. 100мл</p>
+                           <p class="price">181.76<span>грн</span></p>
+                        </a>
+                        <div class="hover"><button title="Додати в корзину" class="addBusket"><i
+                                 class="icon-shopping-cart"></i><span>В корзину</span></button><button
+                              title="Додати в обране" class="addFavorite"><i class="icon-heart"></i></button></div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div id="tabs-4" class="videoSurveillance">
+               <p>"At vero eos et accusamus et iusto odio dignissimos
+                  ducimus qui blanditiis praesentium voluptatum deleniti
+                  atque corrupti quos dolores et quas molestias excepturi
+                  sint occaecati cupiditate non provident, similique sunt
+                  in culpa qui officia deserunt mollitia animi, id est
+                  laborum et dolorum fuga. Et harum quidem rerum facilis
+                  est et expedita distinctio. Nam libero tempore, cum
+                  soluta nobis est eligendi optio cumque nihil impedit
+                  quo minus id quod maxime placeat facere possimus, omnis
+                  voluptas assumenda est, omnis dolor repellendus.
+                  Temporibus autem quibusdam et aut officiis debitis aut
+                  rerum necessitatibus saepe eveniet ut et voluptates
+                  repudiandae sint et molestiae non recusandae. Itaque
+                  earum rerum hic tenetur a sapiente delectus, ut aut
+                  reiciendis voluptatibus maiores alias consequatur aut
+                  perferendis doloribus asperiores repellat."</p>
+            </div>
+         </div> -->
+        <div class="content__recomend">
+          <div class="center cards-slider-pagination">
+            <a href="#" class="prevRecomend cards-slider-pagin"
+              ><i class="icon-left-arrow"></i></a
+            ><a href="#" class="nextRecomend cards-slider-pagin"
+              ><i class="icon-right-arrow"></i
+            ></a>
+          </div>
+          <div class="slider">
+            <ul id="slideshowRecomend">
+              <li>
+                <a href="product_card.html" class="catalog__card-link">
+                  <img
+                    class="catalog__card-img"
+                    src="img/products/card-1.jpg"
+                    alt="" />
+                  <p class="catalog__card-title">
+                    Нокспрей 0.05% спрей<br />назальний 10 мл
+                  </p>
+                  <p class="catalog__card-descr">
+                    Сперко Україна СП ТОВ (Україна)
+                  </p>
+                  <p class="catalog__card-price">206,70 грн</p>
+                  <p class="catalog__card-cash">В наявності</p>
+                  <div class="card-hover">
+                    <button class="card-hover-like">
+                      <img src="img/like.svg" alt="" />
+                    </button>
+                    <button type="button" class="products__info-btn">
+                      <img src="img/basket.svg" alt="" />до кошика
+                    </button>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="product_card.html" class="catalog__card-link">
+                  <img
+                    class="catalog__card-img"
+                    src="img/products/card-2.jpg"
+                    alt="" />
+                  <p class="catalog__card-title">
+                    Ентерожерміна форте 5 мл<br />суспензія №10
+                  </p>
+                  <p class="catalog__card-descr">Sanofi Aventis (Італія)</p>
+                  <p class="catalog__card-price">
+                    206,70 грн<span>256,70 грн</span>
+                  </p>
+                  <p class="catalog__card-cash">В наявності</p>
+                  <div class="card-hover">
+                    <button class="card-hover-like">
+                      <img src="img/like.svg" alt="" />
+                    </button>
+                    <button type="button" class="products__info-btn">
+                      <img src="img/basket.svg" alt="" />до кошика
+                    </button>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="product_card.html" class="catalog__card-link">
+                  <img
+                    class="catalog__card-img"
+                    src="img/products/card-3.jpg"
+                    alt="" />
+                  <p class="catalog__card-title">
+                    Корвалмент 0,1 г капсули<br />№80
+                  </p>
+                  <p class="catalog__card-descr">
+                    Вітамінний завод ПАТ (Україна)
+                  </p>
+                  <p class="catalog__card-price">206,70 грн</p>
+                  <p class="catalog__card-cash">В наявності</p>
+                  <div class="card-hover">
+                    <button class="card-hover-like">
+                      <img src="img/like.svg" alt="" />
+                    </button>
+                    <button type="button" class="products__info-btn">
+                      <img src="img/basket.svg" alt="" />до кошика
+                    </button>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="product_card.html" class="catalog__card-link">
+                  <img
+                    class="catalog__card-img"
+                    src="img/products/card-4.jpg"
+                    alt="" />
+                  <p class="catalog__card-title">
+                    Нервонорм Night капсули<br />№30
+                  </p>
+                  <p class="catalog__card-descr">Ілан Фарм (Україна)</p>
+                  <p class="catalog__card-price">
+                    206,70 грн <span>256,70 грн</span>
+                  </p>
+                  <p class="catalog__card-cash">В наявності</p>
+                  <div class="card-hover">
+                    <button class="card-hover-like">
+                      <img src="img/like.svg" alt="" />
+                    </button>
+                    <button type="button" class="products__info-btn">
+                      <img src="img/basket.svg" alt="" />до кошика
+                    </button>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="product_card.html" class="catalog__card-link">
+                  <img
+                    class="catalog__card-img"
+                    src="img/products/card-5.jpg"
+                    alt="" />
+                  <p class="catalog__card-title">
+                    Синупрет форте таблетки<br />№20
+                  </p>
+                  <p class="catalog__card-descr">Bionorica (Німеччина)</p>
+                  <p class="catalog__card-price">206,70 грн</p>
+                  <p class="catalog__card-cash">В наявності</p>
+                  <div class="card-hover">
+                    <button class="card-hover-like">
+                      <img src="img/like.svg" alt="" />
+                    </button>
+                    <button type="button" class="products__info-btn">
+                      <img src="img/basket.svg" alt="" />до кошика
+                    </button>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="product_card.html" class="catalog__card-link">
+                  <img
+                    class="catalog__card-img"
+                    src="img/products/card-6.jpg"
+                    alt="" />
+                  <p class="catalog__card-title">
+                    Хлорофіліпт Ілан Фарм<br />спрей для горла 30 мл
+                  </p>
+                  <p class="catalog__card-descr">Ілан Фарм (Україна)</p>
+                  <p class="catalog__card-price">206,70 грн</p>
+                  <p class="catalog__card-cash">В наявності</p>
+                  <div class="card-hover">
+                    <button class="card-hover-like">
+                      <img src="img/like.svg" alt="" />
+                    </button>
+                    <button type="button" class="products__info-btn">
+                      <img src="img/basket.svg" alt="" />до кошика
+                    </button>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const tabs = document.querySelectorAll(".products__info-tab");
+      const tabCon = document.querySelectorAll(".products__info-description");
+
+      tabs.forEach((item) => {
+        item.addEventListener("click", (event) => {
+          event.preventDefault();
+
+          tabs.forEach((item) => {
+            if (item.classList.contains("tabs-active")) {
+              item.classList.remove("tabs-active");
+            }
+          });
+
+          tabCon.forEach((elem) => {
+            if (elem.classList.contains("show")) {
+              elem.classList.remove("show");
+            }
+            if (event.target.dataset.tabs === elem.getAttribute("data-tabs")) {
+              elem.classList.add("show");
+            }
+          });
+
+          event.target.classList.add("tabs-active");
+        });
+      });
+
+      var tabLinks = document.querySelectorAll(".tablinks");
+      var tabContent = document.querySelectorAll(".tabcontent");
+
+      tabLinks.forEach(function (el) {
+        el.addEventListener("click", openTabs);
+      });
+
+      function openTabs(el) {
+        el.preventDefault();
+        var btnTarget = el.currentTarget;
+        var country = btnTarget.dataset.country;
+
+        tabContent.forEach(function (el) {
+          el.classList.remove("active");
+        });
+
+        tabLinks.forEach(function (el) {
+          el.classList.remove("active");
+        });
+
+        console.log(document.querySelector("#" + country));
+        document.querySelector("#" + country).classList.add("active");
+
+        btnTarget.classList.add("active");
+      }
+    </script>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.arcticmodal-0.3.min.js"></script>
+    <script src="js/jquery.cycle2.js"></script>
+    <script src="js/jquery.cycle2.carousel.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

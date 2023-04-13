@@ -1,0 +1,143 @@
+body {
+  font-size: 18px;
+  line-height: 20px;
+  color: #474747;
+}
+
+.container {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 480px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1210px) {
+  .container {
+    max-width: 1210px;
+  }
+}
+@media screen and (min-width: 2100px) {
+  .container {
+    max-width: 2100px;
+  }
+}
+
+.tabs-bar {
+  padding: 0 30px;
+  border-bottom: 1px solid #e7e6e6;
+}
+
+.tabs-bar__wrapp {
+  display: flex;
+  gap: 30px;
+}
+
+.tabs-bar__tab {
+  display: block;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 110%;
+  align-items: center;
+  text-transform: uppercase;
+  color: #76737d;
+  transition: all 0.3s linear;
+  position: relative;
+  text-decoration: none;
+  border: 0;
+  background: transparent;
+  padding: 15px 5px;
+  transition: color 0.3s linear;
+}
+.tabs-bar__tab::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  transition: background-color 0.3s linear;
+}
+.tabs-bar__tab:hover {
+  color: #0d727e;
+}
+.tabs-bar__tab:hover::before {
+  background-color: #0d727e;
+}
+
+.instruction {
+  align-items: start;
+  gap: 30px;
+  flex-direction: column-reverse;
+}
+@media screen and (min-width: 768px) {
+  .instruction {
+    flex-direction: row;
+  }
+}
+
+.instruction__body {
+  font-size: 14px;
+  line-height: 1.2857142857;
+  font-weight: 400;
+  color: #1e1e1e;
+  width: 100%;
+}
+
+.instruction__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2333333333;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.instruction__body-subtitle {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.instruction__body-paragraph {
+  margin-bottom: 18px;
+}
+.instruction__body-paragraph i {
+  font-style: italic;
+}
+
+.instruction__body-list {
+  margin-bottom: 18px;
+  list-style: inside;
+}
+
+.instruction__content {
+  width: 340px;
+  border: 1px solid #e7e6e6;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.instruction__content-list {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #76737d;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.instruction__content-link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s linear;
+}
+.instruction__content-link:hover {
+  color: #0d727e;
+}/*# sourceMappingURL=new-styles.css.map */
