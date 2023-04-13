@@ -1,6 +1,6 @@
 .instruction {
   display: flex;
-  align-items: start;
+  // align-items: start;
   gap: 30px;
   flex-direction: column-reverse;
   @media screen and (min-width: $tablet) {
@@ -47,6 +47,9 @@
 }
 
 .instruction__content {
+  align-self: start;
+  position: sticky;
+  top: 30px;
   width: 340px;
   border: 1px solid #e7e6e6;
   border-radius: 10px;
@@ -67,10 +70,25 @@
 .instruction__content-list-item {
 }
 .instruction__content-link {
+  position: relative;
   color: inherit;
   text-decoration: none;
   transition: color 0.3s linear;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: calc(100% + 15px);
+    top: 50%;
+    left: -30px;
+    transform: translateY(-50%);
+    transition: background-color 0.3s linear;
+  }
   &:hover {
     color: #0d727e;
+    &::before {
+      background-color: #0d727e;
+    }
   }
 }
