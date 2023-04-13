@@ -26,6 +26,57 @@ body {
   }
 }
 
+.product__body {
+  border: 1px solid #e7e6e6;
+  border-radius: 10px;
+}
+
+.product__content {
+  padding: 30px;
+}
+
+.tabs-bar {
+  padding: 0 30px;
+  border-bottom: 1px solid #e7e6e6;
+}
+
+.tabs-bar__list {
+  display: flex;
+  gap: 30px;
+}
+
+.tabs-bar__link {
+  display: block;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 110%;
+  align-items: center;
+  text-transform: uppercase;
+  color: #76737d;
+  transition: all 0.3s linear;
+  position: relative;
+  text-decoration: none;
+  border: 0;
+  background: transparent;
+  padding: 15px 5px;
+  transition: color 0.3s linear;
+}
+.tabs-bar__link::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  transition: background-color 0.3s linear;
+}
+.tabs-bar__link:hover {
+  color: #0d727e;
+}
+.tabs-bar__link:hover::before {
+  background-color: #0d727e;
+}
+
 .tabs-bar {
   padding: 0 30px;
   border-bottom: 1px solid #e7e6e6;
@@ -69,6 +120,7 @@ body {
 }
 
 .instruction {
+  display: flex;
   align-items: start;
   gap: 30px;
   flex-direction: column-reverse;
@@ -100,10 +152,12 @@ body {
 .instruction__body-subtitle {
   display: block;
   font-weight: 700;
+}
+.instruction__body-subtitle:not(:last-child) {
   margin-bottom: 18px;
 }
 
-.instruction__body-paragraph {
+.instruction__body-paragraph:not(:last-child) {
   margin-bottom: 18px;
 }
 .instruction__body-paragraph i {
@@ -111,8 +165,10 @@ body {
 }
 
 .instruction__body-list {
-  margin-bottom: 18px;
   list-style: inside;
+}
+.instruction__body-list:not(:last-child) {
+  margin-bottom: 18px;
 }
 
 .instruction__content {

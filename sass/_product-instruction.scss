@@ -1,6 +1,5 @@
-// .products__wrapp {
-// }
 .instruction {
+  display: flex;
   align-items: start;
   gap: 30px;
   flex-direction: column-reverse;
@@ -28,16 +27,22 @@
 .instruction__body-subtitle {
   display: block;
   font-weight: 700;
-  margin-bottom: 18px;
+  &:not(:last-child) {
+    margin-bottom: 18px;
+  }
 }
 .instruction__body-paragraph {
-  margin-bottom: 18px;
+  &:not(:last-child) {
+    margin-bottom: 18px;
+  }
   i {
     font-style: italic;
   }
 }
 .instruction__body-list {
-  margin-bottom: 18px;
+  &:not(:last-child) {
+    margin-bottom: 18px;
+  }
   list-style: inside;
 }
 
