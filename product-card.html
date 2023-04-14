@@ -110,27 +110,33 @@
             </ul>
           </nav>
 
-          <div class="product__body tabs">
+          <div class="product__body tabs tabs1">
             <!-- TAB BAR -->
             <div class="tabs-bar">
               <ul class="tabs-bar__list">
                 <li class="tabs-bar__list-item">
-                  <a href="#" class="tabs-bar__link">Все про товар</a>
+                  <a href="#" class="tabs-bar__link current" data-tab-id="1"
+                    >Все про товар</a
+                  >
                 </li>
                 <li class="tabs-bar__list-item">
-                  <a href="#" class="tabs-bar__link">фарм опіка </a>
+                  <a href="#" class="tabs-bar__link" data-tab-id="2"
+                    >фарм опіка
+                  </a>
                 </li>
                 <li class="tabs-bar__list-item">
-                  <a href="#" class="tabs-bar__link">Інструкція</a>
+                  <a href="#" class="tabs-bar__link" data-tab-id="3"
+                    >Інструкція</a
+                  >
                 </li>
                 <li class="tabs-bar__list-item">
-                  <a href="#" class="tabs-bar__link">Аналоги</a>
+                  <a href="#" class="tabs-bar__link" data-tab-id="4">Аналоги</a>
                 </li>
               </ul>
             </div>
             <div class="product__content tabs-content">
               <!-- ВСЕ ПРО ТОВАР -->
-              <div class="everything-about-product tab-body">
+              <div class="everything-about-product tab-body" data-tab-id="1">
                 <div class="everything-about-product__item product-gallery">
                   <img src="img/products/no_shpa.jpg" alt="" />
                 </div>
@@ -164,19 +170,23 @@
 
                   <!-- TABS -->
 
-                  <div class="products__info-information tabs">
+                  <div
+                    class="products__info-information tabs tabs2"
+                    data-tabSet="2">
                     <div class="tabs-bar">
                       <ul class="tabs-bar__list">
                         <li class="tabs-bar__list-item">
-                          <a href="#" class="tabs-bar__link">Характеристики</a>
+                          <a href="#" class="tabs-bar__link" data-tab-id="1"
+                            >Характеристики</a
+                          >
                         </li>
                         <li class="tabs-bar__list-item">
-                          <a href="#" class="tabs-bar__link"
+                          <a href="#" class="tabs-bar__link" data-tab-id="2"
                             >інші форми випуску
                           </a>
                         </li>
                         <li class="tabs-bar__list-item">
-                          <a href="#" class="tabs-bar__link"
+                          <a href="#" class="tabs-bar__link" data-tab-id="3"
                             >Доставка і оплата</a
                           >
                         </li>
@@ -184,7 +194,7 @@
                     </div>
 
                     <div class="products__info-body tabs-content">
-                      <!-- <div class="characteristics tab-body">
+                      <div class="characteristics tab-body" data-tab-id="1">
                         <div class="characteristics-body">
                           <h4 class="characteristics-title visually-hidden">
                             Доставка
@@ -241,40 +251,15 @@
                             <option value="">Всі характеристики</option>
                           </select>
                         </div>
-                      </div> -->
+                      </div>
 
-                      <div class="other-forms tab-body">
-                        <!-- <div
-                          class="catalog__card cards__card products__info-description show other-forms__body">
-                          <a href="product_card.html" class="cards__card-wrap">
-                            <div class="cards__card-left">
-                              <img
-                                class="catalog__card-img"
-                                src="img/products/card-1.jpg"
-                                alt="" />
-                            </div>
-                            <div class="cards__card-right">
-                              <p class="catalog__card-title">
-                                Нокспрей 0.05% спрей назальний 10 мл
-                              </p>
-                              <p class="catalog__card-descr">
-                                Сперко Україна СП ТОВ (Україна)
-                              </p>
-                              <div class="catalog__card-price">
-                                206,70 грн
-                                <button
-                                  type="button"
-                                  class="products__info-btn">
-                                  до кошика
-                                </button>
-                              </div>
-                            </div>
-                          </a>
-                        </div> -->
-
+                      <div class="other-forms tab-body hidden" data-tab-id="2">
                         <div class="product-card-wide">
                           <div class="product-card-wide__img-container">
-                            <img src="img/products/card-1.jpg" alt="" />
+                            <img
+                              src="img/products/card-1.jpg"
+                              width="60"
+                              alt="" />
                           </div>
                           <div class="product-card-wide__info">
                             <h3 class="product-card-wide__title">
@@ -299,16 +284,69 @@
                           </div>
                         </div>
                       </div>
+
+                      <div
+                        class="delivery-and-payment tab-body hidden"
+                        data-tab-id="3">
+                        <div class="delivery">
+                          <h3 class="delivery__title">Доставка</h3>
+                          <dl class="delivery__list">
+                            <div class="delivery__list-wrap">
+                              <dt class="delivery__list-dt">Кур’єром</dt>
+                              <dd class="delivery__list-dd">
+                                безкоштовно від 500 грн
+                              </dd>
+                            </div>
+                            <div class="delivery__list-wrap">
+                              <dt class="delivery__list-dt">Самовивіз</dt>
+                              <dd class="delivery__list-dd">безкоштовно</dd>
+                            </div>
+                            <div class="delivery__list-wrap">
+                              <dt class="delivery__list-dt">Нова пошта</dt>
+                              <dd
+                                class="delivery__list-dd delivery__list-dd--black">
+                                від 50 грн
+                              </dd>
+                            </div>
+                            <div class="delivery__list-wrap">
+                              <dt class="delivery__list-dt">Укрпошта</dt>
+                              <dd
+                                class="delivery__list-dd delivery__list-dd--black">
+                                від 70 грн
+                              </dd>
+                            </div>
+                          </dl>
+                        </div>
+                        <div class="payment">
+                          <h3 class="payment__title">Оплата</h3>
+                          <dl class="payment__list">
+                            <div class="payment__list-wrap">
+                              <dt class="payment__list-dt">На сайті</dt>
+                              <dd class="payment__list-dd">
+                                безкоштовна доставка
+                              </dd>
+                            </div>
+                            <div class="payment__list-wrap">
+                              <dt class="payment__list-dt">При отриманні</dt>
+                              <dd class="payment__list-dd">
+                                за рахунок отримувача
+                              </dd>
+                            </div>
+                          </dl>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
               <!-- ФАРМ ОПІКА -->
 
-              <div class="pharm-care tab-body"></div>
+              <div class="pharm-care tab-body hidden" data-tab-id="2">
+                <h2>ФАРМ ОПІКА</h2>
+              </div>
 
               <!-- ІНСТРУКЦІЯ                    START -->
-              <!-- <div class="instruction tab-body" hidden>
+              <div class="instruction tab-body hidden" data-tab-id="3">
                 <div class="instruction__body">
                   <h2 class="instruction__title">
                     Інструкція до Фервекс для дорослих (з вітаміном С) №8, саше
@@ -454,15 +492,20 @@
                     </li>
                   </ul>
                 </div>
-              </div> -->
+              </div>
               <!-- ІНСТРУКЦІЯ                    END -->
 
               <!-- АНАЛОГИ -->
-              <div class="analogs tab-body"></div>
+              <div class="analogs tab-body hidden" data-tab-id="4">
+                <h2>АНАЛОГИ</h2>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
+
+    <script src="./index.js" type="module"></script>
+    <!-- <script src="./js-new/tabs.js" type="module"></script> -->
   </body>
 </html>

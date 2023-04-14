@@ -44,6 +44,10 @@ body {
   margin: -1px;
 }
 
+img {
+  max-width: 100%;
+}
+
 .product__content {
   padding: 30px;
 }
@@ -216,6 +220,10 @@ body {
 
 .everything-about-product__item {
   width: 50%;
+}
+
+.hidden {
+  display: none;
 }
 
 .products__info-title {
@@ -459,14 +467,138 @@ body {
   margin-left: 15px;
 }
 
+.other-forms {
+  padding: 20px;
+}
+
 .product-card-wide {
   display: flex;
+  gap: 15px;
+  padding: 15px;
+  border: 1px solid #e7e6e6;
+  border-radius: 10px;
+}
+
+.product-card-wide__info {
+  flex-grow: 1;
+}
+
+.product-card-wide__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2142857143;
+  color: #1e1e1e;
+  margin-bottom: 15px;
 }
 
 .product-card-wide__info-body {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.product-card-wide__form {
+  font-size: 12px;
+  line-height: 1.1666666667;
+  color: #76737d;
 }
 
 .product-card-wide__form-value {
   display: block;
+  color: #1e1e1e;
+}
+
+.product-card-wide__price {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  margin: 0 15px 0 auto;
+  color: #0d727e;
+}
+
+.product-card-wide__button {
+  cursor: pointer;
+  background-color: #0d727e;
+  color: white;
+  border-radius: 10px;
+  padding: 8px 24px;
+  border: none;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.delivery-and-payment {
+  padding: 20px 30px 30px;
+}
+
+.delivery {
+  margin-bottom: 20px;
+}
+
+.delivery__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  color: #1e1e1e;
+  margin-bottom: 15px;
+}
+
+.delivery__list {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e7e6e6;
+}
+
+.delivery__list-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.delivery__list-wrap:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.delivery__list-dt {
+  font-size: 14px;
+  line-height: 1.2142857143;
+  color: #76737d;
+}
+
+.delivery__list-dd {
+  font-size: 14px;
+  line-height: 1.2142857143;
+  color: #0d727e;
+}
+
+.delivery__list-dd--black {
+  color: #1e1e1e;
+}
+
+.payment__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  color: #1e1e1e;
+  margin-bottom: 15px;
+}
+
+.payment__list-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.payment__list-wrap:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.payment__list-dt {
+  font-size: 14px;
+  line-height: 1.2142857143;
+  color: #76737d;
+}
+
+.payment__list-dd {
+  font-size: 14px;
+  line-height: 1.2142857143;
+  color: #0d727e;
 }/*# sourceMappingURL=new-styles.css.map */
