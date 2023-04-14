@@ -86,7 +86,7 @@
       href="css/jquery.arcticmodal-0.3.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" /> -->
     <!-- <link rel="stylesheet" type="text/css" href="css/media.css" /> -->
-    <link rel="stylesheet" href="css/main.css" />
+    <!-- <link rel="stylesheet" href="css/main.css" /> -->
     <link rel="stylesheet" href="css-new/new-styles.css" />
     <title>Картка товару</title>
   </head>
@@ -110,7 +110,7 @@
             </ul>
           </nav>
 
-          <div class="product__body">
+          <div class="product__body tabs">
             <!-- TAB BAR -->
             <div class="tabs-bar">
               <ul class="tabs-bar__list">
@@ -128,15 +128,152 @@
                 </li>
               </ul>
             </div>
-            <div class="product__content">
+            <div class="product__content tabs-content">
               <!-- ВСЕ ПРО ТОВАР -->
-              <div class="product-info tab-body"></div>
+              <div class="product-card tab-body">
+                <div class="product-card__item product-gallery">
+                  <img src="img/products/no_shpa.jpg" alt="" />
+                </div>
+                <div class="product-card__item product-info">
+                  <h2 class="products__info-title">
+                    Фервекс для дорослих (з вітаміном С) №8, саше
+                  </h2>
+                  <div class="products__info-descr">
+                    <div class="products__info-text">
+                      Виробник: <span>BMS (Франція)</span>
+                    </div>
+                    <div class="products__info-text">
+                      Код товару: <span>734</span>
+                    </div>
+                    <a href="#" class="products__info-link">В наявності</a>
+                  </div>
+
+                  <div class="products__info-price">
+                    206,70 грн <span>256,70 грн</span>
+                  </div>
+                  <div class="products__info-buttons">
+                    <button type="button" class="products__info-btn">
+                      <img src="img/basket.svg" alt="" />до кошика
+                    </button>
+                    <button
+                      type="button"
+                      class="products__info-btn products__info-btn--blue">
+                      <img src="img/like.svg" alt="" />до обраного
+                    </button>
+                  </div>
+
+                  <!-- TABS -->
+
+                  <div class="products__info-information tabs">
+                    <div class="tabs-bar">
+                      <ul class="tabs-bar__list">
+                        <li class="tabs-bar__list-item">
+                          <a href="#" class="tabs-bar__link">Характеристики</a>
+                        </li>
+                        <li class="tabs-bar__list-item">
+                          <a href="#" class="tabs-bar__link"
+                            >інші форми випуску
+                          </a>
+                        </li>
+                        <li class="tabs-bar__list-item">
+                          <a href="#" class="tabs-bar__link"
+                            >Доставка і оплата</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="products__info-body tabs-content">
+                      <div class="characteristics tab-body">
+                        <div class="characteristics-body">
+                          <h4 class="characteristics-title visually-hidden">
+                            Доставка
+                          </h4>
+
+                          <dl class="products__info-list characteristics-list">
+                            <div class="characteristics-list-wrap">
+                              <dt class="characteristics-list-dt">Код АТС</dt>
+                              <dd class="characteristics-list-dd">123</dd>
+                            </div>
+
+                            <div class="characteristics-list-wrap">
+                              <dt class="characteristics-list-dt">Категорія</dt>
+                              <dd class="characteristics-list-dd">
+                                Лікарські засоби
+                              </dd>
+                            </div>
+                            <div class="characteristics-list-wrap">
+                              <dt class="characteristics-list-dt">
+                                Торгова назва
+                              </dt>
+                              <dd class="characteristics-list-dd">
+                                Фервекс для дорослих
+                              </dd>
+                            </div>
+                            <div class="characteristics-list-wrap">
+                              <dt class="characteristics-list-dt">
+                                Діючі речорини
+                              </dt>
+                              <dd class="characteristics-list-dd">
+                                Парацетамол фенірамін, аскорбінова кислота
+                              </dd>
+                            </div>
+                            <div class="characteristics-list-wrap">
+                              <dt class="characteristics-list-dt">
+                                Форма випуску
+                              </dt>
+                              <dd class="characteristics-list-dd">
+                                Порошок д/ор. р-ну
+                              </dd>
+                            </div>
+                            <div class="characteristics-list-wrap">
+                              <dt class="characteristics-list-dt">Дозування</dt>
+                              <dd class="characteristics-list-dd">
+                                Парацетамол: 500мг, фенірамін: 25 мг,
+                                аскорбінова кислота: 200 мг
+                              </dd>
+                            </div>
+                          </dl>
+                        </div>
+
+                        <!-- <div class="products__info-description">
+                          <h4 class="products__info-description--title">
+                            Оплата
+                          </h4>
+                          <div class="products__info-box">
+                            <ul class="products__info-list">
+                              <li class="products__info-point">На сайті</li>
+                              <li class="products__info-point">
+                                При отриманні
+                              </li>
+                            </ul>
+                            <ul class="products__info-list">
+                              <li
+                                class="products__info-point products__info-point--item">
+                                <a href="#" class="products__info-links"
+                                  >безкоштовна доставка</a
+                                >
+                              </li>
+                              <li
+                                class="products__info-point products__info-point--item">
+                                <a href="#" class="products__info-links"
+                                  >за рахунок отримувача</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <!-- ФАРМ ОПІКА -->
 
               <div class="pharm-care tab-body"></div>
 
-              <!-- ІНСТРУКЦІЯ -->
-              <div class="instruction tab-body">
+              <!-- ІНСТРУКЦІЯ                    START -->
+              <!-- <div class="instruction tab-body" hidden>
                 <div class="instruction__body">
                   <h2 class="instruction__title">
                     Інструкція до Фервекс для дорослих (з вітаміном С) №8, саше
@@ -282,7 +419,8 @@
                     </li>
                   </ul>
                 </div>
-              </div>
+              </div> -->
+              <!-- ІНСТРУКЦІЯ                    END -->
 
               <!-- АНАЛОГИ -->
               <div class="analogs tab-body"></div>

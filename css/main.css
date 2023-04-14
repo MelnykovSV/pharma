@@ -574,7 +574,7 @@ select:focus-visible {
   margin-left: 30px;
 }
 
-.products__info-button {
+.products__info-buttons {
   display: flex;
   align-items: center;
 }
@@ -1067,7 +1067,7 @@ select:focus-visible {
     max-width: 100%;
   }
 
-  .products__info-button {
+  .products__info-buttons {
     max-width: 540px;
   }
 }
@@ -1183,7 +1183,7 @@ select:focus-visible {
 }
 
 @media (max-width: 400px) {
-  .products__info-button {
+  .products__info-buttons {
     flex-direction: column;
     max-width: 100%;
   }
