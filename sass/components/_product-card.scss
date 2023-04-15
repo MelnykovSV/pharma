@@ -1,0 +1,152 @@
+.product-card {
+  box-sizing: border-box;
+  width: 270px;
+  padding: 30px;
+  position: relative;
+
+  border: 1px solid #e7e6e6;
+  border-radius: 10px;
+
+  //   transition: height 2s linear;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -100;
+    transition: opacity 0.3s linear;
+    box-shadow: 0px 5px 20px rgba(23, 105, 117, 0.15);
+  }
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+
+    .product-card__buttons {
+      height: 45px;
+      margin-top: 15px;
+    }
+  }
+}
+.product-card__product-link {
+  text-decoration: none;
+  display: block;
+}
+.sale-label {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #77c9cc;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sale-label__value {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  color: #ffffff;
+}
+.product-card__image {
+  display: block;
+  margin: 0 auto;
+
+  margin-bottom: 30px;
+}
+.product-card__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  color: #1e1e1e;
+  margin-bottom: 5px;
+}
+.product-card__producer {
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  color: #76737d;
+  margin-bottom: 7px;
+}
+.product-card__price {
+  display: flex;
+  gap: 15px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+
+  color: #176975;
+  margin-bottom: 5px;
+  span {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+
+    color: #76737d;
+  }
+}
+.product-card__status {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+
+  color: #0d727e;
+}
+.product-card__buttons {
+  display: flex;
+
+  height: 0;
+
+  transition: height 0.3s linear, margin 0.3s linear;
+  overflow: hidden;
+
+  gap: 10px;
+}
+.product-card__like-button {
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  background: #77c9cc;
+  border-radius: 10px;
+  border: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 13px;
+    display: block;
+  }
+}
+.product-card__cart-button {
+  display: flex;
+  cursor: pointer;
+
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 155px;
+  height: 45px;
+  background: #0d727e;
+  border-radius: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  img {
+    width: 15px;
+  }
+}
