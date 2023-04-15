@@ -2,6 +2,8 @@ body {
   font-size: 18px;
   line-height: 20px;
   color: #474747;
+  // overflow-x: hidden;
+  font-family: Gilroy;
 }
 
 .container {
@@ -24,6 +26,12 @@ body {
   }
 }
 
+.container-fluid {
+  width: min(100%, 1210px);
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
 .tabs {
   border: 1px solid #e7e6e6;
   border-radius: 10px;
@@ -44,4 +52,5 @@ body {
 
 img {
   max-width: 100%;
+  display: block;
 }

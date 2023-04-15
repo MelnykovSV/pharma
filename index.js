@@ -1,2 +1,3 @@
 import "./js-new/tabs.js";
-import "./js-new/swiper-slider.js";
+import "./js-new/slider-offers.js";
+import "./js-new/slider-info.js";

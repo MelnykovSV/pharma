@@ -1,0 +1,29 @@
+// @font-face {
+//   font-family: "PTSerif-Regular";
+//   src: url("../fonts/PTSerif-Regular/PTSerif-Regular.eot");
+//   src: url("../fonts/PTSerif-Regular/PTSerif-Regular.eot?iefix")
+//       format("embedded-opentype"),
+//     url("../fonts/PTSerif-Regular/PTSerif-Regular.woff") format("woff"),
+//     url("../fonts/PTSerif-Regular/PTSerif-Regular.ttf") format("truetype"),
+//     url("../fonts/PTSerif-Regular/PTSerif-Regular.svg#webfont") format("svg");
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+@font-face {
+  font-family: "Gilroy-Regular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("./../fonts/Gilroy-Regular/Gilroy-Regular.eot"); /* IE9 eot*/
+  src: url("./../fonts/Gilroy-Regular/Gilroy-Regular.eot?iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("./../fonts/Gilroy-Regular/Gilroy-Regular.woff2")
+      format("woff2"),
+    /* chrome、firefox */ url("./../fonts/Gilroy-Regular/Gilroy-Regular.woff")
+      format("woff"),
+    /* chrome、firefox */ url("./../fonts/Gilroy-Regular/Gilroy-Regular.ttf")
+      format("truetype"),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+      url("./../fonts/Gilroy-Regular/Gilroy-Regular.svg#Gilroy-Regular")
+      format("svg"); /* iOS 4.1- */
+}

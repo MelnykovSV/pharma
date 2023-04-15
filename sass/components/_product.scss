@@ -1,3 +1,6 @@
+.product {
+  margin-bottom: 60px;
+}
 .everything-about-product {
   display: flex;
   gap: 30px;
@@ -104,8 +107,9 @@
     margin-right: 0;
   }
 
-  & img {
+  & svg {
     margin-right: 10px;
+    fill: white;
   }
 
   &:hover {

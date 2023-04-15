@@ -2,7 +2,6 @@ const tab1 = document.querySelector(".tabs1");
 const tab2 = document.querySelector(".tabs2");
 tab1.addEventListener("click", handleTabClick);
 tab2.addEventListener("click", handleTabClick);
-console.log("started");
 
 function handleTabClick(e) {
   e.preventDefault();

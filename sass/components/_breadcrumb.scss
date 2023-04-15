@@ -9,10 +9,18 @@
   margin: 0;
   padding: 0;
 }
-
 .breadcrumb__list-item {
+  display: flex;
   font-size: 14px;
   margin-right: 5px;
+  &:not(:last-child)::after {
+    content: "";
+    background-image: url("./../images/angle-right.svg");
+    background-size: contain;
+    display: block;
+    width: 15px;
+    height: 15px;
+  }
 }
 
 .breadcrumb-link {

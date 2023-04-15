@@ -1,0 +1,71 @@
+.offers-slider {
+  width: 270px;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: visible;
+
+  @media screen and (min-width: 570px) {
+    width: 570px;
+  }
+
+  @media screen and (min-width: 870px) {
+    width: 870px;
+  }
+  @media screen and (min-width: 1170px) {
+    width: 1170px;
+  }
+}
+.offers-slider__slide {
+}
+
+.offers__title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.offers__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: calc(37 / 30);
+
+  color: #1e1e1e;
+}
+
+.slider-buttons-container {
+  display: flex;
+  //   height: 30px;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.offers-slider__button {
+  //   position: absolute;
+  position: static;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+
+  &::after {
+    content: "";
+  }
+
+  .swiper-button__icon {
+    fill: white;
+  }
+
+  //   top: -34px;
+
+  background-color: #77c9cc;
+  border-radius: 10px;
+}
+.swiper-button-prev {
+  //   right: 40px;
+  //   left: auto;
+}
+.swiper-button-next {
+  //   right: 1px;
+  //   left: auto;
+}

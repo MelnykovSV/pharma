@@ -11,71 +11,75 @@
     <meta name="msapplication-TileColor" content="#00929e" />
     <meta
       name="msapplication-TileImage"
-      content="img/mstile_144x144.png?v=NmYO8WoKWA" />
+      content="images/mstile_144x144.png?v=NmYO8WoKWA" />
     <meta name="msapplication-config" content="/browserconfig.xml" />
     <!-- check -->
 
     <link
       rel="icon"
       type="image/png"
-      href="img/favicon_16x16.png"
+      href="images/favicon_16x16.png"
       sizes="16x16" />
     <link
       rel="icon"
       type="image/png"
-      href="img/favicon_32x32.png"
+      href="images/favicon_32x32.png"
       sizes="32x32" />
     <link
       rel="icon"
       type="image/png"
-      href="img/favicon_96x96.png"
+      href="images/favicon_96x96.png"
       sizes="96x96" />
     <link
       rel="icon"
       type="image/png"
-      href="img/favicon_192x192.png"
+      href="images/favicon_192x192.png"
       sizes="192x192" />
     <!--favicon iOs-->
     <link
       rel="apple-touch-icon"
       sizes="57x57"
-      href="img/apple-touch-icon_57x57.png" />
+      href="images/apple-touch-icon_57x57.png" />
     <link
       rel="apple-touch-icon"
       sizes="60x60"
-      href="img/apple-touch-icon_60x60.png" />
+      href="images/apple-touch-icon_60x60.png" />
     <link
       rel="apple-touch-icon"
       sizes="72x72"
-      href="img/apple-touch-icon_72x72.png" />
+      href="images/apple-touch-icon_72x72.png" />
     <link
       rel="apple-touch-icon"
       sizes="76x76"
-      href="img/apple-touch-icon_76x76.png" />
+      href="images/apple-touch-icon_76x76.png" />
     <link
       rel="apple-touch-icon"
       sizes="114x114"
-      href="img/apple-touch-icon_114x114.png" />
+      href="images/apple-touch-icon_114x114.png" />
     <link
       rel="apple-touch-icon"
       sizes="120x120"
-      href="img/apple-touch-icon_120x120.png" />
+      href="images/apple-touch-icon_120x120.png" />
     <link
       rel="apple-touch-icon"
       sizes="144x144"
-      href="img/apple-touch-icon_144x144.png" />
+      href="images/apple-touch-icon_144x144.png" />
     <link
       rel="apple-touch-icon"
       sizes="152x152"
-      href="img/apple-touch-icon_152x152.png" />
+      href="images/apple-touch-icon_152x152.png" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="img/apple-touch-icon_180x180.png" />
+      href="images/apple-touch-icon_180x180.png" />
     <link rel="manifest" href="/manifest.json" />
 
     <!--my own styles-->
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/fonts.css" />
     <link rel="stylesheet" type="text/css" href="css/icomoon.css" />
@@ -143,7 +147,83 @@
               <!-- ВСЕ ПРО ТОВАР -->
               <div class="everything-about-product tab-body" data-tab-id="1">
                 <div class="everything-about-product__item product-gallery">
-                  <img src="img/products/no_shpa.jpg" alt="" />
+                  <div class="product-gallery__slider info-slider">
+                    <div class="info-slider_thumbs">
+                      <div class="swiper info-slider__thumbs-slider">
+                        <!-- Additional required wrapper -->
+
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide info-slider__thumbs-slide">
+                            <img
+                              src="images/products/no_shpa.jpg"
+                              width="90"
+                              height="90"
+                              alt="" />
+                          </div>
+                          <div class="swiper-slide info-slider__thumbs-slide">
+                            <img
+                              src="images/products/no_shpa.jpg"
+                              width="90"
+                              height="90"
+                              alt="" />
+                          </div>
+                          <div class="swiper-slide info-slider__thumbs-slide">
+                            <img
+                              src="images/products/no_shpa.jpg"
+                              width="90"
+                              height="90"
+                              alt="" />
+                          </div>
+                          <div class="swiper-slide info-slider__thumbs-slide">
+                            <img
+                              src="images/products/no_shpa.jpg"
+                              width="90"
+                              height="90"
+                              alt="" />
+                          </div>
+                          <div class="swiper-slide info-slider__thumbs-slide">
+                            <img
+                              src="images/products/no_shpa.jpg"
+                              width="90"
+                              height="90"
+                              alt="" />
+                          </div>
+                        </div>
+
+                        <!-- If we need navigation buttons -->
+                      </div>
+
+                      <div class="info-slider_thumbs-buttons">
+                        <div
+                          class="info-slider_thumbs-button swiper-button-prev info-slider_thumbs-button-prev">
+                          <svg
+                            class="info-slider_thumbs-button-icon"
+                            width="20"
+                            height="20">
+                            <use href="images/icons.svg#icon-angle-left"></use>
+                          </svg>
+                        </div>
+                        <div
+                          class="info-slider_thumbs-button swiper-button-next info-slider_thumbs-button-next">
+                          <svg
+                            class="info-slider_thumbs-button-icon"
+                            width="20"
+                            height="20">
+                            <use href="images/icons.svg#icon-angle-right"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="info-slider__big-image-thumb">
+                      <img
+                        src="images/products/no_shpa.jpg"
+                        alt=""
+                        width="420"
+                        height="420"
+                        class="info-slider__big-image" />
+                    </div>
+                  </div>
                 </div>
                 <div class="everything-about-product__item product-info">
                   <h2 class="products__info-title">
@@ -164,12 +244,26 @@
                   </div>
                   <div class="products__info-buttons">
                     <button type="button" class="products__info-btn">
-                      <img src="img/basket.svg" alt="" />до кошика
+                      <svg
+                        class="products__info-btn-icon"
+                        width="20"
+                        height="20">
+                        <use href="images/icons.svg#icon-bag"></use>
+                      </svg>
+
+                      до кошика
                     </button>
                     <button
                       type="button"
                       class="products__info-btn products__info-btn--blue">
-                      <img src="img/like.svg" alt="" />до обраного
+                      <svg
+                        class="products__info-btn-icon"
+                        width="20"
+                        height="20">
+                        <use href="images/icons.svg#icon-heart"></use>
+                      </svg>
+
+                      до обраного
                     </button>
                   </div>
 
@@ -262,7 +356,7 @@
                         <div class="product-card-wide">
                           <div class="product-card-wide__img-container">
                             <img
-                              src="img/products/card-1.jpg"
+                              src="images/products/card-1.jpg"
                               width="60"
                               alt="" />
                           </div>
@@ -509,14 +603,14 @@
         </div>
       </section>
 
-      <div class="product-card">
+      <!-- <div class="product-card">
         <div class="sale-label">
           <span class="sale-label__value">-15%</span>
         </div>
 
         <a href="" class="product-card__product-link">
           <img
-            src="img/products/card-4.jpg"
+            src="images/products/card-4.jpg"
             width="180"
             alt=""
             class="product-card__image" />
@@ -531,496 +625,342 @@
 
         <div class="product-card__buttons">
           <button class="product-card__like-button">
-            <img src="img/like.svg" alt="" />
+            <img src="images/like.svg" alt="" />
           </button>
           <button type="button" class="product-card__cart-button">
-            <img src="img/basket.svg" alt="" />до кошика
+            <img src="images/basket.svg" alt="" />до кошика
           </button>
         </div>
-      </div>
+      </div> -->
 
-      <!-- Slider main container -->
-      <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">
-            <div class="product-card">
-              <div class="sale-label">
-                <span class="sale-label__value">-15%</span>
+      <section class="offers">
+        <div class="container-fluid">
+          <div class="offers__title-container">
+            <h2 class="offers__title">Радимо придбати</h2>
+
+            <div class="slider-buttons-container">
+              <div
+                class="swiper-button swiper-button-prev offers-slider__button offers-slider__button-prev">
+                <svg class="swiper-button__icon" width="20" height="20">
+                  <use href="images/icons.svg#icon-angle-left"></use>
+                </svg>
               </div>
-
-              <a href="" class="product-card__product-link">
-                <img
-                  src="img/products/card-4.jpg"
-                  width="180"
-                  alt=""
-                  class="product-card__image" />
-
-                <h3 class="product-card__title">Нервонорм Night капсули №30</h3>
-
-                <p class="product-card__producer">Ілан Фарм (Україна)</p>
-
-                <p class="product-card__price">
-                  206,70 грн <span>256,70 грн</span>
-                </p>
-                <p class="product-card__status">В наявності</p>
-              </a>
-
-              <div class="product-card__buttons">
-                <button class="product-card__like-button">
-                  <img src="img/like.svg" alt="" />
-                </button>
-                <button type="button" class="product-card__cart-button">
-                  <img src="img/basket.svg" alt="" />до кошика
-                </button>
+              <div
+                class="swiper-button swiper-button-next offers-slider__button offers-slider__button-next">
+                <svg class="swiper-button__icon" width="20" height="20">
+                  <use href="images/icons.svg#icon-angle-right"></use>
+                </svg>
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="product-card">
-              <div class="sale-label">
-                <span class="sale-label__value">-15%</span>
+
+          <!-- Slider main container -->
+          <div class="swiper swiper-offers offers-slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide offers-slider__slide">
+                <div class="product-card">
+                  <div class="sale-label">
+                    <span class="sale-label__value">-15%</span>
+                  </div>
+
+                  <a href="" class="product-card__product-link">
+                    <img
+                      src="images/products/card-4.jpg"
+                      width="180"
+                      alt=""
+                      class="product-card__image" />
+
+                    <h3 class="product-card__title">
+                      Нервонорм Night капсули №30
+                    </h3>
+
+                    <p class="product-card__producer">Ілан Фарм (Україна)</p>
+
+                    <p class="product-card__price">
+                      206,70 грн <span>256,70 грн</span>
+                    </p>
+                    <p class="product-card__status">В наявності</p>
+                  </a>
+
+                  <div class="product-card__buttons">
+                    <button class="product-card__like-button">
+                      <svg
+                        class="product-card__like-button-icon"
+                        width="20"
+                        height="20">
+                        <use href="images/icons.svg#icon-heart"></use>
+                      </svg>
+                    </button>
+                    <button type="button" class="product-card__cart-button">
+                      <svg
+                        class="product-card__cart-button-icon"
+                        width="20"
+                        height="20">
+                        <use href="images/icons.svg#icon-bag"></use>
+                      </svg>
+
+                      до кошика
+                    </button>
+                  </div>
+                </div>
               </div>
+              <div class="swiper-slide offers-slider__slide">
+                <div class="product-card">
+                  <div class="sale-label">
+                    <span class="sale-label__value">-15%</span>
+                  </div>
 
-              <a href="" class="product-card__product-link">
-                <img
-                  src="img/products/card-4.jpg"
-                  width="180"
-                  alt=""
-                  class="product-card__image" />
+                  <a href="" class="product-card__product-link">
+                    <img
+                      src="images/products/card-1.jpg"
+                      width="180"
+                      alt=""
+                      class="product-card__image" />
 
-                <h3 class="product-card__title">Нервонорм Night капсули №30</h3>
+                    <h3 class="product-card__title">
+                      Нервонорм Night капсули №30
+                    </h3>
 
-                <p class="product-card__producer">Ілан Фарм (Україна)</p>
+                    <p class="product-card__producer">Ілан Фарм (Україна)</p>
 
-                <p class="product-card__price">
-                  206,70 грн <span>256,70 грн</span>
-                </p>
-                <p class="product-card__status">В наявності</p>
-              </a>
+                    <p class="product-card__price">
+                      206,70 грн <span>256,70 грн</span>
+                    </p>
+                    <p class="product-card__status">В наявності</p>
+                  </a>
 
-              <div class="product-card__buttons">
-                <button class="product-card__like-button">
-                  <img src="img/like.svg" alt="" />
-                </button>
-                <button type="button" class="product-card__cart-button">
-                  <img src="img/basket.svg" alt="" />до кошика
-                </button>
+                  <div class="product-card__buttons">
+                    <button class="product-card__like-button">
+                      <svg
+                        class="product-card__like-button-icon"
+                        width="20"
+                        height="20">
+                        <use href="images/icons.svg#icon-heart"></use>
+                      </svg>
+                    </button>
+                    <button type="button" class="product-card__cart-button">
+                      <svg
+                        class="product-card__cart-button-icon"
+                        width="20"
+                        height="20">
+                        <use href="images/icons.svg#icon-bag"></use>
+                      </svg>
+
+                      до кошика
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide offers-slider__slide">
+                <div class="product-card">
+                  <div class="sale-label">
+                    <span class="sale-label__value">-15%</span>
+                  </div>
+
+                  <a href="" class="product-card__product-link">
+                    <img
+                      src="images/products/card-2.jpg"
+                      width="180"
+                      alt=""
+                      class="product-card__image" />
+
+                    <h3 class="product-card__title">
+                      Нервонорм Night капсули №30
+                    </h3>
+
+                    <p class="product-card__producer">Ілан Фарм (Україна)</p>
+
+                    <p class="product-card__price">
+                      206,70 грн <span>256,70 грн</span>
+                    </p>
+                    <p class="product-card__status">В наявності</p>
+                  </a>
+
+                  <div class="product-card__buttons">
+                    <button class="product-card__like-button">
+                      <svg
+                        class="product-card__like-button-icon"
+                        width="20"
+                        height="20">
+                        <use href="images/icons.svg#icon-heart"></use>
+                      </svg>
+                    </button>
+                    <button type="button" class="product-card__cart-button">
+                      <svg
+                        class="product-card__cart-button-icon"
+                        width="20"
+                        height="20">
+                        <use href="images/icons.svg#icon-bag"></use>
+                      </svg>
+
+                      до кошика
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide offers-slider__slide">
+                <div class="product-card">
+                  <div class="sale-label">
+                    <span class="sale-label__value">-15%</span>
+                  </div>
+
+                  <a href="" class="product-card__product-link">
+                    <img
+                      src="images/products/card-3.jpg"
+                      width="180"
+                      alt=""
+                      class="product-card__image" />
+
+                    <h3 class="product-card__title">
+                      Нервонорм Night капсули №30
+                    </h3>
+
+                    <p class="product-card__producer">Ілан Фарм (Україна)</p>
+
+                    <p class="product-card__price">
+                      206,70 грн <span>256,70 грн</span>
+                    </p>
+                    <p class="product-card__status">В наявності</p>
+                  </a>
+
+                  <div class="product-card__buttons">
+                    <button class="product-card__like-button">
+                      <svg
+                        class="product-card__like-button-icon"
+                        width="20"
+                        height="20">
+                        <use href="images/icons.svg#icon-heart"></use>
+                      </svg>
+                    </button>
+                    <button type="button" class="product-card__cart-button">
+                      <svg
+                        class="product-card__cart-button-icon"
+                        width="20"
+                        height="20">
+                        <use href="images/icons.svg#icon-bag"></use>
+                      </svg>
+
+                      до кошика
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide offers-slider__slide">
+                <div class="product-card">
+                  <div class="sale-label">
+                    <span class="sale-label__value">-15%</span>
+                  </div>
+
+                  <a href="" class="product-card__product-link">
+                    <img
+                      src="images/products/card-5.jpg"
+                      width="180"
+                      alt=""
+                      class="product-card__image" />
+
+                    <h3 class="product-card__title">
+                      Нервонорм Night капсули №30
+                    </h3>
+
+                    <p class="product-card__producer">Ілан Фарм (Україна)</p>
+
+                    <p class="product-card__price">
+                      206,70 грн <span>256,70 грн</span>
+                    </p>
+                    <p class="product-card__status">В наявності</p>
+                  </a>
+
+                  <div class="product-card__buttons">
+                    <button class="product-card__like-button">
+                      <svg
+                        class="product-card__like-button-icon"
+                        width="20"
+                        height="20">
+                        <use href="images/icons.svg#icon-heart"></use>
+                      </svg>
+                    </button>
+                    <button type="button" class="product-card__cart-button">
+                      <svg
+                        class="product-card__cart-button-icon"
+                        width="20"
+                        height="20">
+                        <use href="images/icons.svg#icon-bag"></use>
+                      </svg>
+
+                      до кошика
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
+
+            <!-- If we need navigation buttons -->
           </div>
-          <div class="swiper-slide">
-            <div class="product-card">
-              <div class="sale-label">
-                <span class="sale-label__value">-15%</span>
-              </div>
 
-              <a href="" class="product-card__product-link">
-                <img
-                  src="img/products/card-4.jpg"
-                  width="180"
-                  alt=""
-                  class="product-card__image" />
-
-                <h3 class="product-card__title">Нервонорм Night капсули №30</h3>
-
-                <p class="product-card__producer">Ілан Фарм (Україна)</p>
-
-                <p class="product-card__price">
-                  206,70 грн <span>256,70 грн</span>
-                </p>
-                <p class="product-card__status">В наявності</p>
-              </a>
-
-              <div class="product-card__buttons">
-                <button class="product-card__like-button">
-                  <img src="img/like.svg" alt="" />
-                </button>
-                <button type="button" class="product-card__cart-button">
-                  <img src="img/basket.svg" alt="" />до кошика
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="product-card">
-              <div class="sale-label">
-                <span class="sale-label__value">-15%</span>
-              </div>
-
-              <a href="" class="product-card__product-link">
-                <img
-                  src="img/products/card-4.jpg"
-                  width="180"
-                  alt=""
-                  class="product-card__image" />
-
-                <h3 class="product-card__title">Нервонорм Night капсули №30</h3>
-
-                <p class="product-card__producer">Ілан Фарм (Україна)</p>
-
-                <p class="product-card__price">
-                  206,70 грн <span>256,70 грн</span>
-                </p>
-                <p class="product-card__status">В наявності</p>
-              </a>
-
-              <div class="product-card__buttons">
-                <button class="product-card__like-button">
-                  <img src="img/like.svg" alt="" />
-                </button>
-                <button type="button" class="product-card__cart-button">
-                  <img src="img/basket.svg" alt="" />до кошика
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="product-card">
-              <div class="sale-label">
-                <span class="sale-label__value">-15%</span>
-              </div>
-
-              <a href="" class="product-card__product-link">
-                <img
-                  src="img/products/card-4.jpg"
-                  width="180"
-                  alt=""
-                  class="product-card__image" />
-
-                <h3 class="product-card__title">Нервонорм Night капсули №30</h3>
-
-                <p class="product-card__producer">Ілан Фарм (Україна)</p>
-
-                <p class="product-card__price">
-                  206,70 грн <span>256,70 грн</span>
-                </p>
-                <p class="product-card__status">В наявності</p>
-              </a>
-
-              <div class="product-card__buttons">
-                <button class="product-card__like-button">
-                  <img src="img/like.svg" alt="" />
-                </button>
-                <button type="button" class="product-card__cart-button">
-                  <img src="img/basket.svg" alt="" />до кошика
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="product-card">
-              <div class="sale-label">
-                <span class="sale-label__value">-15%</span>
-              </div>
-
-              <a href="" class="product-card__product-link">
-                <img
-                  src="img/products/card-4.jpg"
-                  width="180"
-                  alt=""
-                  class="product-card__image" />
-
-                <h3 class="product-card__title">Нервонорм Night капсули №30</h3>
-
-                <p class="product-card__producer">Ілан Фарм (Україна)</p>
-
-                <p class="product-card__price">
-                  206,70 грн <span>256,70 грн</span>
-                </p>
-                <p class="product-card__status">В наявності</p>
-              </a>
-
-              <div class="product-card__buttons">
-                <button class="product-card__like-button">
-                  <img src="img/like.svg" alt="" />
-                </button>
-                <button type="button" class="product-card__cart-button">
-                  <img src="img/basket.svg" alt="" />до кошика
-                </button>
-              </div>
-            </div>
-          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+            error vero accusantium totam dignissimos sunt similique, delectus
+            qui ducimus fuga officia iure temporibus quisquam nulla alias
+            eligendi necessitatibus ipsam distinctio ea explicabo consequatur
+            aspernatur id hic velit. Cum dicta ab facere nihil! Distinctio
+            placeat accusamus numquam ex magni quod. Voluptate, quibusdam ipsa
+            sapiente nostrum possimus natus vitae animi officia cumque quia vero
+            cupiditate accusantium autem molestiae adipisci voluptatem voluptas
+            mollitia neque asperiores error! Sunt quod et labore. Ratione vero
+            molestias ducimus aspernatur voluptatem nihil quo recusandae ad,
+            repudiandae sed. Recusandae eveniet molestiae ipsam dolorum ex sint
+            labore at quae animi nemo! Perferendis pariatur eos quas modi
+            debitis assumenda sapiente! Eaque enim quaerat veritatis, minima
+            doloribus sunt atque tenetur vel autem adipisci, esse vero officiis,
+            aperiam laudantium dolor ipsa pariatur itaque. Explicabo dolorem
+            optio incidunt alias laborum voluptatibus, veniam, dolorum voluptate
+            reprehenderit corporis laudantium praesentium. Facere ducimus
+            numquam quaerat debitis ipsum quod quasi et voluptatum hic nam
+            corrupti, eos voluptatem fuga accusantium cumque atque suscipit
+            dolore id doloribus voluptatibus voluptas. Dolore adipisci nulla
+            eaque maxime cupiditate sapiente quidem quod laboriosam et, deserunt
+            dolores nesciunt consequatur expedita aspernatur dicta iusto hic
+            quasi. Ab in vitae facilis repudiandae esse illo pariatur nulla eos
+            blanditiis ipsam provident, accusantium nesciunt sit nemo recusandae
+            architecto quisquam dolorem autem laboriosam nisi quae tempora
+            obcaecati? Dignissimos impedit quibusdam asperiores fugit quod illum
+            sed voluptatibus eum inventore laboriosam nulla eius ratione
+            cupiditate minus dolor, odit animi vel facere a esse exercitationem
+            quae repudiandae libero. Ea ut quibusdam autem, ullam facilis et
+            eveniet eligendi molestias nesciunt tenetur suscipit error dicta!
+            Quas, iure? Similique omnis dolores quod debitis iste quasi id
+            aperiam ullam facere ratione veritatis, fuga maiores nisi laboriosam
+            animi tenetur repellat labore porro assumenda reprehenderit nihil
+            voluptatem eligendi rem maxime? Odio animi ut libero. Dolores,
+            veritatis. Iure, saepe perspiciatis culpa quae iste illo voluptas,
+            voluptatibus hic mollitia nesciunt sequi aliquam tempore tempora
+            tenetur similique corporis unde? Animi odit repudiandae deleniti
+            nulla! Facilis nisi cumque obcaecati totam aliquam animi id pariatur
+            aperiam explicabo voluptate nobis magnam, nostrum illum, velit
+            suscipit veritatis nulla quae error. Rerum est veritatis quis dolor
+            cum eos adipisci sequi. Dolorum labore eveniet mollitia dolorem
+            iusto molestias est rem minima repellat doloribus atque commodi
+            itaque dicta placeat sit, officia reprehenderit et amet similique
+            illum vel pariatur, magnam quis. Dolor culpa explicabo consectetur
+            quaerat non! Aut quasi porro necessitatibus, in perferendis vel
+            eligendi dolores numquam iusto quod cupiditate accusamus,
+            consectetur est voluptatum officia? Facilis aliquam assumenda, ipsum
+            quasi alias nulla asperiores incidunt molestias aspernatur corporis
+            expedita modi commodi ut ipsam a maiores officia minima iste ullam
+            dignissimos. Voluptate eos facere maxime modi. Harum provident
+            magnam atque vel temporibus similique eum aliquid quasi. Ab
+            obcaecati perferendis optio officia sit rerum recusandae dignissimos
+            dicta vitae! Aperiam commodi voluptate autem, doloremque
+            dignissimos, consectetur non, recusandae a eligendi cum impedit! Rem
+            numquam perspiciatis qui illo ut ipsam nostrum corporis deserunt
+            dolor, porro voluptas eius enim placeat voluptate reiciendis quia,
+            sunt saepe eligendi. Modi nobis pariatur sit vel doloremque earum
+            excepturi non quam?
+          </p>
         </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
-      </div>
-
-      <div class="swiper-thumbnail">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">
-            <div class="product-card">
-              <div class="sale-label">
-                <span class="sale-label__value">-15%</span>
-              </div>
-
-              <a href="" class="product-card__product-link">
-                <img
-                  src="img/products/card-4.jpg"
-                  width="180"
-                  alt=""
-                  class="product-card__image" />
-
-                <h3 class="product-card__title">Нервонорм Night капсули №30</h3>
-
-                <p class="product-card__producer">Ілан Фарм (Україна)</p>
-
-                <p class="product-card__price">
-                  206,70 грн <span>256,70 грн</span>
-                </p>
-                <p class="product-card__status">В наявності</p>
-              </a>
-
-              <div class="product-card__buttons">
-                <button class="product-card__like-button">
-                  <img src="img/like.svg" alt="" />
-                </button>
-                <button type="button" class="product-card__cart-button">
-                  <img src="img/basket.svg" alt="" />до кошика
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="product-card">
-              <div class="sale-label">
-                <span class="sale-label__value">-15%</span>
-              </div>
-
-              <a href="" class="product-card__product-link">
-                <img
-                  src="img/products/card-4.jpg"
-                  width="180"
-                  alt=""
-                  class="product-card__image" />
-
-                <h3 class="product-card__title">Нервонорм Night капсули №30</h3>
-
-                <p class="product-card__producer">Ілан Фарм (Україна)</p>
-
-                <p class="product-card__price">
-                  206,70 грн <span>256,70 грн</span>
-                </p>
-                <p class="product-card__status">В наявності</p>
-              </a>
-
-              <div class="product-card__buttons">
-                <button class="product-card__like-button">
-                  <img src="img/like.svg" alt="" />
-                </button>
-                <button type="button" class="product-card__cart-button">
-                  <img src="img/basket.svg" alt="" />до кошика
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="product-card">
-              <div class="sale-label">
-                <span class="sale-label__value">-15%</span>
-              </div>
-
-              <a href="" class="product-card__product-link">
-                <img
-                  src="img/products/card-4.jpg"
-                  width="180"
-                  alt=""
-                  class="product-card__image" />
-
-                <h3 class="product-card__title">Нервонорм Night капсули №30</h3>
-
-                <p class="product-card__producer">Ілан Фарм (Україна)</p>
-
-                <p class="product-card__price">
-                  206,70 грн <span>256,70 грн</span>
-                </p>
-                <p class="product-card__status">В наявності</p>
-              </a>
-
-              <div class="product-card__buttons">
-                <button class="product-card__like-button">
-                  <img src="img/like.svg" alt="" />
-                </button>
-                <button type="button" class="product-card__cart-button">
-                  <img src="img/basket.svg" alt="" />до кошика
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="product-card">
-              <div class="sale-label">
-                <span class="sale-label__value">-15%</span>
-              </div>
-
-              <a href="" class="product-card__product-link">
-                <img
-                  src="img/products/card-4.jpg"
-                  width="180"
-                  alt=""
-                  class="product-card__image" />
-
-                <h3 class="product-card__title">Нервонорм Night капсули №30</h3>
-
-                <p class="product-card__producer">Ілан Фарм (Україна)</p>
-
-                <p class="product-card__price">
-                  206,70 грн <span>256,70 грн</span>
-                </p>
-                <p class="product-card__status">В наявності</p>
-              </a>
-
-              <div class="product-card__buttons">
-                <button class="product-card__like-button">
-                  <img src="img/like.svg" alt="" />
-                </button>
-                <button type="button" class="product-card__cart-button">
-                  <img src="img/basket.svg" alt="" />до кошика
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="product-card">
-              <div class="sale-label">
-                <span class="sale-label__value">-15%</span>
-              </div>
-
-              <a href="" class="product-card__product-link">
-                <img
-                  src="img/products/card-4.jpg"
-                  width="180"
-                  alt=""
-                  class="product-card__image" />
-
-                <h3 class="product-card__title">Нервонорм Night капсули №30</h3>
-
-                <p class="product-card__producer">Ілан Фарм (Україна)</p>
-
-                <p class="product-card__price">
-                  206,70 грн <span>256,70 грн</span>
-                </p>
-                <p class="product-card__status">В наявності</p>
-              </a>
-
-              <div class="product-card__buttons">
-                <button class="product-card__like-button">
-                  <img src="img/like.svg" alt="" />
-                </button>
-                <button type="button" class="product-card__cart-button">
-                  <img src="img/basket.svg" alt="" />до кошика
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="product-card">
-              <div class="sale-label">
-                <span class="sale-label__value">-15%</span>
-              </div>
-
-              <a href="" class="product-card__product-link">
-                <img
-                  src="img/products/card-4.jpg"
-                  width="180"
-                  alt=""
-                  class="product-card__image" />
-
-                <h3 class="product-card__title">Нервонорм Night капсули №30</h3>
-
-                <p class="product-card__producer">Ілан Фарм (Україна)</p>
-
-                <p class="product-card__price">
-                  206,70 грн <span>256,70 грн</span>
-                </p>
-                <p class="product-card__status">В наявності</p>
-              </a>
-
-              <div class="product-card__buttons">
-                <button class="product-card__like-button">
-                  <img src="img/like.svg" alt="" />
-                </button>
-                <button type="button" class="product-card__cart-button">
-                  <img src="img/basket.svg" alt="" />до кошика
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
-      </div>
-
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam error vero
-      accusantium totam dignissimos sunt similique, delectus qui ducimus fuga
-      officia iure temporibus quisquam nulla alias eligendi necessitatibus ipsam
-      distinctio ea explicabo consequatur aspernatur id hic velit. Cum dicta ab
-      facere nihil! Distinctio placeat accusamus numquam ex magni quod.
-      Voluptate, quibusdam ipsa sapiente nostrum possimus natus vitae animi
-      officia cumque quia vero cupiditate accusantium autem molestiae adipisci
-      voluptatem voluptas mollitia neque asperiores error! Sunt quod et labore.
-      Ratione vero molestias ducimus aspernatur voluptatem nihil quo recusandae
-      ad, repudiandae sed. Recusandae eveniet molestiae ipsam dolorum ex sint
-      labore at quae animi nemo! Perferendis pariatur eos quas modi debitis
-      assumenda sapiente! Eaque enim quaerat veritatis, minima doloribus sunt
-      atque tenetur vel autem adipisci, esse vero officiis, aperiam laudantium
-      dolor ipsa pariatur itaque. Explicabo dolorem optio incidunt alias laborum
-      voluptatibus, veniam, dolorum voluptate reprehenderit corporis laudantium
-      praesentium. Facere ducimus numquam quaerat debitis ipsum quod quasi et
-      voluptatum hic nam corrupti, eos voluptatem fuga accusantium cumque atque
-      suscipit dolore id doloribus voluptatibus voluptas. Dolore adipisci nulla
-      eaque maxime cupiditate sapiente quidem quod laboriosam et, deserunt
-      dolores nesciunt consequatur expedita aspernatur dicta iusto hic quasi. Ab
-      in vitae facilis repudiandae esse illo pariatur nulla eos blanditiis ipsam
-      provident, accusantium nesciunt sit nemo recusandae architecto quisquam
-      dolorem autem laboriosam nisi quae tempora obcaecati? Dignissimos impedit
-      quibusdam asperiores fugit quod illum sed voluptatibus eum inventore
-      laboriosam nulla eius ratione cupiditate minus dolor, odit animi vel
-      facere a esse exercitationem quae repudiandae libero. Ea ut quibusdam
-      autem, ullam facilis et eveniet eligendi molestias nesciunt tenetur
-      suscipit error dicta! Quas, iure? Similique omnis dolores quod debitis
-      iste quasi id aperiam ullam facere ratione veritatis, fuga maiores nisi
-      laboriosam animi tenetur repellat labore porro assumenda reprehenderit
-      nihil voluptatem eligendi rem maxime? Odio animi ut libero. Dolores,
-      veritatis. Iure, saepe perspiciatis culpa quae iste illo voluptas,
-      voluptatibus hic mollitia nesciunt sequi aliquam tempore tempora tenetur
-      similique corporis unde? Animi odit repudiandae deleniti nulla! Facilis
-      nisi cumque obcaecati totam aliquam animi id pariatur aperiam explicabo
-      voluptate nobis magnam, nostrum illum, velit suscipit veritatis nulla quae
-      error. Rerum est veritatis quis dolor cum eos adipisci sequi. Dolorum
-      labore eveniet mollitia dolorem iusto molestias est rem minima repellat
-      doloribus atque commodi itaque dicta placeat sit, officia reprehenderit et
-      amet similique illum vel pariatur, magnam quis. Dolor culpa explicabo
-      consectetur quaerat non! Aut quasi porro necessitatibus, in perferendis
-      vel eligendi dolores numquam iusto quod cupiditate accusamus, consectetur
-      est voluptatum officia? Facilis aliquam assumenda, ipsum quasi alias nulla
-      asperiores incidunt molestias aspernatur corporis expedita modi commodi ut
-      ipsam a maiores officia minima iste ullam dignissimos. Voluptate eos
-      facere maxime modi. Harum provident magnam atque vel temporibus similique
-      eum aliquid quasi. Ab obcaecati perferendis optio officia sit rerum
-      recusandae dignissimos dicta vitae! Aperiam commodi voluptate autem,
-      doloremque dignissimos, consectetur non, recusandae a eligendi cum
-      impedit! Rem numquam perspiciatis qui illo ut ipsam nostrum corporis
-      deserunt dolor, porro voluptas eius enim placeat voluptate reiciendis
-      quia, sunt saepe eligendi. Modi nobis pariatur sit vel doloremque earum
-      excepturi non quam?
+      </section>
     </main>
 
     <script src="./index.js" type="module"></script>
