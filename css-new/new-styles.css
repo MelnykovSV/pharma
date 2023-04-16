@@ -5,11 +5,32 @@
   src: url("./../fonts/Gilroy-Regular/Gilroy-Regular.eot"); /* IE9 eot*/
   src: url("./../fonts/Gilroy-Regular/Gilroy-Regular.eot?iefix") format("embedded-opentype"), url("./../fonts/Gilroy-Regular/Gilroy-Regular.woff2") format("woff2"), url("./../fonts/Gilroy-Regular/Gilroy-Regular.woff") format("woff"), url("./../fonts/Gilroy-Regular/Gilroy-Regular.ttf") format("truetype"), url("./../fonts/Gilroy-Regular/Gilroy-Regular.svg#Gilroy-Regular") format("svg"); /* iOS 4.1- */
 }
+@font-face {
+  font-family: "Gilroy-Bold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("./../fonts/Gilroy-Bold/Gilroy-Bold.eot"); /* IE9 eot*/
+  src: url("./../fonts/Gilroy-Bold/Gilroy-Bold.eot?iefix") format("embedded-opentype"), url("./../fonts/Gilroy-Bold/Gilroy-Bold.woff2") format("woff2"), url("./../fonts/Gilroy-Bold/Gilroy-Bold.woff") format("woff"), url("./../fonts/Gilroy-Bold/Gilroy-Bold.ttf") format("truetype"), url("./../fonts/Gilroy-Bold/Gilroy-Bold.svg#Gilroy-Bold") format("svg"); /* iOS 4.1- */
+}
+@font-face {
+  font-family: "Gilroy-SemiBold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("./../fonts/Gilroy-SemiBold/Gilroy-SemiBold.eot"); /* IE9 eot*/
+  src: url("./../fonts/Gilroy-SemiBold/Gilroy-SemiBold.eot?iefix") format("embedded-opentype"), url("./../fonts/Gilroy-SemiBold/Gilroy-SemiBold.woff2") format("woff2"), url("./../fonts/Gilroy-SemiBold/Gilroy-SemiBold.woff") format("woff"), url("./../fonts/Gilroy-SemiBold/Gilroy-SemiBold.ttf") format("truetype"), url("./../fonts/Gilroy-SemiBold/Gilroy-SemiBold.svg#Gilroy-SemiBold") format("svg"); /* iOS 4.1- */
+}
+@font-face {
+  font-family: "Gilroy-Regularitalic";
+  font-weight: normal;
+  font-style: italic;
+  src: url("./../fonts/Gilroy-Regularitalic/Gilroy-Regularitalic.eot"); /* IE9 eot*/
+  src: url("./../fonts/Gilroy-Regularitalic/Gilroy-Regularitalic.eot?iefix") format("embedded-opentype"), url("./../fonts/Gilroy-Regularitalic/Gilroy-Regularitalic.woff2") format("woff2"), url("./../fonts/Gilroy-Regularitalic/Gilroy-Regularitalic.woff") format("woff"), url("./../fonts/Gilroy-Regularitalic/Gilroy-Regularitalic.ttf") format("truetype"), url("./../fonts/Gilroy-Regularitalic/Gilroy-Regularitalic.svg#Gilroy-Regularitalic") format("svg"); /* iOS 4.1- */
+}
 body {
   font-size: 18px;
   line-height: 20px;
   color: #474747;
-  font-family: Gilroy;
+  font-family: "Gilroy";
 }
 
 .container {
@@ -102,10 +123,10 @@ img {
   left: 0;
   transition: background-color 0.3s linear;
 }
-.tabs-bar__link:hover {
+.tabs-bar__link:hover, .tabs-bar__link:focus {
   color: #0d727e;
 }
-.tabs-bar__link:hover::before {
+.tabs-bar__link:hover::before, .tabs-bar__link:focus::before {
   background-color: #0d727e;
 }
 
@@ -230,10 +251,10 @@ img {
   transform: translateY(-50%);
   transition: background-color 0.3s linear;
 }
-.instruction__content-link:hover {
+.instruction__content-link:hover, .instruction__content-link:focus {
   color: #0d727e;
 }
-.instruction__content-link:hover::before {
+.instruction__content-link:hover::before, .instruction__content-link:focus::before {
   background-color: #0d727e;
 }
 
@@ -437,11 +458,17 @@ img {
   overflow: hidden;
 }
 
+.analogs__list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
 .offers-slider {
   width: 270px;
   position: relative;
-  overflow-x: hidden;
-  overflow-y: visible;
+  overflow: visible;
+  overflow: visible;
 }
 @media screen and (min-width: 570px) {
   .offers-slider {
@@ -457,6 +484,15 @@ img {
   .offers-slider {
     width: 1170px;
   }
+}
+
+.offers-slider__slide {
+  overflow: visible;
+  opacity: 0;
+}
+
+.swiper-slide-visible {
+  opacity: 1;
 }
 
 .offers__title-container {
@@ -552,7 +588,7 @@ img {
   transition: all 0.3s linear;
   text-decoration: none;
 }
-.products__info-link:hover {
+.products__info-link:hover, .products__info-link:focus {
   color: #008cff;
 }
 
@@ -609,14 +645,14 @@ img {
   margin-right: 10px;
   fill: white;
 }
-.products__info-btn:hover {
+.products__info-btn:hover, .products__info-btn:focus {
   background: #77c9cc;
 }
 
 .products__info-btn--blue {
   background: #77c9cc;
 }
-.products__info-btn--blue:hover {
+.products__info-btn--blue:hover, .products__info-btn--blue:focus {
   background: #0d727e;
 }
 

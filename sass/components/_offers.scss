@@ -1,8 +1,12 @@
 .offers-slider {
   width: 270px;
   position: relative;
-  overflow-x: hidden;
-  overflow-y: visible;
+  // overflow-x: hidden;
+  // overflow-y: visible;
+  overflow: visible;
+  // padding: 20px;
+
+  overflow: visible;
 
   @media screen and (min-width: 570px) {
     width: 570px;
@@ -16,6 +20,12 @@
   }
 }
 .offers-slider__slide {
+  overflow: visible;
+  opacity: 0;
+}
+
+.swiper-slide-visible {
+  opacity: 1;
 }
 
 .offers__title-container {

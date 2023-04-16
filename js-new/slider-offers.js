@@ -5,6 +5,7 @@ const swiper = new Swiper(".swiper-offers", {
   direction: "horizontal",
   // loop: false,
   // rewind: true,
+  watchSlidesProgress: true,
 
   speed: 400,
   spaceBetween: 30,

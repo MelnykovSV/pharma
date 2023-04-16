@@ -52,7 +52,8 @@
   color: #0d727e;
   transition: all 0.3s linear;
   text-decoration: none;
-  &:hover {
+  &:hover,
+  &:focus {
     color: #008cff;
   }
 }
@@ -112,14 +113,16 @@
     fill: white;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background: #77c9cc;
   }
 }
 .products__info-btn--blue {
   background: #77c9cc;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background: #0d727e;
   }
 }
