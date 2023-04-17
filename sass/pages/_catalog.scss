@@ -1,0 +1,127 @@
+.catalog {
+  margin-bottom: 30px;
+}
+.catalog__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.catalog__asides {
+  grid-column-start: 1;
+  grid-column-end: span 1;
+  grid-row-start: 1;
+  grid-row-end: span 1;
+}
+
+.catalog__content {
+  grid-column-start: 2;
+  grid-column-end: span 3;
+  grid-row-start: 1;
+  grid-row-end: span 1;
+}
+
+.catalog__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: calc(37 / 30);
+
+  color: #1e1e1e;
+  margin-bottom: 30px;
+}
+.catalog__filtrs {
+  margin-bottom: 30px;
+}
+.catalog__filtrs-form {
+  display: flex;
+  gap: 10px;
+
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  color: #1e1e1e;
+}
+.catalog__filtrs-label {
+  display: block;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+
+  color: #76737d;
+}
+
+.catalog__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 45px;
+}
+
+.catalog__card {
+  align-self: self-start;
+  max-width: 270px;
+}
+
+.catalog__paginator {
+  display: none;
+}
+.catalog__paginator--on {
+  display: block;
+}
+
+.catalog__paginator-button {
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid #77c9cc;
+  border-radius: 10px;
+  padding: 15px 17px;
+  color: #77c9cc;
+
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.catalog__paginator-button-icon {
+  fill: #77c9cc;
+}
+.catalog__paginator-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 0 auto;
+}
+.catalog__paginator-list-item {
+}
+.catalog__paginator-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+  width: 40px;
+  height: 40px;
+  font-weight: 700;
+  color: #77c9cc;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #77c9cc;
+  border-radius: 10px;
+  transition: all 0.2s linear;
+}
+
+.catalog__paginator-link--active {
+  background-color: #77c9cc;
+  color: white;
+}
+
+.catalog__paginator-arrow {
+  fill: #77c9cc;
+}

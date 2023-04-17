@@ -1,0 +1,107 @@
+.price-range {
+  position: relative;
+  width: 95vmin;
+  background-color: #ffffff;
+
+  border-radius: 10px;
+  max-width: 210px;
+}
+.price-range__body {
+  position: relative;
+  width: 100%;
+  height: 11px;
+}
+.price-range__input[type="range"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  outline: none;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  background-color: transparent;
+  pointer-events: none;
+}
+.slider-track {
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+}
+.price-range__input[type="range"]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  height: 5px;
+}
+.price-range__input[type="range"]::-moz-range-track {
+  -moz-appearance: none;
+  height: 5px;
+}
+.price-range__input[type="range"]::-ms-track {
+  appearance: none;
+  height: 5px;
+}
+.price-range__input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 11px;
+  width: 11px;
+  background-color: #176975;
+  cursor: pointer;
+  margin-top: -3px;
+  pointer-events: auto;
+  border-radius: 50%;
+}
+.price-range__input[type="range"]::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 11px;
+  width: 11px;
+  background-color: #176975;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+
+  pointer-events: auto;
+}
+.price-range__input[type="range"]::-ms-thumb {
+  appearance: none;
+  height: 11px;
+  width: 11px;
+  background-color: #176975;
+  cursor: pointer;
+  border-radius: 50%;
+
+  pointer-events: auto;
+}
+.price-range__input[type="range"]:active::-webkit-slider-thumb {
+  background-color: #176975;
+}
+.price-range__values {
+  position: relative;
+  margin: auto;
+
+  border-radius: 5px;
+  text-align: center;
+
+  font-size: 14px;
+  line-height: calc(17 / 14);
+
+  color: #1e1e1e;
+  display: flex;
+  gap: 11px;
+  align-items: center;
+  margin-bottom: 23px;
+}
+
+.price-range__value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 45px;
+  border: 1px solid #76737d;
+  border-radius: 10px;
+}
