@@ -215,6 +215,11 @@ img {
   display: block;
 }
 
+a {
+  display: block;
+  text-decoration: none;
+}
+
 .product__content {
   padding: 30px;
 }
@@ -344,6 +349,33 @@ img {
 
 .catalog__paginator-arrow {
   fill: #77c9cc;
+}
+
+.header__top {
+  display: flex;
+  gap: 81px;
+}
+
+.header__logo {
+  width: 167px;
+  height: 50px;
+  background-color: aqua;
+}
+
+.header__main-menu {
+  display: flex;
+  gap: 30px;
+}
+
+.header__menu {
+  display: flex;
+  gap: 30px;
+}
+
+.header__product-types-list {
+  display: flex;
+  gap: 85px;
+  background-color: #77c9cc;
 }
 
 .tabs-bar {
