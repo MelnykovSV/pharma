@@ -1,0 +1,23 @@
+@import './abstracts/vars';
+@import './abstracts/fonts';
+@import './base/reset';
+@import './base/common';
+
+@import './pages/product';
+@import './pages/catalog';
+
+// @import "./vendors/nice-select2";
+
+@import './components/tabs-bar';
+@import './components/breadcrumb';
+@import './components/product-instruction';
+@import './components/product-card';
+@import './components/info-slider';
+@import './components/analogs';
+@import './components/slim-selects';
+@import './components/catalog-aside';
+@import './components/price-range-slider';
+
+@import './components/offers';
+
+@import './components/product';
