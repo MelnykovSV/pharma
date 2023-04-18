@@ -4,9 +4,18 @@
 .product__content {
   padding: 30px;
 }
-
+// .product__accordion {
+//   border-radius: 15px;
+// }
 .product__accordion .dropdownlink {
   justify-content: start;
   gap: 5px;
   padding: 0 30px;
+}
+
+.product__accordion .catalog__accordion-title {
+  margin-bottom: 0;
+}
+.product__accordion .other-forms__body {
+  border-bottom: none;
 }

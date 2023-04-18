@@ -21,20 +21,15 @@ body {
   @media screen and (min-width: $desktop) {
     max-width: $desktop;
   }
-  @media screen and (min-width: $desktop-wide) {
-    max-width: $desktop-wide;
-  }
+  // @media screen and (min-width: $desktop-wide) {
+  //   max-width: $desktop-wide;
+  // }
 }
 
 .container-fluid {
   width: min(100%, 1210px);
   padding: 0 20px;
   margin: 0 auto;
-}
-
-.tabs {
-  border: 1px solid #e7e6e6;
-  border-radius: 10px;
 }
 
 .visually-hidden {

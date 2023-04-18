@@ -1,7 +1,7 @@
 .tabs {
   border: 1px solid #e7e6e6;
   border-radius: 10px;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .tabs-bar {
@@ -27,7 +27,7 @@
   text-decoration: none;
   border: 0;
   background: transparent;
-  padding: 15px 5px;
+  padding: 15px 0;
 
   transition: color 0.3s linear;
   &::before {
