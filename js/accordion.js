@@ -1,5 +1,4 @@
-export function accordion() {
-  console.log('started');
+function accordion() {
   const accordions = document.querySelectorAll('.dropdownlink');
 
   if (accordions.length) {

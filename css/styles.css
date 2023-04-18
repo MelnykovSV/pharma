@@ -224,6 +224,12 @@ a {
   padding: 30px;
 }
 
+.product__accordion .dropdownlink {
+  justify-content: start;
+  gap: 5px;
+  padding: 0 30px;
+}
+
 .catalog {
   margin-bottom: 30px;
 }
@@ -454,6 +460,12 @@ a {
 
 .header__product-types-icon {
   fill: white;
+}
+
+.tabs {
+  border: 1px solid #e7e6e6;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .tabs-bar {
@@ -1358,8 +1370,13 @@ a {
   max-width: 302px;
 }
 
-.other-forms {
+.other-forms__body {
   padding: 20px;
+  border-bottom: 1px solid #e7e6e6;
+  margin-bottom: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .product-card-wide {
