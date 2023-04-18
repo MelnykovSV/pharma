@@ -351,15 +351,18 @@ a {
   fill: #77c9cc;
 }
 
-.header__top {
-  display: flex;
-  gap: 81px;
+.header {
+  margin-bottom: 30px;
 }
 
-.header__logo {
-  width: 167px;
-  height: 50px;
-  background-color: aqua;
+.header__bottom {
+  background-color: #77c9cc;
+}
+
+.header__top-nav {
+  display: flex;
+  align-items: center;
+  gap: 71px;
 }
 
 .header__main-menu {
@@ -367,15 +370,90 @@ a {
   gap: 30px;
 }
 
+.header__main-menu-link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  padding: 30px 0;
+  color: #76737d;
+}
+
 .header__menu {
   display: flex;
-  gap: 30px;
+  gap: 8px;
+}
+
+.header__menu-item {
+  display: flex;
+  align-items: center;
+}
+
+.header__menu-link {
+  position: relative;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.header__menu-icon {
+  fill: #76737d;
+}
+
+.header__menu-label {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #176975;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 1.2;
+  color: white;
 }
 
 .header__product-types-list {
   display: flex;
-  gap: 85px;
-  background-color: #77c9cc;
+}
+
+.header__product-types-list-item {
+  flex-grow: 1;
+}
+.header__product-types-list-item > a {
+  justify-content: center;
+}
+.header__product-types-list-item:last-child > a::after {
+  display: none;
+}
+
+.header__product-types-list-link {
+  position: relative;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  width: 100%;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: flex;
+  gap: 10px;
+  padding: 19px 0;
+}
+.header__product-types-list-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 1px;
+  background-color: white;
+}
+
+.header__product-types-icon {
+  fill: white;
 }
 
 .tabs-bar {
@@ -412,6 +490,12 @@ a {
   bottom: 0;
   left: 0;
   transition: background-color 0.3s linear;
+}
+.tabs-bar__link.current {
+  color: #0d727e;
+}
+.tabs-bar__link.current::before {
+  background-color: #0d727e;
 }
 .tabs-bar__link:hover, .tabs-bar__link:focus {
   color: #0d727e;
@@ -581,7 +665,7 @@ a {
   display: block;
 }
 
-.sale-label {
+.discount-label {
   position: absolute;
   top: 15px;
   right: 15px;
@@ -590,12 +674,12 @@ a {
   border-radius: 50%;
   background: #77c9cc;
   z-index: 100;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
 }
 
-.sale-label__value {
+.discount-label__value {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
@@ -636,6 +720,7 @@ a {
   font-weight: 600;
   font-size: 14px;
   line-height: 1.2142857143;
+  display: none;
   color: #76737d;
 }
 
@@ -692,6 +777,13 @@ a {
   width: 15px;
   display: block;
   fill: white;
+}
+
+.product-card.discount .discount-label {
+  display: flex;
+}
+.product-card.discount .product-card__price span {
+  display: block;
 }
 
 .product-gallery__slider {
@@ -807,6 +899,9 @@ a {
   background: #fff;
   border-radius: 4px;
 }
+.accordion-menu > li {
+  overflow: hidden;
+}
 
 .catalog__accordion > .open > .catalog__accordion-title {
   color: #0d727e;
@@ -830,24 +925,30 @@ a {
   fill: #176975;
   display: block;
   transition: transform 0.15s linear;
+  pointer-events: none;
 }
 
 .dropdownlink {
   cursor: pointer;
   position: relative;
-  transition: all 0.4s ease-out;
 }
 
+.catalog__accordion-list-container {
+  transition: height 0.3s linear, padding 0.3s linear;
+}
+
+.catalog__accordion-list {
+  padding-bottom: 15px;
+}
 .catalog__accordion-list li:not(:last-child) {
   margin-bottom: 15px;
 }
-
-.submenuItems {
-  display: none;
+.catalog__accordion-list li:last-child {
+  margin-bottom: 0;
 }
+
 .submenuItems a {
   display: block;
-  transition: all 0.4s ease-out;
   text-decoration: none;
 }
 
@@ -907,6 +1008,12 @@ a {
 .catalog__checkbox-label-value span {
   margin-left: 3px;
   color: #76737d;
+}
+
+.accordion-closed {
+  height: 0 !important;
+  padding-bottom: 0;
+  overflow: hidden;
 }
 
 .price-range {

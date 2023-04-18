@@ -105,7 +105,158 @@
     <title>Картка товару</title>
   </head>
   <body>
-    <header class="header"></header>
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <nav class="header__top-nav">
+            <a href="index.html" class="header__logo">
+              <picture>
+                <source
+                  srcset="./images/Logo.webp 1x, ./images/Logo@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/Logo.png 1x, ./images/Logo@2x.png 2x"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/Logo.png"
+                  width="167"
+                  height="50"
+                  alt="лого"
+                  class="product-card__image"
+                />
+              </picture>
+            </a>
+            <ul class="header__main-menu">
+              <li class="header__main-menu-item">
+                <a href="#" class="header__main-menu-link">Класифікація АТС</a>
+              </li>
+              <li class="header__main-menu-item">
+                <a href="#" class="header__main-menu-link">Про нас</a>
+              </li>
+              <li class="header__main-menu-item">
+                <a href="#" class="header__main-menu-link">Оплата і доставка</a>
+              </li>
+              <li class="header__main-menu-item">
+                <a href="#" class="header__main-menu-link">Акції</a>
+              </li>
+              <li class="header__main-menu-item">
+                <a href="#" class="header__main-menu-link">Гарантія</a>
+              </li>
+              <li class="header__main-menu-item">
+                <a href="#" class="header__main-menu-link">Контакти</a>
+              </li>
+            </ul>
+            <ul class="header__menu">
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link" aria-label="пошук">
+                  <svg class="header__menu-icon" width="20" height="20">
+                    <use href="images/icons.svg#icon-search1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header__menu-item">
+                <a
+                  href="#"
+                  class="header__menu-link"
+                  aria-label="профіль користувача"
+                >
+                  <svg class="header__menu-icon" width="20" height="20">
+                    <use href="images/icons.svg#icon-account"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link" aria-label="обране">
+                  <svg class="header__menu-icon" width="24" height="24">
+                    <use href="images/icons.svg#icon-heart"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link" aria-label="кошик">
+                  <svg class="header__menu-icon" width="20" height="20">
+                    <use href="images/icons.svg#icon-bag"></use>
+                  </svg>
+                  <div class="header__menu-label">2</div>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container">
+          <nav class="header__bottom-nav">
+            <ul class="header__product-types-list">
+              <li class="header__product-types-list-item">
+                <a href="#" class="header__product-types-list-link">
+                  <svg
+                    class="header__product-types-icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="images/icons.svg#icon-tablets"></use>
+                  </svg>
+                  Лікарські засоби
+                </a>
+              </li>
+              <li class="header__product-types-list-item">
+                <a href="#" class="header__product-types-list-link">
+                  <svg
+                    class="header__product-types-icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="images/icons.svg#icon-sanitizer"></use>
+                  </svg>
+                  Косметика
+                </a>
+              </li>
+              <li class="header__product-types-list-item">
+                <a href="#" class="header__product-types-list-link">
+                  <svg
+                    class="header__product-types-icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="images/icons.svg#icon-baby-carriage"></use>
+                  </svg>
+                  Дитячі товари
+                </a>
+              </li>
+              <li class="header__product-types-list-item">
+                <a href="#" class="header__product-types-list-link">
+                  <svg
+                    class="header__product-types-icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="images/icons.svg#icon-stethoscope"></use>
+                  </svg>
+                  Медтехніка
+                </a>
+              </li>
+              <li class="header__product-types-list-item">
+                <a href="#" class="header__product-types-list-link">
+                  <svg
+                    class="header__product-types-icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="images/icons.svg#icon-capsule"></use>
+                  </svg>
+
+                  Вітаміни і БАДи
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
     <main class="main">
       <section class="product">
         <div class="container">
@@ -160,7 +311,7 @@
                         <div class="swiper-wrapper">
                           <!-- Slides -->
                           <div class="swiper-slide info-slider__thumbs-slide">
-                            <img
+                            <!-- <img
                               src="images/products/product-1-small.jpg"
                               srcset="
                                 images/products/product-1-small.jpg    1x,
@@ -169,55 +320,136 @@
                               width="90"
                               height="90"
                               alt=""
-                            />
+                            /> -->
+
+                            <picture>
+                              <source
+                                srcset="
+                                  ./images/products/product-1-small.webp    1x,
+                                  ./images/products/product-1-small@2x.webp 2x
+                                "
+                                type="image/webp"
+                              />
+                              <source
+                                srcset="
+                                  ./images/products/product-1-small.jpg    1x,
+                                  ./images/products/product-1-small@2x.jpg 2x
+                                "
+                                type="image/jpeg"
+                              />
+                              <img
+                                src="./images/products/product-1-small.jpg"
+                                width="90"
+                                height="90"
+                                data-img-name="product-1"
+                                alt="фервекс"
+                                class="info-slider__small-image"
+                              />
+                            </picture>
                           </div>
                           <div class="swiper-slide info-slider__thumbs-slide">
-                            <img
-                              src="images/products/product-2-small.jpg"
-                              srcset="
-                                images/products/product-2-small.jpg    1x,
-                                images/products/product-2-small@2x.jpg 2x
-                              "
-                              width="90"
-                              height="90"
-                              alt=""
-                            />
+                            <picture>
+                              <source
+                                srcset="
+                                  ./images/products/product-2-small.webp    1x,
+                                  ./images/products/product-2-small@2x.webp 2x
+                                "
+                                type="image/webp"
+                              />
+                              <source
+                                srcset="
+                                  ./images/products/product-2-small.jpg    1x,
+                                  ./images/products/product-2-small@2x.jpg 2x
+                                "
+                                type="image/jpeg"
+                              />
+                              <img
+                                src="./images/products/product-2-small.jpg"
+                                width="90"
+                                height="90"
+                                data-img-name="product-2"
+                                alt="фервекс"
+                                class="info-slider__small-image"
+                              />
+                            </picture>
                           </div>
                           <div class="swiper-slide info-slider__thumbs-slide">
-                            <img
-                              src="images/products/product-1-small.jpg"
-                              srcset="
-                                images/products/product-1-small.jpg    1x,
-                                images/products/product-1-small@2x.jpg 2x
-                              "
-                              width="90"
-                              height="90"
-                              alt=""
-                            />
+                            <picture>
+                              <source
+                                srcset="
+                                  ./images/products/product-1-small.webp    1x,
+                                  ./images/products/product-1-small@2x.webp 2x
+                                "
+                                type="image/webp"
+                              />
+                              <source
+                                srcset="
+                                  ./images/products/product-1-small.jpg    1x,
+                                  ./images/products/product-1-small@2x.jpg 2x
+                                "
+                                type="image/jpeg"
+                              />
+                              <img
+                                src="./images/products/product-1-small.jpg"
+                                width="90"
+                                height="90"
+                                data-img-name="product-1"
+                                alt="фервекс"
+                                class="info-slider__small-image"
+                              />
+                            </picture>
                           </div>
                           <div class="swiper-slide info-slider__thumbs-slide">
-                            <img
-                              src="images/products/product-2-small.jpg"
-                              srcset="
-                                images/products/product-2-small.jpg    1x,
-                                images/products/product-2-small@2x.jpg 2x
-                              "
-                              width="90"
-                              height="90"
-                              alt=""
-                            />
+                            <picture>
+                              <source
+                                srcset="
+                                  ./images/products/product-2-small.webp    1x,
+                                  ./images/products/product-2-small@2x.webp 2x
+                                "
+                                type="image/webp"
+                              />
+                              <source
+                                srcset="
+                                  ./images/products/product-2-small.jpg    1x,
+                                  ./images/products/product-2-small@2x.jpg 2x
+                                "
+                                type="image/jpeg"
+                              />
+                              <img
+                                src="./images/products/product-2-small.jpg"
+                                width="90"
+                                height="90"
+                                data-img-name="product-2"
+                                alt="фервекс"
+                                class="info-slider__small-image"
+                              />
+                            </picture>
                           </div>
                           <div class="swiper-slide info-slider__thumbs-slide">
-                            <img
-                              src="images/products/product-1-small.jpg"
-                              srcset="
-                                images/products/product-1-small.jpg    1x,
-                                images/products/product-1-small@2x.jpg 2x
-                              "
-                              width="90"
-                              height="90"
-                              alt=""
-                            />
+                            <picture>
+                              <source
+                                srcset="
+                                  ./images/products/product-1-small.webp    1x,
+                                  ./images/products/product-1-small@2x.webp 2x
+                                "
+                                type="image/webp"
+                              />
+                              <source
+                                srcset="
+                                  ./images/products/product-1-small.jpg    1x,
+                                  ./images/products/product-1-small@2x.jpg 2x
+                                "
+                                type="image/jpeg"
+                              />
+                              <img
+                                src="./images/products/product-1-small.jpg"
+                                width="90"
+                                height="90"
+                                data-img-name="product-1"
+                                alt="фервекс"
+                                class="info-slider__small-image"
+                              />
+                            </picture>
                           </div>
                         </div>
 
@@ -249,19 +481,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="info-slider__big-image-thumb">
-                      <img
-                        src="images/products/product-1.jpg"
-                        srcset="
-                          images/products/product-1.jpg    1x,
-                          images/products/product-1@2x.jpg 2x
-                        "
-                        alt=""
-                        width="420"
-                        height="420"
-                        class="info-slider__big-image"
-                      />
-                    </div>
+                    <div class="info-slider__big-image-thumb"></div>
                   </div>
                 </div>
                 <div class="everything-about-product__item product-info">
@@ -299,6 +519,7 @@
                     <button
                       type="button"
                       class="products__info-btn products__info-btn--blue"
+                      aria-label="додати в обране"
                     >
                       <svg
                         class="products__info-btn-icon"
@@ -321,7 +542,11 @@
                     <div class="tabs-bar">
                       <ul class="tabs-bar__list">
                         <li class="tabs-bar__list-item">
-                          <a href="#" class="tabs-bar__link" data-tab-id="1">
+                          <a
+                            href="#"
+                            class="tabs-bar__link current"
+                            data-tab-id="1"
+                          >
                             Характеристики
                           </a>
                         </li>
@@ -392,51 +617,248 @@
                         </div>
 
                         <div>
-                          <select name="select">
-                            <option value="">Всі характеристики</option>
-                          </select>
-                        </div>
-                      </div>
-
-                      <div class="other-forms tab-body hidden" data-tab-id="2">
-                        <div class="product-card-wide">
-                          <div class="product-card-wide__img-container">
-                            <img
-                              src="images/products/analog.jpg"
-                              srcset="
-                                images/products/analog.jpg    1x,
-                                images/products/analog@2x.jpg 2x
-                              "
-                              alt=""
-                            />
-                          </div>
-                          <div class="product-card-wide__info">
-                            <h3 class="product-card-wide__title">
-                              Фервекс для дорослих (без цукру) №8
-                            </h3>
-                            <div class="product-card-wide__info-body">
-                              <p class="product-card-wide__form">
-                                Форма випуску:
-                                <span class="product-card-wide__form-value">
-                                  Таблетки
-                                </span>
-                              </p>
-                              <span class="product-card-wide__price">
-                                156,50 грн
-                              </span>
-                              <button
-                                type="button"
-                                class="product-card-wide__button"
+                          <ul class="catalog__accordion accordion-menu">
+                            <li>
+                              <div
+                                class="catalog__accordion-title dropdownlink"
                               >
-                                до кошика
-                              </button>
-                            </div>
-                          </div>
+                                Всі характеристики
+
+                                <svg
+                                  class="catalog__accordion-icon"
+                                  width="20"
+                                  height="20"
+                                >
+                                  <use
+                                    href="images/icons.svg#icon-angle-down"
+                                  ></use>
+                                </svg>
+                              </div>
+
+                              <div
+                                class="catalog__accordion-list-container accordion-closed"
+                              >
+                                <dl
+                                  class="products__info-list characteristics-list"
+                                >
+                                  <div class="characteristics-list-wrap">
+                                    <dt class="characteristics-list-dt">
+                                      Код АТС
+                                    </dt>
+                                    <dd class="characteristics-list-dd">123</dd>
+                                  </div>
+
+                                  <div class="characteristics-list-wrap">
+                                    <dt class="characteristics-list-dt">
+                                      Категорія
+                                    </dt>
+                                    <dd class="characteristics-list-dd">
+                                      Лікарські засоби
+                                    </dd>
+                                  </div>
+                                  <div class="characteristics-list-wrap">
+                                    <dt class="characteristics-list-dt">
+                                      Торгова назва
+                                    </dt>
+                                    <dd class="characteristics-list-dd">
+                                      Фервекс для дорослих
+                                    </dd>
+                                  </div>
+                                  <div class="characteristics-list-wrap">
+                                    <dt class="characteristics-list-dt">
+                                      Діючі речорини
+                                    </dt>
+                                    <dd class="characteristics-list-dd">
+                                      Парацетамол фенірамін, аскорбінова кислота
+                                    </dd>
+                                  </div>
+                                  <div class="characteristics-list-wrap">
+                                    <dt class="characteristics-list-dt">
+                                      Форма випуску
+                                    </dt>
+                                    <dd class="characteristics-list-dd">
+                                      Порошок д/ор. р-ну
+                                    </dd>
+                                  </div>
+                                  <div class="characteristics-list-wrap">
+                                    <dt class="characteristics-list-dt">
+                                      Дозування
+                                    </dt>
+                                    <dd class="characteristics-list-dd">
+                                      Парацетамол: 500мг, фенірамін: 25 мг,
+                                      аскорбінова кислота: 200 мг
+                                    </dd>
+                                  </div>
+                                </dl>
+                              </div>
+                            </li>
+                          </ul>
                         </div>
                       </div>
 
                       <div
-                        class="delivery-and-payment tab-body hidden"
+                        class="other-forms tab-body visually-hidden"
+                        data-tab-id="2"
+                      >
+                        <div class="other-forms__body">
+                          <div class="product-card-wide">
+                            <div class="product-card-wide__img-container">
+                              <!-- <img
+                                src="images/products/analog.jpg"
+                                srcset="
+                                  images/products/analog.jpg    1x,
+                                  images/products/analog@2x.jpg 2x
+                                "
+                                alt=""
+                              /> -->
+
+                              <picture>
+                                <source
+                                  srcset="
+                                    ./images/products/analog.webp    1x,
+                                    ./images/products/analog@2x.webp 2x
+                                  "
+                                  type="image/webp"
+                                />
+                                <source
+                                  srcset="
+                                    ./images/products/analog.jpg    1x,
+                                    ./images/products/analog@2x.jpg 2x
+                                  "
+                                  type="image/jpeg"
+                                />
+                                <img
+                                  src="./images/products/analog.jpg"
+                                  width="60"
+                                  height="60"
+                                  alt="фервекс для дорослих"
+                                />
+                              </picture>
+                            </div>
+                            <div class="product-card-wide__info">
+                              <h3 class="product-card-wide__title">
+                                Фервекс для дорослих (без цукру) №8
+                              </h3>
+                              <div class="product-card-wide__info-body">
+                                <p class="product-card-wide__form">
+                                  Форма випуску:
+                                  <span class="product-card-wide__form-value">
+                                    Таблетки
+                                  </span>
+                                </p>
+                                <span class="product-card-wide__price">
+                                  156,50 грн
+                                </span>
+                                <button
+                                  type="button"
+                                  class="product-card-wide__button"
+                                >
+                                  до кошика
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div>
+                          <ul class="catalog__accordion accordion-menu">
+                            <li>
+                              <div
+                                class="catalog__accordion-title dropdownlink"
+                              >
+                                Всі характеристики
+
+                                <svg
+                                  class="catalog__accordion-icon"
+                                  width="20"
+                                  height="20"
+                                >
+                                  <use
+                                    href="images/icons.svg#icon-angle-down"
+                                  ></use>
+                                </svg>
+                              </div>
+
+                              <div
+                                class="catalog__accordion-list-container accordion-closed"
+                              >
+                                <ul>
+                                  <li>
+                                    <div class="product-card-wide">
+                                      <div
+                                        class="product-card-wide__img-container"
+                                      >
+                                        <!-- <img
+                                          src="images/products/analog.jpg"
+                                          srcset="
+                                            images/products/analog.jpg    1x,
+                                            images/products/analog@2x.jpg 2x
+                                          "
+                                          alt=""
+                                        /> -->
+
+                                        <picture>
+                                          <source
+                                            srcset="
+                                              ./images/products/analog.webp    1x,
+                                              ./images/products/analog@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                          />
+                                          <source
+                                            srcset="
+                                              ./images/products/analog.jpg    1x,
+                                              ./images/products/analog@2x.jpg 2x
+                                            "
+                                            type="image/jpeg"
+                                          />
+                                          <img
+                                            src="./images/products/analog.jpg"
+                                            width="60"
+                                            height="60"
+                                            alt="фервекс для дорослих"
+                                          />
+                                        </picture>
+                                      </div>
+                                      <div class="product-card-wide__info">
+                                        <h3 class="product-card-wide__title">
+                                          Фервекс для дорослих (без цукру) №8
+                                        </h3>
+                                        <div
+                                          class="product-card-wide__info-body"
+                                        >
+                                          <p class="product-card-wide__form">
+                                            Форма випуску:
+                                            <span
+                                              class="product-card-wide__form-value"
+                                            >
+                                              Таблетки
+                                            </span>
+                                          </p>
+                                          <span
+                                            class="product-card-wide__price"
+                                          >
+                                            156,50 грн
+                                          </span>
+                                          <button
+                                            type="button"
+                                            class="product-card-wide__button"
+                                          >
+                                            до кошика
+                                          </button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div
+                        class="delivery-and-payment tab-body visually-hidden"
                         data-tab-id="3"
                       >
                         <div class="delivery">
@@ -494,12 +916,78 @@
               </div>
               <!-- ФАРМ ОПІКА -->
 
-              <div class="pharm-care tab-body hidden" data-tab-id="2">
+              <div class="pharm-care tab-body visually-hidden" data-tab-id="2">
                 <h2>ФАРМ ОПІКА</h2>
+                <div>
+                  <ul class="catalog__accordion accordion-menu">
+                    <li>
+                      <div class="catalog__accordion-title dropdownlink">
+                        Всі характеристики
+
+                        <svg
+                          class="catalog__accordion-icon"
+                          width="20"
+                          height="20"
+                        >
+                          <use href="images/icons.svg#icon-angle-down"></use>
+                        </svg>
+                      </div>
+
+                      <div
+                        class="catalog__accordion-list-container accordion-closed"
+                      >
+                        <dl class="products__info-list characteristics-list">
+                          <div class="characteristics-list-wrap">
+                            <dt class="characteristics-list-dt">Код АТС</dt>
+                            <dd class="characteristics-list-dd">123</dd>
+                          </div>
+
+                          <div class="characteristics-list-wrap">
+                            <dt class="characteristics-list-dt">Категорія</dt>
+                            <dd class="characteristics-list-dd">
+                              Лікарські засоби
+                            </dd>
+                          </div>
+                          <div class="characteristics-list-wrap">
+                            <dt class="characteristics-list-dt">
+                              Торгова назва
+                            </dt>
+                            <dd class="characteristics-list-dd">
+                              Фервекс для дорослих
+                            </dd>
+                          </div>
+                          <div class="characteristics-list-wrap">
+                            <dt class="characteristics-list-dt">
+                              Діючі речорини
+                            </dt>
+                            <dd class="characteristics-list-dd">
+                              Парацетамол фенірамін, аскорбінова кислота
+                            </dd>
+                          </div>
+                          <div class="characteristics-list-wrap">
+                            <dt class="characteristics-list-dt">
+                              Форма випуску
+                            </dt>
+                            <dd class="characteristics-list-dd">
+                              Порошок д/ор. р-ну
+                            </dd>
+                          </div>
+                          <div class="characteristics-list-wrap">
+                            <dt class="characteristics-list-dt">Дозування</dt>
+                            <dd class="characteristics-list-dd">
+                              Парацетамол: 500мг, фенірамін: 25 мг, аскорбінова
+                              кислота: 200 мг
+                            </dd>
+                          </div>
+                        </dl>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
 
               <!-- ІНСТРУКЦІЯ                    START -->
-              <div class="instruction tab-body hidden" data-tab-id="3">
+              <div class="instruction tab-body visually-hidden" data-tab-id="3">
                 <div class="instruction__body">
                   <h2 class="instruction__title">
                     Інструкція до Фервекс для дорослих (з вітаміном С) №8, саше
@@ -650,25 +1138,48 @@
               <!-- ІНСТРУКЦІЯ                    END -->
 
               <!-- АНАЛОГИ -->
-              <div class="analogs tab-body hidden" data-tab-id="4">
+              <div class="analogs tab-body visually-hidden" data-tab-id="4">
                 <ul class="analogs__list">
                   <li class="analogs__list-item">
-                    <div class="product-card">
-                      <div class="sale-label">
-                        <span class="sale-label__value">-15%</span>
+                    <div class="product-card discount">
+                      <div class="discount-label">
+                        <span class="discount-label__value">-15%</span>
                       </div>
 
                       <a href="" class="product-card__product-link">
-                        <img
-                          src="images/products/card-2.jpg"
+                        <!-- <img
+                          src="images/products/card-1.jpg"
                           srcset="
-                            images/products/card-2.jpg    1x,
-                            images/products/card-2@2x.jpg 2x
+                            images/products/card-1.jpg    1x,
+                            images/products/card-1@2x.jpg 2x
                           "
                           width="180"
                           alt=""
                           class="product-card__image"
-                        />
+                        /> -->
+                        <picture>
+                          <source
+                            srcset="
+                              ./images/products/card-1.webp    1x,
+                              ./images/products/card-1@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <source
+                            srcset="
+                              ./images/products/card-1.jpg    1x,
+                              ./images/products/card-1@2x.jpg 2x
+                            "
+                            type="image/jpeg"
+                          />
+                          <img
+                            src="./images/products/card-1.jpg"
+                            width="180"
+                            height="180"
+                            alt="нервонорм"
+                            class="product-card__image"
+                          />
+                        </picture>
 
                         <h3 class="product-card__title">
                           Нервонорм Night капсули №30
@@ -686,7 +1197,10 @@
                       </a>
 
                       <div class="product-card__buttons">
-                        <button class="product-card__like-button">
+                        <button
+                          class="product-card__like-button"
+                          aria-label="додати в обране"
+                        >
                           <svg
                             class="product-card__like-button-icon"
                             width="20"
@@ -711,12 +1225,12 @@
                   </li>
                   <li class="analogs__list-item">
                     <div class="product-card">
-                      <div class="sale-label">
-                        <span class="sale-label__value">-15%</span>
+                      <div class="discount-label">
+                        <span class="discount-label__value">-15%</span>
                       </div>
 
                       <a href="" class="product-card__product-link">
-                        <img
+                        <!-- <img
                           src="images/products/card-2.jpg"
                           srcset="
                             images/products/card-2.jpg    1x,
@@ -725,14 +1239,37 @@
                           width="180"
                           alt=""
                           class="product-card__image"
-                        />
+                        /> -->
+                        <picture>
+                          <source
+                            srcset="
+                              ./images/products/card-2.webp    1x,
+                              ./images/products/card-2@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <source
+                            srcset="
+                              ./images/products/card-2.jpg    1x,
+                              ./images/products/card-2@2x.jpg 2x
+                            "
+                            type="image/jpeg"
+                          />
+                          <img
+                            src="./images/products/card-2.jpg"
+                            width="180"
+                            height="180"
+                            alt="нокспрей"
+                            class="product-card__image"
+                          />
+                        </picture>
 
                         <h3 class="product-card__title">
-                          Нервонорм Night капсули №30
+                          Нокспрей 0.05% спрей назальний 10 мл
                         </h3>
 
                         <p class="product-card__producer">
-                          Ілан Фарм (Україна)
+                          Сперко Україна СП ТОВ (Україна)
                         </p>
 
                         <p class="product-card__price">
@@ -743,7 +1280,94 @@
                       </a>
 
                       <div class="product-card__buttons">
-                        <button class="product-card__like-button">
+                        <button
+                          class="product-card__like-button"
+                          aria-label="додати в обране"
+                        >
+                          <svg
+                            class="product-card__like-button-icon"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="images/icons.svg#icon-heart"></use>
+                          </svg>
+                        </button>
+                        <button type="button" class="product-card__cart-button">
+                          <svg
+                            class="product-card__cart-button-icon"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="images/icons.svg#icon-bag"></use>
+                          </svg>
+
+                          до кошика
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="analogs__list-item">
+                    <div class="product-card discount">
+                      <div class="discount-label">
+                        <span class="discount-label__value">-15%</span>
+                      </div>
+
+                      <a href="" class="product-card__product-link">
+                        <!-- <img
+                          src="images/products/card-3.jpg"
+                          srcset="
+                            images/products/card-3.jpg    1x,
+                            images/products/card-3@2x.jpg 2x
+                          "
+                          width="180"
+                          alt=""
+                          class="product-card__image"
+                        /> -->
+
+                        <picture>
+                          <source
+                            srcset="
+                              ./images/products/card-3.webp    1x,
+                              ./images/products/card-3@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <source
+                            srcset="
+                              ./images/products/card-3.jpg    1x,
+                              ./images/products/card-3@2x.jpg 2x
+                            "
+                            type="image/jpeg"
+                          />
+                          <img
+                            src="./images/products/card-3.jpg"
+                            width="180"
+                            height="180"
+                            alt="ентерожерміна"
+                            class="product-card__image"
+                          />
+                        </picture>
+
+                        <h3 class="product-card__title">
+                          Ентерожерміна форте 5 мл суспензія №10
+                        </h3>
+
+                        <p class="product-card__producer">
+                          Sanofi Aventis (Італія)
+                        </p>
+
+                        <p class="product-card__price">
+                          206,70 грн
+                          <span>256,70 грн</span>
+                        </p>
+                        <p class="product-card__status">В наявності</p>
+                      </a>
+
+                      <div class="product-card__buttons">
+                        <button
+                          class="product-card__like-button"
+                          aria-label="додати в обране"
+                        >
                           <svg
                             class="product-card__like-button-icon"
                             width="20"
@@ -768,28 +1392,52 @@
                   </li>
                   <li class="analogs__list-item">
                     <div class="product-card">
-                      <div class="sale-label">
-                        <span class="sale-label__value">-15%</span>
+                      <div class="discount-label">
+                        <span class="discount-label__value">-15%</span>
                       </div>
 
                       <a href="" class="product-card__product-link">
-                        <img
-                          src="images/products/card-2.jpg"
+                        <!-- <img
+                          src="images/products/card-4.jpg"
                           srcset="
-                            images/products/card-2.jpg    1x,
-                            images/products/card-2@2x.jpg 2x
+                            images/products/card-4.jpg    1x,
+                            images/products/card-4@2x.jpg 2x
                           "
                           width="180"
                           alt=""
                           class="product-card__image"
-                        />
+                        /> -->
+
+                        <picture>
+                          <source
+                            srcset="
+                              ./images/products/card-4.webp    1x,
+                              ./images/products/card-4@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <source
+                            srcset="
+                              ./images/products/card-4.jpg    1x,
+                              ./images/products/card-4@2x.jpg 2x
+                            "
+                            type="image/jpeg"
+                          />
+                          <img
+                            src="./images/products/card-4.jpg"
+                            width="180"
+                            height="180"
+                            alt="корвалмент"
+                            class="product-card__image"
+                          />
+                        </picture>
 
                         <h3 class="product-card__title">
-                          Нервонорм Night капсули №30
+                          Корвалмент 0,1 г капсули №80
                         </h3>
 
                         <p class="product-card__producer">
-                          Ілан Фарм (Україна)
+                          Вітамінний завод ПАТ (Україна)
                         </p>
 
                         <p class="product-card__price">
@@ -800,64 +1448,10 @@
                       </a>
 
                       <div class="product-card__buttons">
-                        <button class="product-card__like-button">
-                          <svg
-                            class="product-card__like-button-icon"
-                            width="20"
-                            height="20"
-                          >
-                            <use href="images/icons.svg#icon-heart"></use>
-                          </svg>
-                        </button>
-                        <button type="button" class="product-card__cart-button">
-                          <svg
-                            class="product-card__cart-button-icon"
-                            width="20"
-                            height="20"
-                          >
-                            <use href="images/icons.svg#icon-bag"></use>
-                          </svg>
-
-                          до кошика
-                        </button>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="analogs__list-item">
-                    <div class="product-card">
-                      <div class="sale-label">
-                        <span class="sale-label__value">-15%</span>
-                      </div>
-
-                      <a href="" class="product-card__product-link">
-                        <img
-                          src="images/products/card-2.jpg"
-                          srcset="
-                            images/products/card-2.jpg    1x,
-                            images/products/card-2@2x.jpg 2x
-                          "
-                          width="180"
-                          alt=""
-                          class="product-card__image"
-                        />
-
-                        <h3 class="product-card__title">
-                          Нервонорм Night капсули №30
-                        </h3>
-
-                        <p class="product-card__producer">
-                          Ілан Фарм (Україна)
-                        </p>
-
-                        <p class="product-card__price">
-                          206,70 грн
-                          <span>256,70 грн</span>
-                        </p>
-                        <p class="product-card__status">В наявності</p>
-                      </a>
-
-                      <div class="product-card__buttons">
-                        <button class="product-card__like-button">
+                        <button
+                          class="product-card__like-button"
+                          aria-label="додати в обране"
+                        >
                           <svg
                             class="product-card__like-button-icon"
                             width="20"
@@ -916,13 +1510,13 @@
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide offers-slider__slide">
-                <div class="product-card">
-                  <div class="sale-label">
-                    <span class="sale-label__value">-15%</span>
+                <div class="product-card discount">
+                  <div class="discount-label">
+                    <span class="discount-label__value">-15%</span>
                   </div>
 
                   <a href="" class="product-card__product-link">
-                    <img
+                    <!-- <img
                       src="images/products/card-1.jpg"
                       srcset="
                         images/products/card-1.jpg    1x,
@@ -931,7 +1525,30 @@
                       width="180"
                       alt=""
                       class="product-card__image"
-                    />
+                    /> -->
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/products/card-1.webp    1x,
+                          ./images/products/card-1@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/products/card-1.jpg    1x,
+                          ./images/products/card-1@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                      />
+                      <img
+                        src="./images/products/card-1.jpg"
+                        width="180"
+                        height="180"
+                        alt="нервонорм"
+                        class="product-card__image"
+                      />
+                    </picture>
 
                     <h3 class="product-card__title">
                       Нервонорм Night капсули №30
@@ -947,7 +1564,10 @@
                   </a>
 
                   <div class="product-card__buttons">
-                    <button class="product-card__like-button">
+                    <button
+                      class="product-card__like-button"
+                      aria-label="додати в обране"
+                    >
                       <svg
                         class="product-card__like-button-icon"
                         width="20"
@@ -972,12 +1592,12 @@
               </div>
               <div class="swiper-slide offers-slider__slide">
                 <div class="product-card">
-                  <div class="sale-label">
-                    <span class="sale-label__value">-15%</span>
+                  <div class="discount-label">
+                    <span class="discount-label__value">-15%</span>
                   </div>
 
                   <a href="" class="product-card__product-link">
-                    <img
+                    <!-- <img
                       src="images/products/card-2.jpg"
                       srcset="
                         images/products/card-2.jpg    1x,
@@ -986,13 +1606,38 @@
                       width="180"
                       alt=""
                       class="product-card__image"
-                    />
+                    /> -->
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/products/card-2.webp    1x,
+                          ./images/products/card-2@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/products/card-2.jpg    1x,
+                          ./images/products/card-2@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                      />
+                      <img
+                        src="./images/products/card-2.jpg"
+                        width="180"
+                        height="180"
+                        alt="нокспрей"
+                        class="product-card__image"
+                      />
+                    </picture>
 
                     <h3 class="product-card__title">
-                      Нервонорм Night капсули №30
+                      Нокспрей 0.05% спрей назальний 10 мл
                     </h3>
 
-                    <p class="product-card__producer">Ілан Фарм (Україна)</p>
+                    <p class="product-card__producer">
+                      Сперко Україна СП ТОВ (Україна)
+                    </p>
 
                     <p class="product-card__price">
                       206,70 грн
@@ -1002,7 +1647,10 @@
                   </a>
 
                   <div class="product-card__buttons">
-                    <button class="product-card__like-button">
+                    <button
+                      class="product-card__like-button"
+                      aria-label="додати в обране"
+                    >
                       <svg
                         class="product-card__like-button-icon"
                         width="20"
@@ -1026,13 +1674,13 @@
                 </div>
               </div>
               <div class="swiper-slide offers-slider__slide">
-                <div class="product-card">
-                  <div class="sale-label">
-                    <span class="sale-label__value">-15%</span>
+                <div class="product-card discount">
+                  <div class="discount-label">
+                    <span class="discount-label__value">-15%</span>
                   </div>
 
                   <a href="" class="product-card__product-link">
-                    <img
+                    <!-- <img
                       src="images/products/card-3.jpg"
                       srcset="
                         images/products/card-3.jpg    1x,
@@ -1041,13 +1689,39 @@
                       width="180"
                       alt=""
                       class="product-card__image"
-                    />
+                    /> -->
+
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/products/card-3.webp    1x,
+                          ./images/products/card-3@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/products/card-3.jpg    1x,
+                          ./images/products/card-3@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                      />
+                      <img
+                        src="./images/products/card-3.jpg"
+                        width="180"
+                        height="180"
+                        alt="ентерожерміна"
+                        class="product-card__image"
+                      />
+                    </picture>
 
                     <h3 class="product-card__title">
-                      Нервонорм Night капсули №30
+                      Ентерожерміна форте 5 мл суспензія №10
                     </h3>
 
-                    <p class="product-card__producer">Ілан Фарм (Україна)</p>
+                    <p class="product-card__producer">
+                      Sanofi Aventis (Італія)
+                    </p>
 
                     <p class="product-card__price">
                       206,70 грн
@@ -1057,7 +1731,10 @@
                   </a>
 
                   <div class="product-card__buttons">
-                    <button class="product-card__like-button">
+                    <button
+                      class="product-card__like-button"
+                      aria-label="додати в обране"
+                    >
                       <svg
                         class="product-card__like-button-icon"
                         width="20"
@@ -1082,12 +1759,12 @@
               </div>
               <div class="swiper-slide offers-slider__slide">
                 <div class="product-card">
-                  <div class="sale-label">
-                    <span class="sale-label__value">-15%</span>
+                  <div class="discount-label">
+                    <span class="discount-label__value">-15%</span>
                   </div>
 
                   <a href="" class="product-card__product-link">
-                    <img
+                    <!-- <img
                       src="images/products/card-4.jpg"
                       srcset="
                         images/products/card-4.jpg    1x,
@@ -1096,13 +1773,39 @@
                       width="180"
                       alt=""
                       class="product-card__image"
-                    />
+                    /> -->
+
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/products/card-4.webp    1x,
+                          ./images/products/card-4@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/products/card-4.jpg    1x,
+                          ./images/products/card-4@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                      />
+                      <img
+                        src="./images/products/card-4.jpg"
+                        width="180"
+                        height="180"
+                        alt="корвалмент"
+                        class="product-card__image"
+                      />
+                    </picture>
 
                     <h3 class="product-card__title">
-                      Нервонорм Night капсули №30
+                      Корвалмент 0,1 г капсули №80
                     </h3>
 
-                    <p class="product-card__producer">Ілан Фарм (Україна)</p>
+                    <p class="product-card__producer">
+                      Вітамінний завод ПАТ (Україна)
+                    </p>
 
                     <p class="product-card__price">
                       206,70 грн
@@ -1112,7 +1815,10 @@
                   </a>
 
                   <div class="product-card__buttons">
-                    <button class="product-card__like-button">
+                    <button
+                      class="product-card__like-button"
+                      aria-label="додати в обране"
+                    >
                       <svg
                         class="product-card__like-button-icon"
                         width="20"
@@ -1136,13 +1842,13 @@
                 </div>
               </div>
               <div class="swiper-slide offers-slider__slide">
-                <div class="product-card">
-                  <div class="sale-label">
-                    <span class="sale-label__value">-15%</span>
+                <div class="product-card discount">
+                  <div class="discount-label">
+                    <span class="discount-label__value">-15%</span>
                   </div>
 
                   <a href="" class="product-card__product-link">
-                    <img
+                    <!-- <img
                       src="images/products/card-5.jpg"
                       srcset="
                         images/products/card-5.jpg    1x,
@@ -1151,13 +1857,39 @@
                       width="180"
                       alt=""
                       class="product-card__image"
-                    />
+                    /> -->
+
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/products/card-5.webp    1x,
+                          ./images/products/card-5@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/products/card-5.jpg    1x,
+                          ./images/products/card-5@2x.jpg 2x
+                        "
+                        type="image/jpeg"
+                      />
+                      <img
+                        src="./images/products/card-5.jpg"
+                        width="180"
+                        height="180"
+                        alt="корвалмент"
+                        class="product-card__image"
+                      />
+                    </picture>
 
                     <h3 class="product-card__title">
-                      Нервонорм Night капсули №30
+                      Корвалмент 0,1 г капсули №80
                     </h3>
 
-                    <p class="product-card__producer">Ілан Фарм (Україна)</p>
+                    <p class="product-card__producer">
+                      Вітамінний завод ПАТ (Україна)
+                    </p>
 
                     <p class="product-card__price">
                       206,70 грн
@@ -1167,7 +1899,10 @@
                   </a>
 
                   <div class="product-card__buttons">
-                    <button class="product-card__like-button">
+                    <button
+                      class="product-card__like-button"
+                      aria-label="додати в обране"
+                    >
                       <svg
                         class="product-card__like-button-icon"
                         width="20"
@@ -1193,6 +1928,59 @@
             </div>
 
             <!-- If we need navigation buttons -->
+          </div>
+
+          <div>
+            <ul class="catalog__accordion accordion-menu">
+              <li>
+                <div class="catalog__accordion-title dropdownlink">
+                  Всі характеристики
+
+                  <svg class="catalog__accordion-icon" width="20" height="20">
+                    <use href="images/icons.svg#icon-angle-down"></use>
+                  </svg>
+                </div>
+
+                <div class="catalog__accordion-list-container accordion-closed">
+                  <dl class="products__info-list characteristics-list">
+                    <div class="characteristics-list-wrap">
+                      <dt class="characteristics-list-dt">Код АТС</dt>
+                      <dd class="characteristics-list-dd">123</dd>
+                    </div>
+
+                    <div class="characteristics-list-wrap">
+                      <dt class="characteristics-list-dt">Категорія</dt>
+                      <dd class="characteristics-list-dd">Лікарські засоби</dd>
+                    </div>
+                    <div class="characteristics-list-wrap">
+                      <dt class="characteristics-list-dt">Торгова назва</dt>
+                      <dd class="characteristics-list-dd">
+                        Фервекс для дорослих
+                      </dd>
+                    </div>
+                    <div class="characteristics-list-wrap">
+                      <dt class="characteristics-list-dt">Діючі речорини</dt>
+                      <dd class="characteristics-list-dd">
+                        Парацетамол фенірамін, аскорбінова кислота
+                      </dd>
+                    </div>
+                    <div class="characteristics-list-wrap">
+                      <dt class="characteristics-list-dt">Форма випуску</dt>
+                      <dd class="characteristics-list-dd">
+                        Порошок д/ор. р-ну
+                      </dd>
+                    </div>
+                    <div class="characteristics-list-wrap">
+                      <dt class="characteristics-list-dt">Дозування</dt>
+                      <dd class="characteristics-list-dd">
+                        Парацетамол: 500мг, фенірамін: 25 мг, аскорбінова
+                        кислота: 200 мг
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+              </li>
+            </ul>
           </div>
 
           <p>
@@ -1259,7 +2047,7 @@
       </section>
     </main>
 
-    <script src="./index.js" type="module"></script>
+    <script src="./product-card.js" type="module"></script>
     <!-- <script src="./js-new/tabs.js" type="module"></script> -->
   </body>
 </html>

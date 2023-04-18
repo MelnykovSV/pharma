@@ -1,8 +1,8 @@
 const MAX_SLIDES_PER_VIEW = 4;
 
-const swiper = new Swiper(".swiper-offers", {
+const swiper = new Swiper('.swiper-offers', {
   // Optional parameters
-  direction: "horizontal",
+  direction: 'horizontal',
   // loop: false,
   // rewind: true,
   watchSlidesProgress: true,
@@ -14,17 +14,16 @@ const swiper = new Swiper(".swiper-offers", {
   // loopedSlidesLimit: false,
 
   breakpoints: {
-    // when window width is >= 320px
     270: {
       slidesPerView: 1,
       spaceBetween: 30,
     },
-    // when window width is >= 480px
+
     570: {
       slidesPerView: 2,
       spaceBetween: 30,
     },
-    // when window width is >= 640px
+
     870: {
       slidesPerView: 3,
       spaceBetween: 30,
@@ -37,58 +36,68 @@ const swiper = new Swiper(".swiper-offers", {
 
   // Navigation arrows
   navigation: {
-    nextEl: ".offers-slider__button-next",
-    prevEl: ".offers-slider__button-prev",
+    nextEl: '.offers-slider__button-next',
+    prevEl: '.offers-slider__button-prev',
   },
 });
 
-// if (
-//   swiper.slides.length < MAX_SLIDES_PER_VIEW * 2 &&
-//   swiper.slides.length > MAX_SLIDES_PER_VIEW
-// ) {
-//   console.log(swiper.slides[0]);
-//   // Duplicate the existing slides until the total number of slides is >= slidesPerView * 2
+const slider = document.querySelector('.product-gallery__slider');
+const sliderBigImageThumb = document.querySelector(
+  '.info-slider__big-image-thumb'
+);
 
-//   const originalSlides = swiper.slides;
-//   for (let i = 0; i < originalSlides.length; i++) {
-//     swiper.appendSlide(originalSlides[i].outerHTML);
-//   }
+function generateMarkup(imageName, imageAlt) {
+  return `<picture>
+  <source
+    srcset="
+      ./images/products/${imageName}.webp    1x,
+      ./images/products/${imageName}@2x.webp 2x
+    "
+    type="image/webp"
+  />
+  <source
+    srcset="
+      ./images/products/${imageName}.jpg    1x,
+      ./images/products/${imageName}@2x.jpg 2x
+    "
+    type="image/jpeg"
+  />
+  <img
+    src="./images/products/${imageName}.jpg"
+    width="420"
+    height="420"
+    alt=${imageAlt}
+    class="info-slider__big-image"
+    data-img-name=${imageName}
+  />
+  </picture>`;
+}
 
-//   console.log(swiper.slides.length);
-// }
+function renderBigSliderImage(e) {
+  if (e.target.classList.contains('info-slider__small-image')) {
+    const imageName = e.target.dataset.imgName;
+    const imageAlt = e.target.alt;
 
-// swiper.on("reachEnd", function () {
-//   // const slideIndex = swiper.slides.length - 1;
-//   // const newSlideHtml = '<div class="swiper-slide">New slide</div>';
-//   console.log("end");
-//   // swiper.appendSlide(swiper.slides[0]);
-// });
+    const markup = generateMarkup(imageName, imageAlt);
 
-// {
-//   /* <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-// <script>
+    if (
+      e.target.dataset.imgName !==
+      sliderBigImageThumb.querySelector('img').dataset.imgName
+    ) {
+      sliderBigImageThumb.innerHTML = markup;
+    }
+  }
+}
+function initialRenderBigSliderImage() {
+  const sliderWrapper = document.querySelector('.info-slider__thumbs-slider');
+  const firstSliderImage = sliderWrapper.querySelector('img');
 
-//      var galleryThumbs  = new Swiper("#thumb-swiper", {
-//        spaceBetween: 12,
-//       slidesPerView:"auto",
-//        watchSlidesProgress: true,
-//        grabCursor:true,
-//        centeredSlides: false,
-//        allowTouchMove: false,
-//       a11y: false,
-// });
-//        var galleryTop  = new Swiper("#gallery-swiper", {
-//        spaceBetween: 12,
-//        navigation: {
-//          nextEl: "#thumb-arrow-next-slide",
-//          prevEl: "#thumb-arrow-prev-slide",
-//        }, */
-// }
-/* This piece of code connects main slider with thumbnail slider*/
-//        thumbs: {
-//          swiper: galleryThumbs,
-//        },
-//        a11y: false,
-// loop: true,
-//      });
-//    </script>
+  const imageName = firstSliderImage.dataset.imgName;
+  const imageAlt = firstSliderImage.alt;
+
+  const markup = generateMarkup(imageName, imageAlt);
+
+  sliderBigImageThumb.innerHTML = markup;
+}
+initialRenderBigSliderImage();
+slider.addEventListener('click', renderBigSliderImage);

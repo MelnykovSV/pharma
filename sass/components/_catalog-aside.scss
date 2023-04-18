@@ -10,6 +10,9 @@
   width: 100%;
   background: #fff;
   border-radius: 4px;
+  & > li {
+    overflow: hidden;
+  }
 }
 .catalog__accordion > .open > .catalog__accordion-title {
   color: #0d727e;
@@ -33,27 +36,32 @@
   fill: #176975;
   display: block;
   transition: transform 0.15s linear;
+  pointer-events: none;
 }
 
 .dropdownlink {
   cursor: pointer;
 
   position: relative;
-  transition: all 0.4s ease-out;
 }
-
+.catalog__accordion-list-container {
+  transition: height 0.3s linear, padding 0.3s linear;
+}
 .catalog__accordion-list {
+  padding-bottom: 15px;
   li:not(:last-child) {
     margin-bottom: 15px;
+  }
+
+  li:last-child {
+    margin-bottom: 0;
   }
 }
 
 .submenuItems {
-  display: none;
-
   a {
     display: block;
-    transition: all 0.4s ease-out;
+
     text-decoration: none;
   }
 }
@@ -121,4 +129,11 @@
     margin-left: 3px;
     color: #76737d;
   }
+}
+
+.accordion-closed {
+  height: 0 !important;
+  padding-bottom: 0;
+
+  overflow: hidden;
 }

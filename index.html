@@ -115,10 +115,28 @@
   <body>
     <!-- BREADCRUMB -->
     <header class="header">
-      <div class="container">
-        <nav class="header__nav">
-          <div class="header__top">
-            <a class="header__logo"></a>
+      <div class="header__top">
+        <div class="container">
+          <nav class="header__top-nav">
+            <a href="index.html" class="header__logo">
+              <picture>
+                <source
+                  srcset="./images/Logo.webp 1x, ./images/Logo@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/Logo.png 1x, ./images/Logo@2x.png 2x"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/Logo.png"
+                  width="167"
+                  height="50"
+                  alt="лого"
+                  class="product-card__image"
+                />
+              </picture>
+            </a>
             <ul class="header__main-menu">
               <li class="header__main-menu-item">
                 <a href="#" class="header__main-menu-link">Класифікація АТС</a>
@@ -141,79 +159,110 @@
             </ul>
             <ul class="header__menu">
               <li class="header__menu-item">
-                <a href="#" class="header__menu-link">
+                <a href="#" class="header__menu-link" aria-label="пошук">
                   <svg class="header__menu-icon" width="20" height="20">
                     <use href="images/icons.svg#icon-search1"></use>
                   </svg>
                 </a>
               </li>
               <li class="header__menu-item">
-                <a href="#" class="header__menu-link">
+                <a
+                  href="#"
+                  class="header__menu-link"
+                  aria-label="профіль користувача"
+                >
                   <svg class="header__menu-icon" width="20" height="20">
                     <use href="images/icons.svg#icon-account"></use>
                   </svg>
                 </a>
               </li>
               <li class="header__menu-item">
-                <a href="#" class="header__menu-link">
-                  <svg class="header__menu-icon" width="20" height="20">
+                <a href="#" class="header__menu-link" aria-label="обране">
+                  <svg class="header__menu-icon" width="24" height="24">
                     <use href="images/icons.svg#icon-heart"></use>
                   </svg>
                 </a>
               </li>
               <li class="header__menu-item">
-                <a href="#" class="header__menu-link">
+                <a href="#" class="header__menu-link" aria-label="кошик">
                   <svg class="header__menu-icon" width="20" height="20">
                     <use href="images/icons.svg#icon-bag"></use>
                   </svg>
+                  <div class="header__menu-label">2</div>
                 </a>
               </li>
             </ul>
-          </div>
+          </nav>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container">
+          <nav class="header__bottom-nav">
+            <ul class="header__product-types-list">
+              <li class="header__product-types-list-item">
+                <a href="#" class="header__product-types-list-link">
+                  <svg
+                    class="header__product-types-icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="images/icons.svg#icon-tablets"></use>
+                  </svg>
+                  Лікарські засоби
+                </a>
+              </li>
+              <li class="header__product-types-list-item">
+                <a href="#" class="header__product-types-list-link">
+                  <svg
+                    class="header__product-types-icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="images/icons.svg#icon-sanitizer"></use>
+                  </svg>
+                  Косметика
+                </a>
+              </li>
+              <li class="header__product-types-list-item">
+                <a href="#" class="header__product-types-list-link">
+                  <svg
+                    class="header__product-types-icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="images/icons.svg#icon-baby-carriage"></use>
+                  </svg>
+                  Дитячі товари
+                </a>
+              </li>
+              <li class="header__product-types-list-item">
+                <a href="#" class="header__product-types-list-link">
+                  <svg
+                    class="header__product-types-icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="images/icons.svg#icon-stethoscope"></use>
+                  </svg>
+                  Медтехніка
+                </a>
+              </li>
+              <li class="header__product-types-list-item">
+                <a href="#" class="header__product-types-list-link">
+                  <svg
+                    class="header__product-types-icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="images/icons.svg#icon-capsule"></use>
+                  </svg>
 
-          <ul class="header__product-types-list">
-            <li class="header__product-types-list-item">
-              <a href="#" class="header__product-types-list-link">
-                <svg class="header__menu-icon" width="24" height="24">
-                  <use href="images/icons.svg#icon-tablets"></use>
-                </svg>
-                Лікарські засоби
-              </a>
-            </li>
-            <li class="header__product-types-list-item">
-              <a href="#" class="header__product-types-list-link">
-                <svg class="header__menu-icon" width="24" height="24">
-                  <use href="images/icons.svg#icon-sanitizer"></use>
-                </svg>
-                Косметика
-              </a>
-            </li>
-            <li class="header__product-types-list-item">
-              <a href="#" class="header__product-types-list-link">
-                <svg class="header__menu-icon" width="24" height="24">
-                  <use href="images/icons.svg#icon-baby-carriage"></use>
-                </svg>
-                Дитячі товари
-              </a>
-            </li>
-            <li class="header__product-types-list-item">
-              <a href="#" class="header__product-types-list-link">
-                <svg class="header__menu-icon" width="24" height="24">
-                  <use href="images/icons.svg#icon-stethoscope"></use>
-                </svg>
-                Медтехніка
-              </a>
-            </li>
-            <li class="header__product-types-list-item">
-              <a href="#" class="header__product-types-list-link">
-                <svg class="header__menu-icon" width="24" height="24">
-                  <use href="images/icons.svg#icon-capsule"></use>
-                </svg>
-                Вітаміни і БАДи
-              </a>
-            </li>
-          </ul>
-        </nav>
+                  Вітаміни і БАДи
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -253,28 +302,32 @@
                           <use href="images/icons.svg#icon-angle-down"></use>
                         </svg>
                       </div>
-                      <ul class="catalog__accordion-list submenuItems">
-                        <li class="catalog__accordion-item">
-                          <a href="#" class="catalog__accordion-link">
-                            Ліки від застуди та ГРВІ
-                          </a>
-                        </li>
-                        <li class="catalog__accordion-item">
-                          <a href="#" class="catalog__accordion-link">
-                            Препарати для травлення
-                          </a>
-                        </li>
-                        <li class="catalog__accordion-item">
-                          <a href="#" class="catalog__accordion-link">
-                            Для нервової системи
-                          </a>
-                        </li>
-                        <li class="catalog__accordion-item">
-                          <a href="#" class="catalog__accordion-link">
-                            Знеболюючі
-                          </a>
-                        </li>
-                      </ul>
+                      <div
+                        class="catalog__accordion-list-container accordion-closed"
+                      >
+                        <ul class="catalog__accordion-list submenuItems">
+                          <li class="catalog__accordion-item">
+                            <a href="#" class="catalog__accordion-link">
+                              Ліки від застуди та ГРВІ
+                            </a>
+                          </li>
+                          <li class="catalog__accordion-item">
+                            <a href="#" class="catalog__accordion-link">
+                              Препарати для травлення
+                            </a>
+                          </li>
+                          <li class="catalog__accordion-item">
+                            <a href="#" class="catalog__accordion-link">
+                              Для нервової системи
+                            </a>
+                          </li>
+                          <li class="catalog__accordion-item">
+                            <a href="#" class="catalog__accordion-link">
+                              Знеболюючі
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </li>
                     <li>
                       <div class="catalog__accordion-title dropdownlink">
@@ -287,28 +340,32 @@
                           <use href="images/icons.svg#icon-angle-down"></use>
                         </svg>
                       </div>
-                      <ul class="catalog__accordion-list submenuItems">
-                        <li class="catalog__accordion-item">
-                          <a href="#" class="catalog__accordion-link">
-                            Ліки від застуди та ГРВІ
-                          </a>
-                        </li>
-                        <li class="catalog__accordion-item">
-                          <a href="#" class="catalog__accordion-link">
-                            Препарати для травлення
-                          </a>
-                        </li>
-                        <li class="catalog__accordion-item">
-                          <a href="#" class="catalog__accordion-link">
-                            Для нервової системи
-                          </a>
-                        </li>
-                        <li class="catalog__accordion-item">
-                          <a href="#" class="catalog__accordion-link">
-                            Знеболюючі
-                          </a>
-                        </li>
-                      </ul>
+                      <div
+                        class="catalog__accordion-list-container accordion-closed"
+                      >
+                        <ul class="catalog__accordion-list submenuItems d">
+                          <li class="catalog__accordion-item">
+                            <a href="#" class="catalog__accordion-link">
+                              Ліки від застуди та ГРВІ
+                            </a>
+                          </li>
+                          <li class="catalog__accordion-item">
+                            <a href="#" class="catalog__accordion-link">
+                              Препарати для травлення
+                            </a>
+                          </li>
+                          <li class="catalog__accordion-item">
+                            <a href="#" class="catalog__accordion-link">
+                              Для нервової системи
+                            </a>
+                          </li>
+                          <li class="catalog__accordion-item">
+                            <a href="#" class="catalog__accordion-link">
+                              Знеболюючі
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </li>
                     <li>
                       <div class="catalog__accordion-title dropdownlink">
@@ -322,28 +379,32 @@
                           <use href="images/icons.svg#icon-angle-down"></use>
                         </svg>
                       </div>
-                      <ul class="catalog__accordion-list submenuItems">
-                        <li class="catalog__accordion-item">
-                          <a href="#" class="catalog__accordion-link">
-                            Ліки від застуди та ГРВІ
-                          </a>
-                        </li>
-                        <li class="catalog__accordion-item">
-                          <a href="#" class="catalog__accordion-link">
-                            Препарати для травлення
-                          </a>
-                        </li>
-                        <li class="catalog__accordion-item">
-                          <a href="#" class="catalog__accordion-link">
-                            Для нервової системи
-                          </a>
-                        </li>
-                        <li class="catalog__accordion-item">
-                          <a href="#" class="catalog__accordion-link">
-                            Знеболюючі
-                          </a>
-                        </li>
-                      </ul>
+                      <div
+                        class="catalog__accordion-list-container accordion-closed"
+                      >
+                        <ul class="catalog__accordion-list submenuItems">
+                          <li class="catalog__accordion-item">
+                            <a href="#" class="catalog__accordion-link">
+                              Ліки від застуди та ГРВІ
+                            </a>
+                          </li>
+                          <li class="catalog__accordion-item">
+                            <a href="#" class="catalog__accordion-link">
+                              Препарати для травлення
+                            </a>
+                          </li>
+                          <li class="catalog__accordion-item">
+                            <a href="#" class="catalog__accordion-link">
+                              Для нервової системи
+                            </a>
+                          </li>
+                          <li class="catalog__accordion-item">
+                            <a href="#" class="catalog__accordion-link">
+                              Знеболюючі
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </li>
                     <li>
                       <div class="catalog__accordion-title dropdownlink">
@@ -357,28 +418,32 @@
                           <use href="images/icons.svg#icon-angle-down"></use>
                         </svg>
                       </div>
-                      <ul class="catalog__accordion-list submenuItems">
-                        <li class="catalog__accordion-item">
-                          <a href="#" class="catalog__accordion-link">
-                            Ліки від застуди та ГРВІ
-                          </a>
-                        </li>
-                        <li class="catalog__accordion-item">
-                          <a href="#" class="catalog__accordion-link">
-                            Препарати для травлення
-                          </a>
-                        </li>
-                        <li class="catalog__accordion-item">
-                          <a href="#" class="catalog__accordion-link">
-                            Для нервової системи
-                          </a>
-                        </li>
-                        <li class="catalog__accordion-item">
-                          <a href="#" class="catalog__accordion-link">
-                            Знеболюючі
-                          </a>
-                        </li>
-                      </ul>
+                      <div
+                        class="catalog__accordion-list-container accordion-closed"
+                      >
+                        <ul class="catalog__accordion-list submenuItems">
+                          <li class="catalog__accordion-item">
+                            <a href="#" class="catalog__accordion-link">
+                              Ліки від застуди та ГРВІ
+                            </a>
+                          </li>
+                          <li class="catalog__accordion-item">
+                            <a href="#" class="catalog__accordion-link">
+                              Препарати для травлення
+                            </a>
+                          </li>
+                          <li class="catalog__accordion-item">
+                            <a href="#" class="catalog__accordion-link">
+                              Для нервової системи
+                            </a>
+                          </li>
+                          <li class="catalog__accordion-item">
+                            <a href="#" class="catalog__accordion-link">
+                              Знеболюючі
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </li>
                     <li>
                       <div class="catalog__accordion-title dropdownlink">
@@ -392,28 +457,33 @@
                           <use href="images/icons.svg#icon-angle-down"></use>
                         </svg>
                       </div>
-                      <ul class="catalog__accordion-list submenuItems">
-                        <li class="catalog__accordion-item">
-                          <a href="#" class="catalog__accordion-link">
-                            Ліки від застуди та ГРВІ
-                          </a>
-                        </li>
-                        <li class="catalog__accordion-item">
-                          <a href="#" class="catalog__accordion-link">
-                            Препарати для травлення
-                          </a>
-                        </li>
-                        <li class="catalog__accordion-item">
-                          <a href="#" class="catalog__accordion-link">
-                            Для нервової системи
-                          </a>
-                        </li>
-                        <li class="catalog__accordion-item">
-                          <a href="#" class="catalog__accordion-link">
-                            Знеболюючі
-                          </a>
-                        </li>
-                      </ul>
+
+                      <div
+                        class="catalog__accordion-list-container accordion-closed"
+                      >
+                        <ul class="catalog__accordion-list submenuItems">
+                          <li class="catalog__accordion-item">
+                            <a href="#" class="catalog__accordion-link">
+                              Ліки від застуди та ГРВІ
+                            </a>
+                          </li>
+                          <li class="catalog__accordion-item">
+                            <a href="#" class="catalog__accordion-link">
+                              Препарати для травлення
+                            </a>
+                          </li>
+                          <li class="catalog__accordion-item">
+                            <a href="#" class="catalog__accordion-link">
+                              Для нервової системи
+                            </a>
+                          </li>
+                          <li class="catalog__accordion-item">
+                            <a href="#" class="catalog__accordion-link">
+                              Знеболюючі
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -432,45 +502,48 @@
                         </svg>
                       </div>
                       <div
-                        class="catalog__accordion-list submenuItems"
-                        style="display: none"
+                        class="catalog__accordion-list-container accordion-closed"
                       >
-                        <!-- 
+                        <div class="catalog__accordion-list submenuItems">
+                          <!-- 
                         RANGE HERE! -->
-                        <div class="price-range">
-                          <div class="price-range__values">
-                            <span
-                              class="price-range__value price-range__min"
-                              id="range1"
-                            >
-                              0
-                            </span>
-                            <span>&dash;</span>
-                            <span
-                              class="price-range__value price-range__max"
-                              id="range2"
-                            >
-                              100
-                            </span>
-                          </div>
-                          <div class="price-range__body">
-                            <div class="slider-track"></div>
-                            <input
-                              class="price-range__input"
-                              type="range"
-                              min="0"
-                              max="10000"
-                              value="2500"
-                              id="slider-1"
-                            />
-                            <input
-                              class="price-range__input"
-                              type="range"
-                              min="0"
-                              max="10000"
-                              value="7500"
-                              id="slider-2"
-                            />
+                          <div class="price-range">
+                            <div class="price-range__values">
+                              <span
+                                class="price-range__value price-range__min"
+                                id="range1"
+                              >
+                                0
+                              </span>
+                              <span>&dash;</span>
+                              <span
+                                class="price-range__value price-range__max"
+                                id="range2"
+                              >
+                                100
+                              </span>
+                            </div>
+                            <div class="price-range__body">
+                              <div class="slider-track"></div>
+                              <input
+                                class="price-range__input"
+                                type="range"
+                                name="price"
+                                min="0"
+                                max="10000"
+                                value="2500"
+                                id="slider-1"
+                              />
+                              <input
+                                class="price-range__input"
+                                type="range"
+                                name="price"
+                                min="0"
+                                max="10000"
+                                value="7500"
+                                id="slider-2"
+                              />
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -491,103 +564,115 @@
                           <use href="images/icons.svg#icon-angle-down"></use>
                         </svg>
                       </div>
-                      <ul
-                        class="catalog__accordion-list catalog__submenuItems submenuItems"
-                        style="display: none"
+
+                      <div
+                        class="catalog__accordion-list-container accordion-closed"
                       >
-                        <li>
-                          <label class="catalog__checkbox checkbox-container">
-                            <input
-                              type="checkbox"
-                              checked="checked"
-                              class="check-highload"
-                            />
-                            <span class="highload2">
-                              <svg
-                                class="highload2__check"
-                                width="20"
-                                height="20"
-                              >
-                                <use href="images/icons.svg#icon-check"></use>
-                              </svg>
-                            </span>
+                        <ul
+                          class="catalog__accordion-list catalog__submenuItems submenuItems"
+                        >
+                          <li>
+                            <label class="catalog__checkbox checkbox-container">
+                              <input
+                                type="checkbox"
+                                checked="checked"
+                                class="check-highload"
+                                name="form"
+                                value="Капсули"
+                              />
+                              <span class="highload2">
+                                <svg
+                                  class="highload2__check"
+                                  width="20"
+                                  height="20"
+                                >
+                                  <use href="images/icons.svg#icon-check"></use>
+                                </svg>
+                              </span>
 
-                            <span class="catalog__checkbox-label-value">
-                              Капсули
-                              <span>(16)</span>
-                            </span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="catalog__checkbox checkbox-container">
-                            <input
-                              type="checkbox"
-                              checked="checked"
-                              class="check-highload"
-                            />
-                            <span class="highload2">
-                              <svg
-                                class="highload2__check"
-                                width="20"
-                                height="20"
-                              >
-                                <use href="images/icons.svg#icon-check"></use>
-                              </svg>
-                            </span>
+                              <span class="catalog__checkbox-label-value">
+                                Капсули
+                                <span>(16)</span>
+                              </span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="catalog__checkbox checkbox-container">
+                              <input
+                                type="checkbox"
+                                checked="checked"
+                                class="check-highload"
+                                name="form"
+                                value="Краплі"
+                              />
+                              <span class="highload2">
+                                <svg
+                                  class="highload2__check"
+                                  width="20"
+                                  height="20"
+                                >
+                                  <use href="images/icons.svg#icon-check"></use>
+                                </svg>
+                              </span>
 
-                            <span class="catalog__checkbox-label-value">
-                              Краплі
-                              <span>(9)</span>
-                            </span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="catalog__checkbox checkbox-container">
-                            <input
-                              type="checkbox"
-                              checked="checked"
-                              class="check-highload"
-                            />
-                            <span class="highload2">
-                              <svg
-                                class="highload2__check"
-                                width="20"
-                                height="20"
-                              >
-                                <use href="images/icons.svg#icon-check"></use>
-                              </svg>
-                            </span>
+                              <span class="catalog__checkbox-label-value">
+                                Краплі
+                                <span>(9)</span>
+                              </span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="catalog__checkbox checkbox-container">
+                              <input
+                                type="checkbox"
+                                checked="checked"
+                                class="check-highload"
+                                name="form"
+                                value="Розчин"
+                              />
+                              <span class="highload2">
+                                <svg
+                                  class="highload2__check"
+                                  width="20"
+                                  height="20"
+                                >
+                                  <use href="images/icons.svg#icon-check"></use>
+                                </svg>
+                              </span>
 
-                            <span class="catalog__checkbox-label-value">
-                              Розчин
-                              <span>(2)</span>
-                            </span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="catalog__checkbox checkbox-container">
-                            <input
-                              type="checkbox"
-                              checked="checked"
-                              class="check-highload"
-                            />
-                            <span class="highload2">
-                              <svg
-                                class="highload2__check"
-                                width="20"
-                                height="20"
-                              >
-                                <use href="images/icons.svg#icon-check"></use>
-                              </svg>
-                            </span>
+                              <span class="catalog__checkbox-label-value">
+                                Розчин
+                                <span>(2)</span>
+                              </span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="catalog__checkbox checkbox-container">
+                              <input
+                                type="checkbox"
+                                checked="checked"
+                                class="check-highload"
+                                name="form"
+                                value="Таблетки"
+                              />
+                              <span class="highload2">
+                                <svg
+                                  class="highload2__check"
+                                  width="20"
+                                  height="20"
+                                >
+                                  <use href="images/icons.svg#icon-check"></use>
+                                </svg>
+                              </span>
 
-                            <span class="catalog__checkbox-label-value">
-                              Таблетки
-                              <span>(24)</span>
-                            </span>
-                          </label>
-                        </li>
-                      </ul>
+                              <span class="catalog__checkbox-label-value">
+                                Таблетки
+                                <span>(24)</span>
+                              </span>
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -605,147 +690,182 @@
                           <use href="images/icons.svg#icon-angle-down"></use>
                         </svg>
                       </div>
-                      <ul
-                        class="catalog__accordion-list catalog__submenuItems submenuItems"
-                        style="display: none"
+                      <div
+                        class="catalog__accordion-list-container accordion-closed"
                       >
-                        <li>
-                          <label class="catalog__checkbox checkbox-container">
-                            <input
-                              type="checkbox"
-                              checked="checked"
-                              class="check-highload"
-                            />
-                            <span class="highload2">
-                              <svg
-                                class="highload2__check"
-                                width="20"
-                                height="20"
-                              >
-                                <use href="images/icons.svg#icon-check"></use>
-                              </svg>
-                            </span>
+                        <ul
+                          class="catalog__accordion-list catalog__submenuItems submenuItems"
+                        >
+                          <li>
+                            <label class="catalog__checkbox checkbox-container">
+                              <input
+                                type="checkbox"
+                                checked="checked"
+                                class="check-highload"
+                                name="country"
+                                value="Іспанія"
+                              />
+                              <span class="highload2">
+                                <svg
+                                  class="highload2__check"
+                                  width="20"
+                                  height="20"
+                                >
+                                  <use href="images/icons.svg#icon-check"></use>
+                                </svg>
+                              </span>
 
-                            <span class="catalog__checkbox-label-value">
-                              Іспанія
-                              <span>(16)</span>
-                            </span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="catalog__checkbox checkbox-container">
-                            <input type="checkbox" class="check-highload" />
-                            <span class="highload2">
-                              <svg
-                                class="highload2__check"
-                                width="20"
-                                height="20"
-                              >
-                                <use href="images/icons.svg#icon-check"></use>
-                              </svg>
-                            </span>
+                              <span class="catalog__checkbox-label-value">
+                                Іспанія
+                                <span>(16)</span>
+                              </span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="catalog__checkbox checkbox-container">
+                              <input
+                                type="checkbox"
+                                class="check-highload"
+                                name="country"
+                                value="Латвія"
+                              />
+                              <span class="highload2">
+                                <svg
+                                  class="highload2__check"
+                                  width="20"
+                                  height="20"
+                                >
+                                  <use href="images/icons.svg#icon-check"></use>
+                                </svg>
+                              </span>
 
-                            <span class="catalog__checkbox-label-value">
-                              Латвія
-                              <span>(9)</span>
-                            </span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="catalog__checkbox checkbox-container">
-                            <input type="checkbox" class="check-highload" />
-                            <span class="highload2">
-                              <svg
-                                class="highload2__check"
-                                width="20"
-                                height="20"
-                              >
-                                <use href="images/icons.svg#icon-check"></use>
-                              </svg>
-                            </span>
+                              <span class="catalog__checkbox-label-value">
+                                Латвія
+                                <span>(9)</span>
+                              </span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="catalog__checkbox checkbox-container">
+                              <input
+                                type="checkbox"
+                                class="check-highload"
+                                name="country"
+                                value="Німеччина"
+                              />
+                              <span class="highload2">
+                                <svg
+                                  class="highload2__check"
+                                  width="20"
+                                  height="20"
+                                >
+                                  <use href="images/icons.svg#icon-check"></use>
+                                </svg>
+                              </span>
 
-                            <span class="catalog__checkbox-label-value">
-                              Німеччина
-                              <span>(2)</span>
-                            </span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="catalog__checkbox checkbox-container">
-                            <input type="checkbox" class="check-highload" />
-                            <span class="highload2">
-                              <svg
-                                class="highload2__check"
-                                width="20"
-                                height="20"
-                              >
-                                <use href="images/icons.svg#icon-check"></use>
-                              </svg>
-                            </span>
+                              <span class="catalog__checkbox-label-value">
+                                Німеччина
+                                <span>(2)</span>
+                              </span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="catalog__checkbox checkbox-container">
+                              <input
+                                type="checkbox"
+                                class="check-highload"
+                                name="country"
+                                value="Словенія"
+                              />
+                              <span class="highload2">
+                                <svg
+                                  class="highload2__check"
+                                  width="20"
+                                  height="20"
+                                >
+                                  <use href="images/icons.svg#icon-check"></use>
+                                </svg>
+                              </span>
 
-                            <span class="catalog__checkbox-label-value">
-                              Словенія
-                              <span>(24)</span>
-                            </span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="catalog__checkbox checkbox-container">
-                            <input type="checkbox" class="check-highload" />
-                            <span class="highload2">
-                              <svg
-                                class="highload2__check"
-                                width="20"
-                                height="20"
-                              >
-                                <use href="images/icons.svg#icon-check"></use>
-                              </svg>
-                            </span>
+                              <span class="catalog__checkbox-label-value">
+                                Словенія
+                                <span>(24)</span>
+                              </span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="catalog__checkbox checkbox-container">
+                              <input
+                                type="checkbox"
+                                class="check-highload"
+                                name="country"
+                                value="Україна"
+                              />
+                              <span class="highload2">
+                                <svg
+                                  class="highload2__check"
+                                  width="20"
+                                  height="20"
+                                >
+                                  <use href="images/icons.svg#icon-check"></use>
+                                </svg>
+                              </span>
 
-                            <span class="catalog__checkbox-label-value">
-                              Україна
-                              <span>(56)</span>
-                            </span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="catalog__checkbox checkbox-container">
-                            <input type="checkbox" class="check-highload" />
-                            <span class="highload2">
-                              <svg
-                                class="highload2__check"
-                                width="20"
-                                height="20"
-                              >
-                                <use href="images/icons.svg#icon-check"></use>
-                              </svg>
-                            </span>
-                            <span class="catalog__checkbox-label-value">
-                              Франція
-                              <span>(2)</span>
-                            </span>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="catalog__checkbox checkbox-container">
-                            <input type="checkbox" class="check-highload" />
-                            <span class="highload2">
-                              <svg
-                                class="highload2__check"
-                                width="20"
-                                height="20"
-                              >
-                                <use href="images/icons.svg#icon-check"></use>
-                              </svg>
-                            </span>
+                              <span class="catalog__checkbox-label-value">
+                                Україна
+                                <span>(56)</span>
+                              </span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="catalog__checkbox checkbox-container">
+                              <input
+                                type="checkbox"
+                                class="check-highload"
+                                name="country"
+                                value="Франція"
+                              />
+                              <span class="highload2">
+                                <svg
+                                  class="highload2__check"
+                                  width="20"
+                                  height="20"
+                                >
+                                  <use href="images/icons.svg#icon-check"></use>
+                                </svg>
+                              </span>
+                              <span class="catalog__checkbox-label-value">
+                                Франція
+                                <span>(2)</span>
+                              </span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="catalog__checkbox checkbox-container">
+                              <input
+                                type="checkbox"
+                                class="check-highload"
+                                name="country"
+                                value="Чеська Республіка"
+                              />
+                              <span class="highload2">
+                                <svg
+                                  class="highload2__check"
+                                  width="20"
+                                  height="20"
+                                >
+                                  <use href="images/icons.svg#icon-check"></use>
+                                </svg>
+                              </span>
 
-                            <span class="catalog__checkbox-label-value">
-                              Чеська Республіка
-                              <span>(2)</span>
-                            </span>
-                          </label>
-                        </li>
-                      </ul>
+                              <span class="catalog__checkbox-label-value">
+                                Чеська Республіка
+                                <span>(2)</span>
+                              </span>
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -762,58 +882,65 @@
                           <use href="images/icons.svg#icon-angle-down"></use>
                         </svg>
                       </div>
-                      <ul
-                        class="catalog__accordion-list catalog__submenuItems submenuItems"
-                        style="display: none"
+                      <div
+                        class="catalog__accordion-list-container accordion-closed"
                       >
-                        <li>
-                          <label class="catalog__checkbox checkbox-container">
-                            <input
-                              type="checkbox"
-                              checked="checked"
-                              class="check-highload"
-                            />
-                            <span class="highload2">
-                              <svg
-                                class="highload2__check"
-                                width="20"
-                                height="20"
-                              >
-                                <use href="images/icons.svg#icon-check"></use>
-                              </svg>
-                            </span>
+                        <ul
+                          class="catalog__accordion-list catalog__submenuItems submenuItems"
+                        >
+                          <li>
+                            <label class="catalog__checkbox checkbox-container">
+                              <input
+                                type="checkbox"
+                                checked="checked"
+                                class="check-highload"
+                                name="limitations"
+                                value="За рецептом"
+                              />
+                              <span class="highload2">
+                                <svg
+                                  class="highload2__check"
+                                  width="20"
+                                  height="20"
+                                >
+                                  <use href="images/icons.svg#icon-check"></use>
+                                </svg>
+                              </span>
 
-                            <span class="catalog__checkbox-label-value">
-                              За рецептом
-                              <span>(9)</span>
-                            </span>
-                          </label>
-                        </li>
+                              <span class="catalog__checkbox-label-value">
+                                За рецептом
+                                <span>(9)</span>
+                              </span>
+                            </label>
+                          </li>
 
-                        <li>
-                          <label class="catalog__checkbox checkbox-container">
-                            <input
-                              type="checkbox"
-                              checked="checked"
-                              class="check-highload"
-                            />
-                            <span class="highload2">
-                              <svg
-                                class="highload2__check"
-                                width="20"
-                                height="20"
-                              >
-                                <use href="images/icons.svg#icon-check"></use>
-                              </svg>
-                            </span>
+                          <li>
+                            <label class="catalog__checkbox checkbox-container">
+                              <input
+                                type="checkbox"
+                                checked="checked"
+                                class="check-highload"
+                                name="limitations"
+                                value="Без рецепту"
+                              />
+                              <span class="highload2">
+                                <svg
+                                  class="highload2__check"
+                                  width="20"
+                                  height="20"
+                                >
+                                  <use href="images/icons.svg#icon-check"></use>
+                                </svg>
+                              </span>
 
-                            <span class="catalog__checkbox-label-value">
-                              Без рецепту
-                              <span>(9)</span>
-                            </span>
-                          </label>
-                        </li>
-                      </ul>
+                              <span class="catalog__checkbox-label-value">
+                                Без рецепту
+                                <span>(9)</span>
+                              </span>
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -829,6 +956,7 @@
                     </label>
                     <select
                       class="slim-select catalog__filtrs-select js-select"
+                      name="filter-condition"
                     >
                       <option
                         value=" Від дешевих до дорогих"
@@ -867,28 +995,41 @@
                 <ul class="catalog__cards">
                   <li class="catalog__cards-item">
                     <div class="product-card catalog__card">
-                      <div class="sale-label">
-                        <span class="sale-label__value">-15%</span>
+                      <div class="discount-label">
+                        <span class="discount-label__value">-15%</span>
                       </div>
 
                       <a href="" class="product-card__product-link">
-                        <img
-                          src="images/products/card-2.jpg"
-                          srcset="
-                            images/products/card-2.jpg    1x,
-                            images/products/card-2@2x.jpg 2x
-                          "
-                          width="180"
-                          alt=""
-                          class="product-card__image"
-                        />
+                        <picture>
+                          <source
+                            srcset="
+                              ./images/products/card-2.webp    1x,
+                              ./images/products/card-2@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <source
+                            srcset="
+                              ./images/products/card-2.jpg    1x,
+                              ./images/products/card-2@2x.jpg 2x
+                            "
+                            type="image/jpeg"
+                          />
+                          <img
+                            src="./images/products/card-2.jpg"
+                            width="180"
+                            height="180"
+                            alt="нокспрей"
+                            class="product-card__image"
+                          />
+                        </picture>
 
                         <h3 class="product-card__title">
-                          Нервонорм Night капсули №30
+                          Нокспрей 0.05% спрей назальний 10 мл
                         </h3>
 
                         <p class="product-card__producer">
-                          Ілан Фарм (Україна)
+                          Сперко Україна СП ТОВ (Україна)
                         </p>
 
                         <p class="product-card__price">
@@ -899,7 +1040,83 @@
                       </a>
 
                       <div class="product-card__buttons">
-                        <button class="product-card__like-button">
+                        <button
+                          class="product-card__like-button"
+                          aria-label="додати в обране"
+                        >
+                          <svg
+                            class="product-card__like-button-icon"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="images/icons.svg#icon-heart"></use>
+                          </svg>
+                        </button>
+                        <button type="button" class="product-card__cart-button">
+                          <svg
+                            class="product-card__cart-button-icon"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="images/icons.svg#icon-bag"></use>
+                          </svg>
+
+                          до кошика
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalog__cards-item">
+                    <div class="product-card discount catalog__card">
+                      <div class="discount-label">
+                        <span class="discount-label__value">-15%</span>
+                      </div>
+
+                      <a href="" class="product-card__product-link">
+                        <picture>
+                          <source
+                            srcset="
+                              ./images/products/card-3.webp    1x,
+                              ./images/products/card-3@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <source
+                            srcset="
+                              ./images/products/card-3.jpg    1x,
+                              ./images/products/card-3@2x.jpg 2x
+                            "
+                            type="image/jpeg"
+                          />
+                          <img
+                            src="./images/products/card-3.jpg"
+                            width="180"
+                            height="180"
+                            alt="ентерожерміна"
+                            class="product-card__image"
+                          />
+                        </picture>
+
+                        <h3 class="product-card__title">
+                          Ентерожерміна форте 5 мл суспензія №10
+                        </h3>
+
+                        <p class="product-card__producer">
+                          Sanofi Aventis (Італія)
+                        </p>
+
+                        <p class="product-card__price">
+                          206,70 грн
+                          <span>256,70 грн</span>
+                        </p>
+                        <p class="product-card__status">В наявності</p>
+                      </a>
+
+                      <div class="product-card__buttons">
+                        <button
+                          class="product-card__like-button"
+                          aria-label="додати в обране"
+                        >
                           <svg
                             class="product-card__like-button-icon"
                             width="20"
@@ -924,21 +1141,107 @@
                   </li>
                   <li class="catalog__cards-item">
                     <div class="product-card catalog__card">
-                      <div class="sale-label">
-                        <span class="sale-label__value">-15%</span>
+                      <div class="discount-label">
+                        <span class="discount-label__value">-15%</span>
                       </div>
 
                       <a href="" class="product-card__product-link">
-                        <img
-                          src="images/products/card-2.jpg"
-                          srcset="
-                            images/products/card-2.jpg    1x,
-                            images/products/card-2@2x.jpg 2x
-                          "
-                          width="180"
-                          alt=""
-                          class="product-card__image"
-                        />
+                        <picture>
+                          <source
+                            srcset="
+                              ./images/products/card-5.webp    1x,
+                              ./images/products/card-5@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <source
+                            srcset="
+                              ./images/products/card-5.jpg    1x,
+                              ./images/products/card-5@2x.jpg 2x
+                            "
+                            type="image/jpeg"
+                          />
+                          <img
+                            src="./images/products/card-5.jpg"
+                            width="180"
+                            height="180"
+                            alt="корвалмент"
+                            class="product-card__image"
+                          />
+                        </picture>
+
+                        <h3 class="product-card__title">
+                          Корвалмент 0,1 г капсули №80
+                        </h3>
+
+                        <p class="product-card__producer">
+                          Вітамінний завод ПАТ (Україна)
+                        </p>
+
+                        <p class="product-card__price">
+                          206,70 грн
+                          <span>256,70 грн</span>
+                        </p>
+                        <p class="product-card__status">В наявності</p>
+                      </a>
+
+                      <div class="product-card__buttons">
+                        <button
+                          class="product-card__like-button"
+                          aria-label="додати в обране"
+                        >
+                          <svg
+                            class="product-card__like-button-icon"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="images/icons.svg#icon-heart"></use>
+                          </svg>
+                        </button>
+                        <button type="button" class="product-card__cart-button">
+                          <svg
+                            class="product-card__cart-button-icon"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="images/icons.svg#icon-bag"></use>
+                          </svg>
+
+                          до кошика
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalog__cards-item">
+                    <div class="product-card discount catalog__card">
+                      <div class="discount-label">
+                        <span class="discount-label__value">-15%</span>
+                      </div>
+
+                      <a href="" class="product-card__product-link">
+                        <picture>
+                          <source
+                            srcset="
+                              ./images/products/card-1.webp    1x,
+                              ./images/products/card-1@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <source
+                            srcset="
+                              ./images/products/card-1.jpg    1x,
+                              ./images/products/card-1@2x.jpg 2x
+                            "
+                            type="image/jpeg"
+                          />
+                          <img
+                            src="./images/products/card-1.jpg"
+                            width="180"
+                            height="180"
+                            alt="нервонорм"
+                            class="product-card__image"
+                          />
+                        </picture>
 
                         <h3 class="product-card__title">
                           Нервонорм Night капсули №30
@@ -956,7 +1259,10 @@
                       </a>
 
                       <div class="product-card__buttons">
-                        <button class="product-card__like-button">
+                        <button
+                          class="product-card__like-button"
+                          aria-label="додати в обране"
+                        >
                           <svg
                             class="product-card__like-button-icon"
                             width="20"
@@ -981,39 +1287,55 @@
                   </li>
                   <li class="catalog__cards-item">
                     <div class="product-card catalog__card">
-                      <div class="sale-label">
-                        <span class="sale-label__value">-15%</span>
+                      <div class="discount-label">
+                        <span class="discount-label__value">-15%</span>
                       </div>
 
                       <a href="" class="product-card__product-link">
-                        <img
-                          src="images/products/card-2.jpg"
-                          srcset="
-                            images/products/card-2.jpg    1x,
-                            images/products/card-2@2x.jpg 2x
-                          "
-                          width="180"
-                          alt=""
-                          class="product-card__image"
-                        />
+                        <picture>
+                          <source
+                            srcset="
+                              ./images/products/card-6.webp    1x,
+                              ./images/products/card-6@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <source
+                            srcset="
+                              ./images/products/card-6.jpg    1x,
+                              ./images/products/card-6@2x.jpg 2x
+                            "
+                            type="image/jpeg"
+                          />
+                          <img
+                            src="./images/products/card-6.jpg"
+                            width="180"
+                            height="180"
+                            alt="синупрет"
+                            class="product-card__image"
+                          />
+                        </picture>
 
                         <h3 class="product-card__title">
-                          Нервонорм Night капсули №30
+                          Синупрет форте таблетки №20
                         </h3>
 
                         <p class="product-card__producer">
-                          Ілан Фарм (Україна)
+                          Bionorica (Німеччина)
                         </p>
 
                         <p class="product-card__price">
-                          206,70 грн
+                          194,72 грн
                           <span>256,70 грн</span>
                         </p>
                         <p class="product-card__status">В наявності</p>
                       </a>
 
                       <div class="product-card__buttons">
-                        <button class="product-card__like-button">
+                        <button
+                          class="product-card__like-button"
+                          aria-label="додати в обране"
+                        >
                           <svg
                             class="product-card__like-button-icon"
                             width="20"
@@ -1038,24 +1360,37 @@
                   </li>
                   <li class="catalog__cards-item">
                     <div class="product-card catalog__card">
-                      <div class="sale-label">
-                        <span class="sale-label__value">-15%</span>
+                      <div class="discount-label">
+                        <span class="discount-label__value">-15%</span>
                       </div>
 
                       <a href="" class="product-card__product-link">
-                        <img
-                          src="images/products/card-2.jpg"
-                          srcset="
-                            images/products/card-2.jpg    1x,
-                            images/products/card-2@2x.jpg 2x
-                          "
-                          width="180"
-                          alt=""
-                          class="product-card__image"
-                        />
+                        <picture>
+                          <source
+                            srcset="
+                              ./images/products/card-7.webp    1x,
+                              ./images/products/card-7@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <source
+                            srcset="
+                              ./images/products/card-7.jpg    1x,
+                              ./images/products/card-7@2x.jpg 2x
+                            "
+                            type="image/jpeg"
+                          />
+                          <img
+                            src="./images/products/card-7.jpg"
+                            width="180"
+                            height="180"
+                            alt="хлорофіліпт"
+                            class="product-card__image"
+                          />
+                        </picture>
 
                         <h3 class="product-card__title">
-                          Нервонорм Night капсули №30
+                          Хлорофіліпт Ілан Фарм спрей для горла 30 мл
                         </h3>
 
                         <p class="product-card__producer">
@@ -1070,7 +1405,10 @@
                       </a>
 
                       <div class="product-card__buttons">
-                        <button class="product-card__like-button">
+                        <button
+                          class="product-card__like-button"
+                          aria-label="додати в обране"
+                        >
                           <svg
                             class="product-card__like-button-icon"
                             width="20"
@@ -1095,28 +1433,41 @@
                   </li>
                   <li class="catalog__cards-item">
                     <div class="product-card catalog__card">
-                      <div class="sale-label">
-                        <span class="sale-label__value">-15%</span>
+                      <div class="discount-label">
+                        <span class="discount-label__value">-15%</span>
                       </div>
 
                       <a href="" class="product-card__product-link">
-                        <img
-                          src="images/products/card-2.jpg"
-                          srcset="
-                            images/products/card-2.jpg    1x,
-                            images/products/card-2@2x.jpg 2x
-                          "
-                          width="180"
-                          alt=""
-                          class="product-card__image"
-                        />
+                        <picture>
+                          <source
+                            srcset="
+                              ./images/products/card-2.webp    1x,
+                              ./images/products/card-2@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <source
+                            srcset="
+                              ./images/products/card-2.jpg    1x,
+                              ./images/products/card-2@2x.jpg 2x
+                            "
+                            type="image/jpeg"
+                          />
+                          <img
+                            src="./images/products/card-2.jpg"
+                            width="180"
+                            height="180"
+                            alt="нокспрей"
+                            class="product-card__image"
+                          />
+                        </picture>
 
                         <h3 class="product-card__title">
-                          Нервонорм Night капсули №30
+                          Нокспрей 0.05% спрей назальний 10 мл
                         </h3>
 
                         <p class="product-card__producer">
-                          Ілан Фарм (Україна)
+                          Сперко Україна СП ТОВ (Україна)
                         </p>
 
                         <p class="product-card__price">
@@ -1127,7 +1478,83 @@
                       </a>
 
                       <div class="product-card__buttons">
-                        <button class="product-card__like-button">
+                        <button
+                          class="product-card__like-button"
+                          aria-label="додати в обране"
+                        >
+                          <svg
+                            class="product-card__like-button-icon"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="images/icons.svg#icon-heart"></use>
+                          </svg>
+                        </button>
+                        <button type="button" class="product-card__cart-button">
+                          <svg
+                            class="product-card__cart-button-icon"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="images/icons.svg#icon-bag"></use>
+                          </svg>
+
+                          до кошика
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalog__cards-item">
+                    <div class="product-card discount catalog__card">
+                      <div class="discount-label">
+                        <span class="discount-label__value">-15%</span>
+                      </div>
+
+                      <a href="" class="product-card__product-link">
+                        <picture>
+                          <source
+                            srcset="
+                              ./images/products/card-3.webp    1x,
+                              ./images/products/card-3@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <source
+                            srcset="
+                              ./images/products/card-3.jpg    1x,
+                              ./images/products/card-3@2x.jpg 2x
+                            "
+                            type="image/jpeg"
+                          />
+                          <img
+                            src="./images/products/card-3.jpg"
+                            width="180"
+                            height="180"
+                            alt="ентерожерміна"
+                            class="product-card__image"
+                          />
+                        </picture>
+
+                        <h3 class="product-card__title">
+                          Ентерожерміна форте 5 мл суспензія №10
+                        </h3>
+
+                        <p class="product-card__producer">
+                          Sanofi Aventis (Італія)
+                        </p>
+
+                        <p class="product-card__price">
+                          206,70 грн
+                          <span>256,70 грн</span>
+                        </p>
+                        <p class="product-card__status">В наявності</p>
+                      </a>
+
+                      <div class="product-card__buttons">
+                        <button
+                          class="product-card__like-button"
+                          aria-label="додати в обране"
+                        >
                           <svg
                             class="product-card__like-button-icon"
                             width="20"
@@ -1152,21 +1579,107 @@
                   </li>
                   <li class="catalog__cards-item">
                     <div class="product-card catalog__card">
-                      <div class="sale-label">
-                        <span class="sale-label__value">-15%</span>
+                      <div class="discount-label">
+                        <span class="discount-label__value">-15%</span>
                       </div>
 
                       <a href="" class="product-card__product-link">
-                        <img
-                          src="images/products/card-2.jpg"
-                          srcset="
-                            images/products/card-2.jpg    1x,
-                            images/products/card-2@2x.jpg 2x
-                          "
-                          width="180"
-                          alt=""
-                          class="product-card__image"
-                        />
+                        <picture>
+                          <source
+                            srcset="
+                              ./images/products/card-5.webp    1x,
+                              ./images/products/card-5@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <source
+                            srcset="
+                              ./images/products/card-5.jpg    1x,
+                              ./images/products/card-5@2x.jpg 2x
+                            "
+                            type="image/jpeg"
+                          />
+                          <img
+                            src="./images/products/card-5.jpg"
+                            width="180"
+                            height="180"
+                            alt="корвалмент"
+                            class="product-card__image"
+                          />
+                        </picture>
+
+                        <h3 class="product-card__title">
+                          Корвалмент 0,1 г капсули №80
+                        </h3>
+
+                        <p class="product-card__producer">
+                          Вітамінний завод ПАТ (Україна)
+                        </p>
+
+                        <p class="product-card__price">
+                          206,70 грн
+                          <span>256,70 грн</span>
+                        </p>
+                        <p class="product-card__status">В наявності</p>
+                      </a>
+
+                      <div class="product-card__buttons">
+                        <button
+                          class="product-card__like-button"
+                          aria-label="додати в обране"
+                        >
+                          <svg
+                            class="product-card__like-button-icon"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="images/icons.svg#icon-heart"></use>
+                          </svg>
+                        </button>
+                        <button type="button" class="product-card__cart-button">
+                          <svg
+                            class="product-card__cart-button-icon"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="images/icons.svg#icon-bag"></use>
+                          </svg>
+
+                          до кошика
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalog__cards-item">
+                    <div class="product-card discount catalog__card">
+                      <div class="discount-label">
+                        <span class="discount-label__value">-15%</span>
+                      </div>
+
+                      <a href="" class="product-card__product-link">
+                        <picture>
+                          <source
+                            srcset="
+                              ./images/products/card-1.webp    1x,
+                              ./images/products/card-1@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <source
+                            srcset="
+                              ./images/products/card-1.jpg    1x,
+                              ./images/products/card-1@2x.jpg 2x
+                            "
+                            type="image/jpeg"
+                          />
+                          <img
+                            src="./images/products/card-1.jpg"
+                            width="180"
+                            height="180"
+                            alt="нервонорм"
+                            class="product-card__image"
+                          />
+                        </picture>
 
                         <h3 class="product-card__title">
                           Нервонорм Night капсули №30
@@ -1184,7 +1697,10 @@
                       </a>
 
                       <div class="product-card__buttons">
-                        <button class="product-card__like-button">
+                        <button
+                          class="product-card__like-button"
+                          aria-label="додати в обране"
+                        >
                           <svg
                             class="product-card__like-button-icon"
                             width="20"
@@ -1209,39 +1725,55 @@
                   </li>
                   <li class="catalog__cards-item">
                     <div class="product-card catalog__card">
-                      <div class="sale-label">
-                        <span class="sale-label__value">-15%</span>
+                      <div class="discount-label">
+                        <span class="discount-label__value">-15%</span>
                       </div>
 
                       <a href="" class="product-card__product-link">
-                        <img
-                          src="images/products/card-2.jpg"
-                          srcset="
-                            images/products/card-2.jpg    1x,
-                            images/products/card-2@2x.jpg 2x
-                          "
-                          width="180"
-                          alt=""
-                          class="product-card__image"
-                        />
+                        <picture>
+                          <source
+                            srcset="
+                              ./images/products/card-6.webp    1x,
+                              ./images/products/card-6@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <source
+                            srcset="
+                              ./images/products/card-6.jpg    1x,
+                              ./images/products/card-6@2x.jpg 2x
+                            "
+                            type="image/jpeg"
+                          />
+                          <img
+                            src="./images/products/card-6.jpg"
+                            width="180"
+                            height="180"
+                            alt="синупрет"
+                            class="product-card__image"
+                          />
+                        </picture>
 
                         <h3 class="product-card__title">
-                          Нервонорм Night капсули №30
+                          Синупрет форте таблетки №20
                         </h3>
 
                         <p class="product-card__producer">
-                          Ілан Фарм (Україна)
+                          Bionorica (Німеччина)
                         </p>
 
                         <p class="product-card__price">
-                          206,70 грн
+                          194,72 грн
                           <span>256,70 грн</span>
                         </p>
                         <p class="product-card__status">В наявності</p>
                       </a>
 
                       <div class="product-card__buttons">
-                        <button class="product-card__like-button">
+                        <button
+                          class="product-card__like-button"
+                          aria-label="додати в обране"
+                        >
                           <svg
                             class="product-card__like-button-icon"
                             width="20"
@@ -1266,24 +1798,37 @@
                   </li>
                   <li class="catalog__cards-item">
                     <div class="product-card catalog__card">
-                      <div class="sale-label">
-                        <span class="sale-label__value">-15%</span>
+                      <div class="discount-label">
+                        <span class="discount-label__value">-15%</span>
                       </div>
 
                       <a href="" class="product-card__product-link">
-                        <img
-                          src="images/products/card-2.jpg"
-                          srcset="
-                            images/products/card-2.jpg    1x,
-                            images/products/card-2@2x.jpg 2x
-                          "
-                          width="180"
-                          alt=""
-                          class="product-card__image"
-                        />
+                        <picture>
+                          <source
+                            srcset="
+                              ./images/products/card-7.webp    1x,
+                              ./images/products/card-7@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <source
+                            srcset="
+                              ./images/products/card-7.jpg    1x,
+                              ./images/products/card-7@2x.jpg 2x
+                            "
+                            type="image/jpeg"
+                          />
+                          <img
+                            src="./images/products/card-7.jpg"
+                            width="180"
+                            height="180"
+                            alt="хлорофіліпт"
+                            class="product-card__image"
+                          />
+                        </picture>
 
                         <h3 class="product-card__title">
-                          Нервонорм Night капсули №30
+                          Хлорофіліпт Ілан Фарм спрей для горла 30 мл
                         </h3>
 
                         <p class="product-card__producer">
@@ -1298,234 +1843,10 @@
                       </a>
 
                       <div class="product-card__buttons">
-                        <button class="product-card__like-button">
-                          <svg
-                            class="product-card__like-button-icon"
-                            width="20"
-                            height="20"
-                          >
-                            <use href="images/icons.svg#icon-heart"></use>
-                          </svg>
-                        </button>
-                        <button type="button" class="product-card__cart-button">
-                          <svg
-                            class="product-card__cart-button-icon"
-                            width="20"
-                            height="20"
-                          >
-                            <use href="images/icons.svg#icon-bag"></use>
-                          </svg>
-
-                          до кошика
-                        </button>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="catalog__cards-item">
-                    <div class="product-card catalog__card">
-                      <div class="sale-label">
-                        <span class="sale-label__value">-15%</span>
-                      </div>
-
-                      <a href="" class="product-card__product-link">
-                        <img
-                          src="images/products/card-2.jpg"
-                          srcset="
-                            images/products/card-2.jpg    1x,
-                            images/products/card-2@2x.jpg 2x
-                          "
-                          width="180"
-                          alt=""
-                          class="product-card__image"
-                        />
-
-                        <h3 class="product-card__title">
-                          Нервонорм Night капсули №30
-                        </h3>
-
-                        <p class="product-card__producer">
-                          Ілан Фарм (Україна)
-                        </p>
-
-                        <p class="product-card__price">
-                          206,70 грн
-                          <span>256,70 грн</span>
-                        </p>
-                        <p class="product-card__status">В наявності</p>
-                      </a>
-
-                      <div class="product-card__buttons">
-                        <button class="product-card__like-button">
-                          <svg
-                            class="product-card__like-button-icon"
-                            width="20"
-                            height="20"
-                          >
-                            <use href="images/icons.svg#icon-heart"></use>
-                          </svg>
-                        </button>
-                        <button type="button" class="product-card__cart-button">
-                          <svg
-                            class="product-card__cart-button-icon"
-                            width="20"
-                            height="20"
-                          >
-                            <use href="images/icons.svg#icon-bag"></use>
-                          </svg>
-
-                          до кошика
-                        </button>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="catalog__cards-item">
-                    <div class="product-card catalog__card">
-                      <div class="sale-label">
-                        <span class="sale-label__value">-15%</span>
-                      </div>
-
-                      <a href="" class="product-card__product-link">
-                        <img
-                          src="images/products/card-2.jpg"
-                          srcset="
-                            images/products/card-2.jpg    1x,
-                            images/products/card-2@2x.jpg 2x
-                          "
-                          width="180"
-                          alt=""
-                          class="product-card__image"
-                        />
-
-                        <h3 class="product-card__title">
-                          Нервонорм Night капсули №30
-                        </h3>
-
-                        <p class="product-card__producer">
-                          Ілан Фарм (Україна)
-                        </p>
-
-                        <p class="product-card__price">
-                          206,70 грн
-                          <span>256,70 грн</span>
-                        </p>
-                        <p class="product-card__status">В наявності</p>
-                      </a>
-
-                      <div class="product-card__buttons">
-                        <button class="product-card__like-button">
-                          <svg
-                            class="product-card__like-button-icon"
-                            width="20"
-                            height="20"
-                          >
-                            <use href="images/icons.svg#icon-heart"></use>
-                          </svg>
-                        </button>
-                        <button type="button" class="product-card__cart-button">
-                          <svg
-                            class="product-card__cart-button-icon"
-                            width="20"
-                            height="20"
-                          >
-                            <use href="images/icons.svg#icon-bag"></use>
-                          </svg>
-
-                          до кошика
-                        </button>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="catalog__cards-item">
-                    <div class="product-card catalog__card">
-                      <div class="sale-label">
-                        <span class="sale-label__value">-15%</span>
-                      </div>
-
-                      <a href="" class="product-card__product-link">
-                        <img
-                          src="images/products/card-2.jpg"
-                          srcset="
-                            images/products/card-2.jpg    1x,
-                            images/products/card-2@2x.jpg 2x
-                          "
-                          width="180"
-                          alt=""
-                          class="product-card__image"
-                        />
-
-                        <h3 class="product-card__title">
-                          Нервонорм Night капсули №30
-                        </h3>
-
-                        <p class="product-card__producer">
-                          Ілан Фарм (Україна)
-                        </p>
-
-                        <p class="product-card__price">
-                          206,70 грн
-                          <span>256,70 грн</span>
-                        </p>
-                        <p class="product-card__status">В наявності</p>
-                      </a>
-
-                      <div class="product-card__buttons">
-                        <button class="product-card__like-button">
-                          <svg
-                            class="product-card__like-button-icon"
-                            width="20"
-                            height="20"
-                          >
-                            <use href="images/icons.svg#icon-heart"></use>
-                          </svg>
-                        </button>
-                        <button type="button" class="product-card__cart-button">
-                          <svg
-                            class="product-card__cart-button-icon"
-                            width="20"
-                            height="20"
-                          >
-                            <use href="images/icons.svg#icon-bag"></use>
-                          </svg>
-
-                          до кошика
-                        </button>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="catalog__cards-item">
-                    <div class="product-card catalog__card">
-                      <div class="sale-label">
-                        <span class="sale-label__value">-15%</span>
-                      </div>
-
-                      <a href="" class="product-card__product-link">
-                        <img
-                          src="images/products/card-2.jpg"
-                          srcset="
-                            images/products/card-2.jpg    1x,
-                            images/products/card-2@2x.jpg 2x
-                          "
-                          width="180"
-                          alt=""
-                          class="product-card__image"
-                        />
-
-                        <h3 class="product-card__title">
-                          Нервонорм Night капсули №30
-                        </h3>
-
-                        <p class="product-card__producer">
-                          Ілан Фарм (Україна)
-                        </p>
-
-                        <p class="product-card__price">
-                          206,70 грн
-                          <span>256,70 грн</span>
-                        </p>
-                        <p class="product-card__status">В наявності</p>
-                      </a>
-                      <div class="product-card__buttons">
-                        <button class="product-card__like-button">
+                        <button
+                          class="product-card__like-button"
+                          aria-label="додати в обране"
+                        >
                           <svg
                             class="product-card__like-button-icon"
                             width="20"
@@ -1606,10 +1927,10 @@
         </div>
       </section>
     </main>
-    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- <script src="js/jquery-3.3.1.min.js"></script> -->
     <script src="./index.js" type="module"></script>
 
-    <script>
+    <!-- <script>
       $(function () {
         var Accordion = function (el, multiple) {
           this.el = el || {};
@@ -1787,6 +2108,6 @@
           }
         });
       });
-    </script>
+    </script> -->
   </body>
 </html>

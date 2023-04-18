@@ -7,10 +7,8 @@
   border: 1px solid #e7e6e6;
   border-radius: 10px;
 
-  //   transition: height 2s linear;
-
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     width: 100%;
     height: 100%;
@@ -36,7 +34,7 @@
   text-decoration: none;
   display: block;
 }
-.sale-label {
+.discount-label {
   position: absolute;
   top: 15px;
   right: 15px;
@@ -45,11 +43,11 @@
   border-radius: 50%;
   background: #77c9cc;
   z-index: 100;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
 }
-.sale-label__value {
+.discount-label__value {
   font-weight: 700;
   font-size: 16px;
   line-height: calc(20 / 16);
@@ -87,6 +85,7 @@
     font-weight: 600;
     font-size: 14px;
     line-height: calc(17 / 14);
+    display: none;
 
     color: #76737d;
   }
@@ -151,5 +150,16 @@
     width: 15px;
     display: block;
     fill: white;
+  }
+}
+
+.product-card.discount {
+  .discount-label {
+    display: flex;
+  }
+  .product-card__price {
+    span {
+      display: block;
+    }
   }
 }
