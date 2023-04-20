@@ -98,6 +98,12 @@
 
   color: #0d727e;
 }
+
+.product-card.out-of-stock {
+  .product-card__status {
+    color: #76737d;
+  }
+}
 .product-card__buttons {
   display: flex;
 
@@ -119,11 +125,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 0.3s linear;
 
   svg {
     width: 19px;
     display: block;
     fill: white;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #0d727e;
   }
 }
 .product-card__cart-button {
@@ -146,6 +158,12 @@
   text-transform: uppercase;
 
   color: #ffffff;
+  transition: background-color 0.3s linear;
+
+  &:hover,
+  &:focus {
+    background-color: #77c9cc;
+  }
 
   svg {
     width: 15px;

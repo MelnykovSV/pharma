@@ -45,17 +45,13 @@
     margin: 0 auto 0 46px;
   }
 }
-.products__info-link {
+.products__info-status {
   font-weight: 700;
   font-size: 16px;
   line-height: calc(20 / 16);
   color: #0d727e;
   transition: all 0.3s linear;
   text-decoration: none;
-  &:hover,
-  &:focus {
-    color: #008cff;
-  }
 }
 .products__info-price {
   font-weight: 700;
@@ -218,7 +214,7 @@
   align-items: end;
 }
 .product-card-wide__form {
-  font-size: 12px;
+  font-size: 14px;
   line-height: calc(14 / 12);
 
   color: #76737d;
@@ -248,6 +244,12 @@
   font-size: 12px;
   line-height: calc(15 / 12);
   text-transform: uppercase;
+  transition: background-color 0.3s linear;
+
+  &:hover,
+  &:focus {
+    background-color: #77c9cc;
+  }
 }
 
 // ==================================DELIVERY AND PAYMENT==================================
