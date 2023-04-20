@@ -310,10 +310,9 @@ a {
   display: flex;
   gap: 5px;
   justify-content: center;
-  align-items: center;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.2142857143;
+  line-height: 1.4285714286;
   text-transform: uppercase;
   margin: 0 auto;
   margin-bottom: 30px;
