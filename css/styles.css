@@ -1,9 +1,30 @@
 @font-face {
   font-family: "Gilroy";
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
   src: url("./../fonts/Gilroy-Regular/Gilroy-Regular.eot"); /* IE9 eot*/
   src: url("./../fonts/Gilroy-Regular/Gilroy-Regular.eot?iefix") format("embedded-opentype"), url("./../fonts/Gilroy-Regular/Gilroy-Regular.woff2") format("woff2"), url("./../fonts/Gilroy-Regular/Gilroy-Regular.woff") format("woff"), url("./../fonts/Gilroy-Regular/Gilroy-Regular.ttf") format("truetype"), url("./../fonts/Gilroy-Regular/Gilroy-Regular.svg#Gilroy-Regular") format("svg"); /* iOS 4.1- */
+}
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-style: normal;
+  src: url("./../fonts/Gilroy-Bold/Gilroy-Bold.eot"); /* IE9 eot*/
+  src: url("./../fonts/Gilroy-Bold/Gilroy-Bold.eot?iefix") format("embedded-opentype"), url("./../fonts/Gilroy-Bold/Gilroy-Bold.woff2") format("woff2"), url("./../fonts/Gilroy-Bold/Gilroy-Bold.woff") format("woff"), url("./../fonts/Gilroy-Bold/Gilroy-Bold.ttf") format("truetype"), url("./../fonts/Gilroy-Bold/Gilroy-Bold.svg#Gilroy-Bold") format("svg"); /* iOS 4.1- */
+}
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-style: normal;
+  src: url("./../fonts/Gilroy-SemiBold/Gilroy-SemiBold.eot"); /* IE9 eot*/
+  src: url("./../fonts/Gilroy-SemiBold/Gilroy-SemiBold.eot?iefix") format("embedded-opentype"), url("./../fonts/Gilroy-SemiBold/Gilroy-SemiBold.woff2") format("woff2"), url("./../fonts/Gilroy-SemiBold/Gilroy-SemiBold.woff") format("woff"), url("./../fonts/Gilroy-SemiBold/Gilroy-SemiBold.ttf") format("truetype"), url("./../fonts/Gilroy-SemiBold/Gilroy-SemiBold.svg#Gilroy-SemiBold") format("svg"); /* iOS 4.1- */
+}
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 400;
+  font-style: italic;
+  src: url("./../fonts/Gilroy-Regularitalic/Gilroy-Regularitalic.eot"); /* IE9 eot*/
+  src: url("./../fonts/Gilroy-Regularitalic/Gilroy-Regularitalic.eot?iefix") format("embedded-opentype"), url("./../fonts/Gilroy-Regularitalic/Gilroy-Regularitalic.woff2") format("woff2"), url("./../fonts/Gilroy-Regularitalic/Gilroy-Regularitalic.woff") format("woff"), url("./../fonts/Gilroy-Regularitalic/Gilroy-Regularitalic.ttf") format("truetype"), url("./../fonts/Gilroy-Regularitalic/Gilroy-Regularitalic.svg#Gilroy-Regularitalic") format("svg"); /* iOS 4.1- */
 }
 html,
 body,
