@@ -286,6 +286,9 @@ a {
   gap: 30px;
   margin-bottom: 45px;
 }
+.catalog__cards li:last-child {
+  height: 440px;
+}
 
 .catalog__card {
   align-self: self-start;

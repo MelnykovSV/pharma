@@ -56,6 +56,10 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-bottom: 45px;
+
+  li:last-child {
+    height: 440px;
+  }
 }
 
 .catalog__card {
