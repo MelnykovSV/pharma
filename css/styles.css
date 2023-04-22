@@ -286,9 +286,6 @@ a {
   gap: 30px;
   margin-bottom: 45px;
 }
-.catalog__cards li:last-child {
-  height: 442px;
-}
 
 .catalog__card {
   align-self: self-start;
@@ -750,7 +747,7 @@ a {
 .product-card__buttons {
   display: flex;
   height: 0;
-  transition: height 0.3s linear, margin 0.3s linear;
+  transition: all 0.3s linear;
   overflow: hidden;
   gap: 10px;
 }

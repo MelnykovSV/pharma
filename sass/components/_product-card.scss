@@ -109,7 +109,8 @@
 
   height: 0;
 
-  transition: height 0.3s linear, margin 0.3s linear;
+  // transition: height 0.3s linear, margin 0.3s linear;
+  transition: all 0.3s linear;
   overflow: hidden;
 
   gap: 10px;
