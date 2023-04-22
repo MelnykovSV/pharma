@@ -322,20 +322,24 @@ a {
   fill: #77c9cc;
 }
 
-.catalog__paginator-list {
+.pagination > ul {
   display: flex;
   gap: 10px;
   justify-content: center;
   margin: 0 auto;
+  font-size: 14px;
+  line-height: 1.2142857143;
 }
-
-.catalog__paginator-link {
+.pagination > ul > li {
+  width: 30px;
+}
+.pagination > ul > li .page-link {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 5px;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   font-weight: 700;
   color: #77c9cc;
   text-align: center;
@@ -343,6 +347,27 @@ a {
   border: 2px solid #77c9cc;
   border-radius: 10px;
   transition: all 0.2s linear;
+}
+.pagination > ul > li > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+  width: 30px;
+  height: 30px;
+  font-weight: 700;
+  color: #77c9cc;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: all 0.2s linear;
+}
+.pagination > ul > li > span.current {
+  background-color: #77c9cc;
+  color: white;
+}
+.pagination > ul > li > span.prev svg, .pagination > ul > li > span.next svg {
+  fill: white;
 }
 
 .catalog__paginator-link--active {
@@ -647,6 +672,7 @@ a {
   position: relative;
   border: 1px solid #e7e6e6;
   border-radius: 10px;
+  background-color: white;
 }
 .product-card::after {
   content: "";
@@ -805,6 +831,14 @@ a {
 }
 .product-card.discount .product-card__price span {
   display: block;
+}
+
+.catalog__cards-item {
+  max-height: 380px;
+}
+
+.js-hover {
+  z-index: 200;
 }
 
 .product-gallery__slider {

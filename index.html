@@ -109,6 +109,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- <link href="./simplePagination/simplePagination.css" rel="stylesheet" /> -->
+
     <title>Каталог</title>
   </head>
 
@@ -986,7 +988,7 @@
                 </div>
 
                 <div class="catalog__cards-container">
-                  <ul class="catalog__cards">
+                  <ul class="catalog__cards cards-container">
                     <li class="catalog__cards-item">
                       <div class="product-card catalog__card">
                         <div class="discount-label">
@@ -1950,7 +1952,8 @@
 
                     показати ще
                   </button>
-                  <ul class="catalog__paginator-list">
+                  <div id="light-pagination" class="pagination"></div>
+                  <!-- <ul class="catalog__paginator-list">
                     <li class="catalog__paginator-list-item">
                       <a href="#" class="catalog__paginator-link">
                         <svg
@@ -1987,7 +1990,7 @@
                         </svg>
                       </a>
                     </li>
-                  </ul>
+                  </ul> -->
                 </div>
               </div>
             </div>
@@ -1995,7 +1998,10 @@
         </div>
       </section>
     </main>
-    <!-- <script src="js/jquery-3.3.1.min.js"></script> -->
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="/simplePagination/jquery.simplePagination.js"></script>
+
     <script src="./index.js" type="module"></script>
   </body>
 </html>

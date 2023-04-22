@@ -6,6 +6,7 @@
 
   border: 1px solid #e7e6e6;
   border-radius: 10px;
+  background-color: white;
 
   &::after {
     content: '';
@@ -182,4 +183,12 @@
       display: block;
     }
   }
+}
+
+.catalog__cards-item {
+  max-height: 380px;
+}
+
+.js-hover {
+  z-index: 200;
 }

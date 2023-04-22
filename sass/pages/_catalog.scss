@@ -95,29 +95,78 @@
 .catalog__paginator-button-icon {
   fill: #77c9cc;
 }
-.catalog__paginator-list {
+.pagination > ul {
   display: flex;
   gap: 10px;
   justify-content: center;
   margin: 0 auto;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+
+  & > li {
+    width: 30px;
+
+    .page-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 5px;
+      width: 30px;
+      height: 30px;
+      font-weight: 700;
+      color: #77c9cc;
+      text-align: center;
+      text-decoration: none;
+      border: 2px solid #77c9cc;
+      border-radius: 10px;
+      transition: all 0.2s linear;
+    }
+
+    & > span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 5px;
+      width: 30px;
+      height: 30px;
+      font-weight: 700;
+      color: #77c9cc;
+      text-align: center;
+      text-decoration: none;
+      // border: 2px solid #77c9cc;
+      border-radius: 10px;
+      transition: all 0.2s linear;
+      // background-color: #77c9cc;
+      &.current {
+        background-color: #77c9cc;
+        color: white;
+      }
+      &.prev,
+      &.next {
+        svg {
+          fill: white;
+        }
+      }
+    }
+  }
 }
-.catalog__paginator-list-item {
-}
-.catalog__paginator-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 5px;
-  width: 40px;
-  height: 40px;
-  font-weight: 700;
-  color: #77c9cc;
-  text-align: center;
-  text-decoration: none;
-  border: 2px solid #77c9cc;
-  border-radius: 10px;
-  transition: all 0.2s linear;
-}
+// .catalog__paginator-list-item {
+// }
+// .catalog__paginator-link {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   margin: 0 5px;
+//   width: 40px;
+//   height: 40px;
+//   font-weight: 700;
+//   color: #77c9cc;
+//   text-align: center;
+//   text-decoration: none;
+//   border: 2px solid #77c9cc;
+//   border-radius: 10px;
+//   transition: all 0.2s linear;
+// }
 
 .catalog__paginator-link--active {
   background-color: #77c9cc;
