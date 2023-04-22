@@ -17,7 +17,7 @@
   font-weight: 600;
   font-style: normal;
   src: url("./../fonts/Gilroy-Semibold/Gilroy-SemiBold.eot"); /* IE9 eot*/
-  src: url("./../fonts/Gilroy-Semibold/Gilroy-SemiBold.eot?iefix") format("embedded-opentype"), url("./../fonts/Gilroy-Semibold/Gilroy-SemiBold.woff2") format("woff2"), url("./../fonts/Gilroy-Semibold/Gilroy-SemiBold.woff") format("woff"), url("./../fonts/Gilroy-Semibold/Gilroy-SemiBold.ttf") format("truetype"), url("./../fonts/Gilroy-SemiBold/Gilroy-Semibold.svg#Gilroy-SemiBold") format("svg"); /* iOS 4.1- */
+  src: url("./../fonts/Gilroy-Semibold/Gilroy-SemiBold.eot?iefix") format("embedded-opentype"), url("./../fonts/Gilroy-Semibold/Gilroy-SemiBold1.woff2") format("woff2"), url("./../fonts/Gilroy-Semibold/Gilroy-Semibold.woff") format("woff"), url("./../fonts/Gilroy-Semibold/Gilroy-SemiBold.ttf") format("truetype"), url("./../fonts/Gilroy-SemiBold/Gilroy-Semibold.svg#Gilroy-SemiBold") format("svg"); /* iOS 4.1- */
 }
 @font-face {
   font-family: "Gilroy";
