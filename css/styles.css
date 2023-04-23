@@ -211,6 +211,14 @@ a {
   text-decoration: none;
 }
 
+.footer-placeholder {
+  height: 83px;
+}
+
+.footer-placeholder-product {
+  height: 291px;
+}
+
 .product__content {
   padding: 30px;
 }
@@ -227,14 +235,6 @@ a {
 
 .product__accordion .other-forms__body {
   border-bottom: none;
-}
-
-.footer-placeholder {
-  height: 291px;
-}
-
-.catalog {
-  margin-bottom: 30px;
 }
 
 .catalog__container {
