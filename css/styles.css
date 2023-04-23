@@ -161,6 +161,7 @@ body {
   font-size: 18px;
   line-height: 20px;
   color: #474747;
+  overflow-x: hidden;
   font-family: "Gilroy";
 }
 
@@ -226,6 +227,10 @@ a {
 
 .product__accordion .other-forms__body {
   border-bottom: none;
+}
+
+.footer-placeholder {
+  height: 291px;
 }
 
 .catalog {
@@ -1190,6 +1195,7 @@ a {
   position: relative;
   overflow: visible;
   overflow: visible;
+  height: 442px;
 }
 @media screen and (min-width: 570px) {
   .offers-slider {

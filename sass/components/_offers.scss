@@ -7,6 +7,7 @@
   // padding: 20px;
 
   overflow: visible;
+  height: 442px;
 
   @media screen and (min-width: 570px) {
     width: 570px;
@@ -59,7 +60,7 @@
   margin: 0;
 
   &::after {
-    content: "";
+    content: '';
   }
 
   .swiper-button__icon {
