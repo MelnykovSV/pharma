@@ -13,9 +13,10 @@
   display: flex;
   font-size: 14px;
   margin-right: 5px;
+  align-items: center;
   &:not(:last-child)::after {
-    content: "";
-    background-image: url("./../images/angle-right.svg");
+    content: '';
+    background-image: url('./../images/angle-right.svg');
     background-size: contain;
     display: block;
     width: 15px;

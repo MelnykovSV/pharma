@@ -451,9 +451,6 @@ a {
   display: flex;
 }
 
-.header__product-types-list-item {
-  flex-grow: 1;
-}
 .header__product-types-list-item > a {
   justify-content: center;
 }
@@ -471,7 +468,13 @@ a {
   color: #ffffff;
   display: flex;
   gap: 10px;
-  padding: 19px 0;
+  padding: 19px 42px;
+}
+.header__product-types-list-link.first-link {
+  padding-left: 0;
+}
+.header__product-types-list-link.last-link {
+  padding-right: 0;
 }
 .header__product-types-list-link::after {
   content: "";
@@ -556,6 +559,7 @@ a {
   display: flex;
   font-size: 14px;
   margin-right: 5px;
+  align-items: center;
 }
 .breadcrumb__list-item:not(:last-child)::after {
   content: "";

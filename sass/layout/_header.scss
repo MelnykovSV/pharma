@@ -72,7 +72,7 @@
   display: flex;
 }
 .header__product-types-list-item {
-  flex-grow: 1;
+  // flex-grow: 1;
 
   // &:not(:last-child),
   & > a {
@@ -98,7 +98,14 @@
   color: #ffffff;
   display: flex;
   gap: 10px;
-  padding: 19px 0;
+  padding: 19px 42px;
+
+  &.first-link {
+    padding-left: 0;
+  }
+  &.last-link {
+    padding-right: 0;
+  }
 
   &::after {
     content: '';
@@ -111,6 +118,12 @@
     background-color: white;
   }
 }
+// .header__product-types-list-link:not(:first-child) {
+
+// }
+// .header__product-types-list-link:not(:last-child) {
+//   padding-right: 42px;
+// }
 .header__product-types-icon {
   fill: white;
 }
