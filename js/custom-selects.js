@@ -1,7 +1,7 @@
 const svgMarkup =
   '<svg class="slim-select__svg" width="20" height="20"><use href="images/icons.svg#icon-angle-down"></use></svg>';
 
-const selects = document.querySelectorAll('.slim-select');
+const selects = document.querySelectorAll('.slim-select.js-select');
 
 if (selects.length) {
   selects.forEach((select) => {
@@ -17,5 +17,7 @@ if (selects.length) {
     selectMain.removeChild(selectMain.lastElementChild);
 
     selectMain.insertAdjacentHTML('beforeend', svgMarkup);
+
+    selectMain.classList.add('select-border');
   });
 }

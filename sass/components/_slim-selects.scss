@@ -1,7 +1,7 @@
 .slim-select.ss-main {
-  border: 1px solid #e7e6e6;
   border-radius: 10px;
   padding: 15px 15px 15px 20px;
+  border: none;
   display: flex;
   gap: 10px;
   width: fit-content;
@@ -25,6 +25,10 @@
       transform: rotate(180deg);
     }
   }
+}
+
+.slim-select.ss-main.select-border {
+  border: 1px solid #e7e6e6;
 }
 
 .slim-select.ss-content {
