@@ -3,6 +3,8 @@
 @import './base/reset';
 @import './base/common';
 
+// @import './../nice-select2/nice-select2.scss';
+
 @import './pages/product';
 @import './pages/catalog';
 
@@ -14,7 +16,8 @@
 @import './components/product-card';
 @import './components/info-slider';
 @import './components/analogs';
-@import './components/slim-selects';
+// @import './components/slim-selects';
+@import './components/select2';
 @import './components/catalog-aside';
 @import './components/price-range-slider';
 
