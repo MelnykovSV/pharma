@@ -150,23 +150,6 @@
     }
   }
 }
-// .catalog__paginator-list-item {
-// }
-// .catalog__paginator-link {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   margin: 0 5px;
-//   width: 40px;
-//   height: 40px;
-//   font-weight: 700;
-//   color: #77c9cc;
-//   text-align: center;
-//   text-decoration: none;
-//   border: 2px solid #77c9cc;
-//   border-radius: 10px;
-//   transition: all 0.2s linear;
-// }
 
 .catalog__paginator-link--active {
   background-color: #77c9cc;
@@ -176,13 +159,3 @@
 .catalog__paginator-arrow {
   fill: #77c9cc;
 }
-
-// .select-dropdown {
-//   border: 2px solid red;
-//   height: 200px;
-//   background-color: aqua;
-// }
-
-// body {
-//   background-color: red !important;
-// }

@@ -18,8 +18,6 @@ if (selects.length) {
 
     selectMain.insertAdjacentHTML('beforeend', svgMarkup);
 
-    // selectMain.classList.add('select-border');
-
     //fixes visual bug with border in Safari
 
     selectMain.focus();
