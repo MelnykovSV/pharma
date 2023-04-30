@@ -18,11 +18,12 @@ if (selects.length) {
 
     selectMain.insertAdjacentHTML('beforeend', svgMarkup);
 
-    selectMain.classList.add('select-border');
-    // selectMain.classList.add('ss-open-below');
+    // selectMain.classList.add('select-border');
+
+    //fixes visual bug with border in Safari
+
     selectMain.focus();
     setTimeout(() => {
-      // selectMain.classList.remove('ss-open-below');
       selectMain.blur();
     }, 0);
   });

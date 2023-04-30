@@ -6,6 +6,7 @@
   gap: 10px;
   width: fit-content;
   overflow: hidden;
+  border: 1px solid #e7e6e6;
 
   font-size: 14px;
   line-height: calc(17 / 14);
@@ -27,9 +28,9 @@
   }
 }
 
-.slim-select.ss-main.select-border {
-  border: 1px solid #e7e6e6;
-}
+// .slim-select.ss-main.select-border {
+//   border: 1px solid #e7e6e6;
+// }
 
 .slim-select.ss-content {
   font-size: 14px;

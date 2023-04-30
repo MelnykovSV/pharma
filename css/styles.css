@@ -916,6 +916,7 @@ a {
   gap: 10px;
   width: fit-content;
   overflow: hidden;
+  border: 1px solid #e7e6e6;
   font-size: 14px;
   line-height: 1.2142857143;
   color: #1e1e1e;
@@ -929,10 +930,6 @@ a {
 }
 .slim-select.ss-main.ss-open-below .slim-select__svg {
   transform: rotate(180deg);
-}
-
-.slim-select.ss-main.select-border {
-  border: 1px solid #e7e6e6;
 }
 
 .slim-select.ss-content {
