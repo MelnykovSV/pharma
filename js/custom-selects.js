@@ -19,10 +19,10 @@ if (selects.length) {
     selectMain.insertAdjacentHTML('beforeend', svgMarkup);
 
     selectMain.classList.add('select-border');
-    selectMain.classList.add('ss-open-below');
+    // selectMain.classList.add('ss-open-below');
     selectMain.focus();
     setTimeout(() => {
-      selectMain.classList.remove('ss-open-below');
+      // selectMain.classList.remove('ss-open-below');
       selectMain.blur();
     }, 0);
   });
