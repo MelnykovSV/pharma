@@ -12,14 +12,94 @@
 .header__top-nav {
   display: flex;
   align-items: center;
-  gap: 71px;
+  justify-content: space-between;
+  // gap: 71px;
 }
+
 .header__logo {
 }
 .header__main-menu {
   display: flex;
   gap: 30px;
+  overflow: hidden;
+
+  transition: width 1s linear 1s;
+
+  &.searchbar-expanded {
+    width: 0 !important;
+  }
 }
+
+.searchbar-list-item {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  transition: border 1s linear, width 1s linear 1s;
+  border: 1px solid rgba(118, 115, 125, 0);
+  &.searchbar-expanded {
+    border-radius: 5px;
+    border: 1px solid rgba(118, 115, 125, 0.5);
+    width: 835px !important;
+
+    .header__menu-icon {
+      position: absolute;
+      z-index: -1;
+    }
+  }
+  .searchbar-container {
+    height: 30px;
+    width: 0;
+    transition: width 0.3s linear;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    // justify-content: center;
+    // padding-left: 15px;
+    align-items: center;
+    opacity: 0;
+    .searchbar-input {
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 5px;
+      padding: 15px 50px;
+    }
+    .searchbar-icon {
+      fill: #76737d;
+      display: block;
+      position: absolute;
+      left: 15px;
+    }
+    &.searchbar-expanded {
+      position: relative;
+      // width: 200px !important;
+      width: 100%;
+      opacity: 1;
+      z-index: 1;
+    }
+  }
+}
+
+.searchbar-button {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  &.searchbar-expanded {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+}
+// .searchbar-button:hover + .searchbar-container {
+//   width: 835px;
+// }
 .header__main-menu-item {
 }
 .header__main-menu-link {
@@ -32,11 +112,14 @@
 }
 .header__menu {
   display: flex;
-  gap: 8px;
+  // gap: 8px;
+  height: 50px;
 }
 .header__menu-item {
   display: flex;
   align-items: center;
+  width: 50px;
+  justify-content: center;
 }
 .header__menu-link {
   position: relative;

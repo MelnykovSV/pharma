@@ -63,7 +63,7 @@
                 />
               </picture>
             </a>
-            <ul class="header__main-menu">
+            <ul class="header__main-menu js-transition-width">
               <li class="header__main-menu-item">
                 <a href="#" class="header__main-menu-link">Класифікація АТС</a>
               </li>
@@ -84,12 +84,21 @@
               </li>
             </ul>
             <ul class="header__menu">
-              <li class="header__menu-item">
-                <a href="#" class="header__menu-link" aria-label="пошук">
+              <li class="header__menu-item searchbar-list-item">
+                <button
+                  class="header__menu-link searchbar-button"
+                  aria-label="пошук"
+                >
                   <svg class="header__menu-icon" width="20" height="20">
                     <use href="images/icons.svg#icon-search1"></use>
                   </svg>
-                </a>
+                </button>
+                <div class="searchbar-container">
+                  <svg class="searchbar-icon" width="20" height="20">
+                    <use href="images/icons.svg#icon-search1"></use>
+                  </svg>
+                  <input class="searchbar-input" type="text" />
+                </div>
               </li>
               <li class="header__menu-item">
                 <a
