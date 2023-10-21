@@ -85,6 +85,23 @@
             </ul>
             <ul class="header__menu">
               <li class="header__menu-item searchbar-list-item">
+                <div class="searchbar-container">
+                  <input class="searchbar-input" type="text" />
+                  <button type="button" class="searchbar-close-button">
+                    <svg
+                      class="searchbar-close-button-icon"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="images/icons.svg#icon-cross"></use>
+                    </svg>
+                  </button>
+                  <div class="searchbar-icon-container">
+                    <svg class="searchbar-icon" width="20" height="20">
+                      <use href="images/icons.svg#icon-search1"></use>
+                    </svg>
+                  </div>
+                </div>
                 <button
                   class="header__menu-link searchbar-button"
                   aria-label="пошук"
@@ -93,12 +110,6 @@
                     <use href="images/icons.svg#icon-search1"></use>
                   </svg>
                 </button>
-                <div class="searchbar-container">
-                  <svg class="searchbar-icon" width="20" height="20">
-                    <use href="images/icons.svg#icon-search1"></use>
-                  </svg>
-                  <input class="searchbar-input" type="text" />
-                </div>
               </li>
               <li class="header__menu-item">
                 <a

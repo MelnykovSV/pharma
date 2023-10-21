@@ -7,4 +7,4 @@ import './js/tabs.js';
 import './js/cardsZIndexHandler.js';
 import './js/pagination.js';
 import './js/transitionAutoWidth.js';
-import './js/reduceMainMenu.js';
+import './js/expandSearchBar.js';
