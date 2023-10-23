@@ -25,6 +25,9 @@
   gap: 30px;
   overflow: hidden;
 }
+.header__main-menu-link {
+  text-wrap: nowrap;
+}
 
 .searchbar-list-item {
   display: flex;

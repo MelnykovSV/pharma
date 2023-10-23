@@ -405,6 +405,10 @@ a {
   overflow: hidden;
 }
 
+.header__main-menu-link {
+  text-wrap: nowrap;
+}
+
 .searchbar-list-item {
   display: flex;
   flex-direction: row-reverse;
