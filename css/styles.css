@@ -402,7 +402,6 @@ a {
 .header__main-menu {
   display: flex;
   gap: 30px;
-  overflow: hidden;
 }
 
 .header__main-menu-link {
