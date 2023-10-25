@@ -393,10 +393,10 @@ a {
 .header__top-nav {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 72px;
   padding-top: 15px;
   padding-bottom: 15px;
+  text-wrap: nowrap;
 }
 
 .header__main-menu {
