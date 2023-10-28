@@ -2,6 +2,9 @@ const button = document.querySelector('.searchbar-button');
 const searchbarContainer = document.querySelector('.searchbar-container');
 const searchbarListItem = document.querySelector('.searchbar-list-item');
 const searchbarInput = document.querySelector('.searchbar-input');
+const searchbarListContainer = document.querySelector(
+  '.searchbar-products-container'
+);
 
 const closeButton = document.querySelector('.searchbar-close-button');
 
@@ -10,8 +13,9 @@ function searchBarOpenHandler() {
   searchbarListItem.classList.add('searchbar-expanded');
   closeButton.setAttribute('tabIndex', '0');
   searchbarInput.setAttribute('tabIndex', '0');
+  searchbarListContainer.classList.remove('hidden');
 
-  searchbarContainer.style.zIndex = 5;
+  searchbarContainer.style.zIndex = 1000;
 }
 
 function searchBarCloseHandler() {
@@ -19,6 +23,7 @@ function searchBarCloseHandler() {
   searchbarListItem.classList.remove('searchbar-expanded');
   closeButton.setAttribute('tabIndex', '-1');
   searchbarInput.setAttribute('tabIndex', '-1');
+  searchbarListContainer.classList.add('hidden');
 
   setTimeout(() => {
     searchbarContainer.style.zIndex = 0;
