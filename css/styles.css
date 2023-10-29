@@ -413,17 +413,11 @@ a {
   flex-direction: row-reverse;
   position: relative;
 }
-.searchbar-list-item.searchbar-expanded {
-  border-radius: 5px;
-}
-.searchbar-list-item.searchbar-expanded .header__menu-icon {
-  position: absolute;
-  z-index: -1;
-}
 .searchbar-list-item .searchbar-container {
   border: 1px solid rgba(118, 115, 125, 0);
   border-radius: 5px;
   background-color: white;
+  width: 100%;
   height: 50px;
   width: 50px;
   top: 0;
@@ -449,11 +443,13 @@ a {
   fill: #76737d;
 }
 .searchbar-list-item .searchbar-container .searchbar-input {
+  display: block;
   width: 100%;
   height: 100%;
   border: none;
   border-radius: 5px;
-  padding: 15px 50px;
+  padding: 15px 0;
+  transition: padding 0.3s linear;
 }
 .searchbar-list-item .searchbar-container .searchbar-icon-container {
   position: absolute;
@@ -473,6 +469,16 @@ a {
   border: 1px solid rgba(118, 115, 125, 0.5);
   width: 790px;
   z-index: 1;
+}
+.searchbar-list-item .searchbar-container.searchbar-expanded .searchbar-input {
+  padding: 15px 50px;
+}
+.searchbar-list-item.searchbar-expanded {
+  border-radius: 5px;
+}
+.searchbar-list-item.searchbar-expanded .header__menu-icon {
+  position: absolute;
+  z-index: -1;
 }
 
 .searchbar-button {
@@ -585,7 +591,7 @@ a {
   transition: height 0.3s linear, border 0.3s linear;
 }
 .searchbar-products-container.searchbar-products-container--hidden {
-  border: 1px solid transparent;
+  border: 1px solid white;
 }
 .searchbar-products-container .searchbar-products {
   padding: 12px 8px;

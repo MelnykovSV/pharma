@@ -5,5 +5,4 @@ import './js/tabs.js';
 
 import './js/cardsZIndexHandler.js';
 import './js/pagination.js';
-import './js/expandSearchBar.js';
-import './js/searchbarList.js'
+import './js/searchbar.js';
