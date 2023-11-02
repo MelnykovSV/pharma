@@ -284,6 +284,10 @@
               font-size: 18px;
               line-height: normal;
               margin-bottom: 12px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              max-width: 680px;
             }
             .searchbar-products__product-price {
               color: #3a3a3a;
@@ -304,6 +308,10 @@
           gap: 12px;
           align-items: center;
           padding: 8px;
+          transition: background-color 0.3s linear;
+          &:hover {
+            background-color: #ebf7f8;
+          }
           .searchbar-products__problematics-item-label-icon-container {
             width: 24px;
             height: 24px;

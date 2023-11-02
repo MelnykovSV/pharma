@@ -629,6 +629,10 @@ a {
   font-size: 18px;
   line-height: normal;
   margin-bottom: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 680px;
 }
 .searchbar-products-container .searchbar-products .searchbar-products__list .searchbar-products__list-item .searchbar-products__link .searchbar-products__text-container .searchbar-products__product-price {
   color: #3a3a3a;
@@ -642,6 +646,10 @@ a {
   gap: 12px;
   align-items: center;
   padding: 8px;
+  transition: background-color 0.3s linear;
+}
+.searchbar-products-container .searchbar-products .searchbar-products__problematics-list .searchbar-products__problematics-item .searchbar-products__problematics-item-label:hover {
+  background-color: #ebf7f8;
 }
 .searchbar-products-container .searchbar-products .searchbar-products__problematics-list .searchbar-products__problematics-item .searchbar-products__problematics-item-label .searchbar-products__problematics-item-label-icon-container {
   width: 24px;
