@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1"
+    />
+    <!--change mobile browser color too custom-->
+    <meta name="theme-color" content="#00929e" />
+    <!--favicon WM-->
+
+    <link rel="icon" href="./images/favicon/favicon.ico" sizes="any" />
+    <!-- 32×32 -->
+    <link rel="icon" href="./images/favicon/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/favicon/apple-touch-icon.png" />
+    <!-- 180×180 -->
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/2.4.5/slimselect.min.js"
+      integrity="sha512-q9yTDhEJZb5wqzpEHjPZENfW50RQM3Kt2cN7Dt7HdZajz77nau1xym6R4IVdDA+YfQBiR6RLkNGal9+MfnCIcg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/2.4.5/slimselect.css"
+      integrity="sha512-ijXMfMV6D0xH0UfHpPnqrwbw9cjd4AbjtWbdfVd204tXEtJtvL3TTNztvqqr9AbLcCiuNTvqHL5c9v2hOjdjpA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Каталог</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <nav class="header__top-nav">
+            <a href="index.html" class="header__logo">
+              <picture>
+                <source
+                  srcset="./images/Logo.webp 1x, ./images/Logo@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/Logo.png 1x, ./images/Logo@2x.png 2x"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/Logo.png"
+                  width="167"
+                  height="50"
+                  alt="лого"
+                />
+              </picture>
+            </a>
+            <ul class="header__main-menu">
+              <li class="header__main-menu-item">
+                <a href="#" class="header__main-menu-link">Класифікація АТС</a>
+              </li>
+              <li class="header__main-menu-item">
+                <a href="#" class="header__main-menu-link">Про нас</a>
+              </li>
+              <li class="header__main-menu-item">
+                <a href="#" class="header__main-menu-link">Оплата і доставка</a>
+              </li>
+              <li class="header__main-menu-item">
+                <a href="#" class="header__main-menu-link">Акції</a>
+              </li>
+              <li class="header__main-menu-item">
+                <a href="#" class="header__main-menu-link">Гарантія</a>
+              </li>
+              <li class="header__main-menu-item">
+                <a href="#" class="header__main-menu-link">Контакти</a>
+              </li>
+            </ul>
+            <ul class="header__menu">
+              <li class="header__menu-item searchbar-list-item">
+                <div class="searchbar-container">
+                  <input class="searchbar-input" tabindex="-1" type="text" />
+                  <button
+                    type="button"
+                    tabindex="-1"
+                    class="searchbar-close-button"
+                  >
+                    <svg
+                      class="searchbar-close-button-icon"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="images/icons.svg#icon-cross"></use>
+                    </svg>
+                  </button>
+                  <div class="searchbar-icon-container">
+                    <svg class="searchbar-icon" width="20" height="20">
+                      <use href="images/icons.svg#icon-search1"></use>
+                    </svg>
+                  </div>
+                  <div
+                    class="searchbar-products-container searchbar-products-container--hidden"
+                  >
+                    <div class="searchbar-products">
+                      <p class="searchbar-products__search-type">За назвою</p>
+                      <ul class="searchbar-products__list">
+                        <li class="searchbar-products__list-item">
+                          <a href="#" class="searchbar-products__link">
+                            <div class="searchbar-products__image-container">
+                              <picture>
+                                <source
+                                  srcset="
+                                    ./images/products/product-1-small.webp    1x,
+                                    ./images/products/product-1-small@2x.webp 2x
+                                  "
+                                  type="image/webp"
+                                />
+                                <source
+                                  srcset="
+                                    ./images/products/product-1-small.png    1x,
+                                    ./images/products/product-1-small@2x.png 2x
+                                  "
+                                  type="image/jpeg"
+                                />
+                                <img
+                                  src="./images/products/product-1-small.png"
+                                  width="60"
+                                  height="60"
+                                  alt="Фервекс"
+                                />
+                              </picture>
+                            </div>
+                            <div class="searchbar-products__text-container">
+                              <p class="searchbar-products__product-name">
+                                Фервекс для дорослих (з вітаміном С) №8, саше
+                              </p>
+                              <p class="searchbar-products__product-price">
+                                154,53 грн
+                              </p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="searchbar-products__list-item">
+                          <a href="#" class="searchbar-products__link">
+                            <div class="searchbar-products__image-container">
+                              <picture>
+                                <source
+                                  srcset="
+                                    ./images/products/product-1-small.webp    1x,
+                                    ./images/products/product-1-small@2x.webp 2x
+                                  "
+                                  type="image/webp"
+                                />
+                                <source
+                                  srcset="
+                                    ./images/products/product-1-small.png    1x,
+                                    ./images/products/product-1-small@2x.png 2x
+                                  "
+                                  type="image/jpeg"
+                                />
+                                <img
+                                  src="./images/products/product-1-small.png"
+                                  width="60"
+                                  height="60"
+                                  alt="Фервекс"
+                                />
+                              </picture>
+                            </div>
+                            <div class="searchbar-products__text-container">
+                              <p class="searchbar-products__product-name">
+                                Фервекс для дорослих (з вітаміном С) №8, саше
+                              </p>
+                              <p class="searchbar-products__product-price">
+                                154,53 грн
+                              </p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="searchbar-products__list-item">
+                          <a href="#" class="searchbar-products__link">
+                            <div class="searchbar-products__image-container">
+                              <picture>
+                                <source
+                                  srcset="
+                                    ./images/products/product-1-small.webp    1x,
+                                    ./images/products/product-1-small@2x.webp 2x
+                                  "
+                                  type="image/webp"
+                                />
+                                <source
+                                  srcset="
+                                    ./images/products/product-1-small.png    1x,
+                                    ./images/products/product-1-small@2x.png 2x
+                                  "
+                                  type="image/jpeg"
+                                />
+                                <img
+                                  src="./images/products/product-1-small.png"
+                                  width="60"
+                                  height="60"
+                                  alt="Фервекс"
+                                />
+                              </picture>
+                            </div>
+                            <div class="searchbar-products__text-container">
+                              <p class="searchbar-products__product-name">
+                                Фервекс для дорослих (з вітаміном С) №8, саше
+                              </p>
+                              <p class="searchbar-products__product-price">
+                                154,53 грн
+                              </p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="searchbar-products__list-item">
+                          <a href="#" class="searchbar-products__link">
+                            <div class="searchbar-products__image-container">
+                              <picture>
+                                <source
+                                  srcset="
+                                    ./images/products/product-1-small.webp    1x,
+                                    ./images/products/product-1-small@2x.webp 2x
+                                  "
+                                  type="image/webp"
+                                />
+                                <source
+                                  srcset="
+                                    ./images/products/product-1-small.png    1x,
+                                    ./images/products/product-1-small@2x.png 2x
+                                  "
+                                  type="image/jpeg"
+                                />
+                                <img
+                                  src="./images/products/product-1-small.png"
+                                  width="60"
+                                  height="60"
+                                  alt="Фервекс"
+                                />
+                              </picture>
+                            </div>
+                            <div class="searchbar-products__text-container">
+                              <p class="searchbar-products__product-name">
+                                Фервекс для дорослих (з вітаміном С) №8, саше
+                              </p>
+                              <p class="searchbar-products__product-price">
+                                154,53 грн
+                              </p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="searchbar-products__list-item">
+                          <a href="#" class="searchbar-products__link">
+                            <div class="searchbar-products__image-container">
+                              <picture>
+                                <source
+                                  srcset="
+                                    ./images/products/product-1-small.webp    1x,
+                                    ./images/products/product-1-small@2x.webp 2x
+                                  "
+                                  type="image/webp"
+                                />
+                                <source
+                                  srcset="
+                                    ./images/products/product-1-small.png    1x,
+                                    ./images/products/product-1-small@2x.png 2x
+                                  "
+                                  type="image/jpeg"
+                                />
+                                <img
+                                  src="./images/products/product-1-small.png"
+                                  width="60"
+                                  height="60"
+                                  alt="Фервекс"
+                                />
+                              </picture>
+                            </div>
+                            <div class="searchbar-products__text-container">
+                              <p class="searchbar-products__product-name">
+                                Фервекс для дорослих (з вітаміном С) №8, саше
+                              </p>
+                              <p class="searchbar-products__product-price">
+                                154,53 грн
+                              </p>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                      <a href="#" class="search-products__all-results-link">
+                        Всі результати пошуку
+                      </a>
+                    </div>
+
+                    <!-- <div class="searchbar-product-list__content"></div>
+                    <div class="searchbar-product-list__content"></div>
+                    <div class="searchbar-product-list__content"></div> -->
+                  </div>
+                </div>
+                <button
+                  class="header__menu-link searchbar-button"
+                  aria-label="пошук"
+                >
+                  <svg class="header__menu-icon" width="20" height="20">
+                    <use href="images/icons.svg#icon-search1"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="header__menu-item">
+                <a
+                  href="#"
+                  class="header__menu-link"
+                  aria-label="профіль користувача"
+                >
+                  <svg class="header__menu-icon" width="20" height="20">
+                    <use href="images/icons.svg#icon-account"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link" aria-label="обране">
+                  <svg class="header__menu-icon" width="24" height="24">
+                    <use href="images/icons.svg#icon-heart"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link" aria-label="кошик">
+                  <svg class="header__menu-icon" width="20" height="20">
+                    <use href="images/icons.svg#icon-bag"></use>
+                  </svg>
+                  <div class="header__menu-label">2</div>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container">
+          <nav class="header__bottom-nav">
+            <ul class="header__product-types-list">
+              <li class="header__product-types-list-item">
+                <a href="#" class="header__product-types-list-link first-link">
+                  <svg
+                    class="header__product-types-icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="images/icons.svg#icon-tablets"></use>
+                  </svg>
+                  Лікарські засоби
+                </a>
+              </li>
+              <li class="header__product-types-list-item">
+                <a href="#" class="header__product-types-list-link">
+                  <svg
+                    class="header__product-types-icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="images/icons.svg#icon-sanitizer"></use>
+                  </svg>
+                  Косметика
+                </a>
+              </li>
+              <li class="header__product-types-list-item">
+                <a href="#" class="header__product-types-list-link">
+                  <svg
+                    class="header__product-types-icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="images/icons.svg#icon-baby-carriage"></use>
+                  </svg>
+                  Дитячі товари
+                </a>
+              </li>
+              <li class="header__product-types-list-item">
+                <a href="#" class="header__product-types-list-link">
+                  <svg
+                    class="header__product-types-icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="images/icons.svg#icon-stethoscope"></use>
+                  </svg>
+                  Медтехніка
+                </a>
+              </li>
+              <li class="header__product-types-list-item">
+                <a href="#" class="header__product-types-list-link last-link">
+                  <svg
+                    class="header__product-types-icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="images/icons.svg#icon-capsule"></use>
+                  </svg>
+
+                  Вітаміни і БАДи
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="banner-section">
+        <div class="container">
+          <div class="swiper banner-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="banner-swiper__img-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Banner.webp         1x,
+                        ./images/Banner.webp@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./images/Banner.jpg 1x, ./images/Banner@2x.jpg 2x"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/Banner.jpg"
+                      width="1170"
+                      height="500"
+                      alt="баннер>"
+                      class="banner-image"
+                    />
+                  </picture>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="banner-swiper__img-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Banner.webp         1x,
+                        ./images/Banner.webp@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./images/Banner.jpg 1x, ./images/Banner@2x.jpg 2x"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/Banner.jpg"
+                      width="1170"
+                      height="500"
+                      alt="баннер>"
+                      class="banner-image"
+                    />
+                  </picture>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="banner-swiper__img-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Banner.webp         1x,
+                        ./images/Banner.webp@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./images/Banner.jpg 1x, ./images/Banner@2x.jpg 2x"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/Banner.jpg"
+                      width="1170"
+                      height="500"
+                      alt="баннер>"
+                      class="banner-image"
+                    />
+                  </picture>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="banner-swiper__img-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Banner.webp         1x,
+                        ./images/Banner.webp@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./images/Banner.jpg 1x, ./images/Banner@2x.jpg 2x"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/Banner.jpg"
+                      width="1170"
+                      height="500"
+                      alt="баннер>"
+                      class="banner-image"
+                    />
+                  </picture>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="banner-swiper__img-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Banner.webp         1x,
+                        ./images/Banner.webp@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./images/Banner.jpg 1x, ./images/Banner@2x.jpg 2x"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/Banner.jpg"
+                      width="1170"
+                      height="500"
+                      alt="баннер>"
+                      class="banner-image"
+                    />
+                  </picture>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section class="special-offers">
+        <div class="container">
+          <div class="product__body tabs tabs-special-offers tabs1">
+            <!-- TAB BAR -->
+            <div class="tabs-bar">
+              <ul class="tabs-bar__list">
+                <li class="tabs-bar__list-item">
+                  <a href="#" class="tabs-bar__link current" data-tab-id="1">
+                    Акції на медикаменти
+                  </a>
+                </li>
+                <li class="tabs-bar__list-item">
+                  <a href="#" class="tabs-bar__link" data-tab-id="2">
+                    Акціх на косметику
+                  </a>
+                </li>
+                <li class="tabs-bar__list-item">
+                  <a href="#" class="tabs-bar__link" data-tab-id="3">
+                    Акції на дитячі товари
+                  </a>
+                </li>
+                <li class="tabs-bar__list-item">
+                  <a href="#" class="tabs-bar__link" data-tab-id="4">
+                    Акції на товари медтехніки
+                  </a>
+                </li>
+                <li class="tabs-bar__list-item">
+                  <a href="#" class="tabs-bar__link" data-tab-id="5">
+                    Акції на Вітаміни та Бади
+                  </a>
+                </li>
+                <li class="tabs-bar__list-item">
+                  <a href="#" class="tabs-bar__link" data-tab-id="6">
+                    Акції на медикаменти
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="special-offers__content tabs-content">
+              <div class="tab-body" data-tab-id="1">
+                <ul class="special-offers__cards cards-container">
+                  <li class="special-offers__cards-item">
+                    <div class="special-offers-card">
+                      <a
+                        href="./product-card.html"
+                        class="special-offers-card__product-link"
+                      >
+                        <div class="special-offers-card__image-thumb">
+                          <picture>
+                            <source
+                              srcset="
+                                ./images/products/card-5.webp    1x,
+                                ./images/products/card-5@2x.webp 2x
+                              "
+                              type="image/webp"
+                            />
+                            <source
+                              srcset="
+                                ./images/products/card-5.jpg    1x,
+                                ./images/products/card-5@2x.jpg 2x
+                              "
+                              type="image/jpeg"
+                            />
+                            <img
+                              src="./images/products/card-5.jpg"
+                              width="151"
+                              height="151"
+                              alt="корвалмент"
+                              class="special-offers-card__image"
+                            />
+                          </picture>
+                        </div>
+
+                        <h3 class="special-offers-card__title">
+                          Корвалмент 0,1 г капсули №80 f sdf sdfdfdfdf d
+                        </h3>
+
+                        <p class="special-offers-card__producer">
+                          Вітамінний завод ПАТ (Україна)
+                        </p>
+
+                        <p class="special-offers-card__price">206,70 грн</p>
+                        <p class="special-offers-card__status">В наявності</p>
+                      </a>
+
+                      <div class="special-offers-card__buttons">
+                        <button
+                          class="special-offers-card__like-button"
+                          aria-label="додати в обране"
+                        >
+                          <svg
+                            class="special-offers-card__like-button-icon"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="images/icons.svg#icon-heart"></use>
+                          </svg>
+                        </button>
+                        <button
+                          type="button"
+                          class="special-offers-card__cart-button"
+                        >
+                          <svg
+                            class="special-offers-card__cart-button-icon"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="images/icons.svg#icon-bag"></use>
+                          </svg>
+
+                          до кошика
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="special-offers__cards-item">
+                    <div class="special-offers-card">
+                      <a
+                        href="./product-card.html"
+                        class="special-offers-card__product-link"
+                      >
+                        <div class="special-offers-card__image-thumb">
+                          <picture>
+                            <source
+                              srcset="
+                                ./images/products/card-5.webp    1x,
+                                ./images/products/card-5@2x.webp 2x
+                              "
+                              type="image/webp"
+                            />
+                            <source
+                              srcset="
+                                ./images/products/card-5.jpg    1x,
+                                ./images/products/card-5@2x.jpg 2x
+                              "
+                              type="image/jpeg"
+                            />
+                            <img
+                              src="./images/products/card-5.jpg"
+                              width="151"
+                              height="151"
+                              alt="корвалмент"
+                              class="special-offers-card__image"
+                            />
+                          </picture>
+                        </div>
+
+                        <h3 class="special-offers-card__title">
+                          Корвалмент 0,1 г капсули №80 f sdf sdfdfdfdf d
+                        </h3>
+
+                        <p class="special-offers-card__producer">
+                          Вітамінний завод ПАТ (Україна)
+                        </p>
+
+                        <p class="special-offers-card__price">206,70 грн</p>
+                        <p class="special-offers-card__status">В наявності</p>
+                      </a>
+
+                      <div class="special-offers-card__buttons">
+                        <button
+                          class="special-offers-card__like-button"
+                          aria-label="додати в обране"
+                        >
+                          <svg
+                            class="special-offers-card__like-button-icon"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="images/icons.svg#icon-heart"></use>
+                          </svg>
+                        </button>
+                        <button
+                          type="button"
+                          class="special-offers-card__cart-button"
+                        >
+                          <svg
+                            class="special-offers-card__cart-button-icon"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="images/icons.svg#icon-bag"></use>
+                          </svg>
+
+                          до кошика
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="special-offers__cards-item">
+                    <div class="special-offers-card">
+                      <a
+                        href="./product-card.html"
+                        class="special-offers-card__product-link"
+                      >
+                        <div class="special-offers-card__image-thumb">
+                          <picture>
+                            <source
+                              srcset="
+                                ./images/products/card-5.webp    1x,
+                                ./images/products/card-5@2x.webp 2x
+                              "
+                              type="image/webp"
+                            />
+                            <source
+                              srcset="
+                                ./images/products/card-5.jpg    1x,
+                                ./images/products/card-5@2x.jpg 2x
+                              "
+                              type="image/jpeg"
+                            />
+                            <img
+                              src="./images/products/card-5.jpg"
+                              width="151"
+                              height="151"
+                              alt="корвалмент"
+                              class="special-offers-card__image"
+                            />
+                          </picture>
+                        </div>
+
+                        <h3 class="special-offers-card__title">
+                          Корвалмент 0,1 г капсули №80 f sdf sdfdfdfdf d
+                        </h3>
+
+                        <p class="special-offers-card__producer">
+                          Вітамінний завод ПАТ (Україна)
+                        </p>
+
+                        <p class="special-offers-card__price">206,70 грн</p>
+                        <p class="special-offers-card__status">В наявності</p>
+                      </a>
+
+                      <div class="special-offers-card__buttons">
+                        <button
+                          class="special-offers-card__like-button"
+                          aria-label="додати в обране"
+                        >
+                          <svg
+                            class="special-offers-card__like-button-icon"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="images/icons.svg#icon-heart"></use>
+                          </svg>
+                        </button>
+                        <button
+                          type="button"
+                          class="special-offers-card__cart-button"
+                        >
+                          <svg
+                            class="special-offers-card__cart-button-icon"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="images/icons.svg#icon-bag"></use>
+                          </svg>
+
+                          до кошика
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="special-offers__cards-item">
+                    <div class="special-offers-card">
+                      <a
+                        href="./product-card.html"
+                        class="special-offers-card__product-link"
+                      >
+                        <div class="special-offers-card__image-thumb">
+                          <picture>
+                            <source
+                              srcset="
+                                ./images/products/card-5.webp    1x,
+                                ./images/products/card-5@2x.webp 2x
+                              "
+                              type="image/webp"
+                            />
+                            <source
+                              srcset="
+                                ./images/products/card-5.jpg    1x,
+                                ./images/products/card-5@2x.jpg 2x
+                              "
+                              type="image/jpeg"
+                            />
+                            <img
+                              src="./images/products/card-5.jpg"
+                              width="151"
+                              height="151"
+                              alt="корвалмент"
+                              class="special-offers-card__image"
+                            />
+                          </picture>
+                        </div>
+
+                        <h3 class="special-offers-card__title">
+                          Корвалмент 0,1 г капсули №80 f sdf sdfdfdfdf d
+                        </h3>
+
+                        <p class="special-offers-card__producer">
+                          Вітамінний завод ПАТ (Україна)
+                        </p>
+
+                        <p class="special-offers-card__price">206,70 грн</p>
+                        <p class="special-offers-card__status">В наявності</p>
+                      </a>
+
+                      <div class="special-offers-card__buttons">
+                        <button
+                          class="special-offers-card__like-button"
+                          aria-label="додати в обране"
+                        >
+                          <svg
+                            class="special-offers-card__like-button-icon"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="images/icons.svg#icon-heart"></use>
+                          </svg>
+                        </button>
+                        <button
+                          type="button"
+                          class="special-offers-card__cart-button"
+                        >
+                          <svg
+                            class="special-offers-card__cart-button-icon"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="images/icons.svg#icon-bag"></use>
+                          </svg>
+
+                          до кошика
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+
+                <button type="button" class="special-offers__more-button">
+                  показати ще
+                  <svg
+                    class="special-offers__more-button-icon"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="images/icons.svg#icon-angle-down"></use>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="pharm-care tab-body visually-hidden" data-tab-id="2">
+                Акціх на косметику
+              </div>
+
+              <div class="instruction tab-body visually-hidden" data-tab-id="3">
+                Акції на Дитячі товари
+              </div>
+              <div class="analogs tab-body visually-hidden" data-tab-id="4">
+                Акції на ТОвари медтехніки
+              </div>
+              <div class="analogs tab-body visually-hidden" data-tab-id="5">
+                Акції на Вітаміни та Бади
+              </div>
+              <div class="analogs tab-body visually-hidden" data-tab-id="6">
+                Акції на медикаменти
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-placeholder"></footer>
+
+    <div class="top-panel">
+      <div class="top-panel__container">
+        <a href="index.html" class="top-panel__logo">
+          <picture>
+            <source
+              srcset="./images/Logo.webp 1x, ./images/Logo@2x.webp 2x"
+              type="image/webp"
+            />
+            <source
+              srcset="./images/Logo.png 1x, ./images/Logo@2x.png 2x"
+              type="image/jpeg"
+            />
+            <img src="./images/Logo.png" width="167" height="50" alt="лого" />
+          </picture>
+        </a>
+
+        <button type="button" class="top-panel__catalog-button">
+          <svg class="top-panel__catalog-icon" width="24" height="24">
+            <use href="images/icons.svg#icon-burger"></use>
+          </svg>
+
+          Каталог товарів
+        </button>
+
+        <div class="top-panel-searchbar">
+          <input class="top-panel-searchbar__input" tabindex="-1" type="text" />
+          <button
+            type="button"
+            tabindex="-1"
+            class="top-panel-searchbar__close-button"
+          >
+            <svg
+              class="top-panel-searchbar__close-button-icon"
+              width="20"
+              height="20"
+            >
+              <use href="images/icons.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <div class="top-panel-searchbar__icon-container">
+            <svg class="top-panel-searchbar__icon" width="20" height="20">
+              <use href="images/icons.svg#icon-search1"></use>
+            </svg>
+          </div>
+          <div
+            class="top-panel-searchbar__products-container top-panel-searchbar__products-container--hidden"
+          >
+            <!-- <div class="top-panel-searchbar-products">
+              <p class="top-panel-searchbar-products__search-type">За назвою</p>
+              <ul class="top-panel-searchbar-products__list">
+                <li class="top-panel-searchbar-products__list-item">
+                  <a href="#" class="top-panel-searchbar-products__link">
+                    <div class="top-panel-searchbar-products__image-container">
+                      <picture>
+                        <source
+                          srcset="
+                            ./images/products/product-1-small.webp    1x,
+                            ./images/products/product-1-small@2x.webp 2x
+                          "
+                          type="image/webp"
+                        />
+                        <source
+                          srcset="
+                            ./images/products/product-1-small.png    1x,
+                            ./images/products/product-1-small@2x.png 2x
+                          "
+                          type="image/jpeg"
+                        />
+                        <img
+                          src="./images/products/product-1-small.png"
+                          width="60"
+                          height="60"
+                          alt="Фервекс"
+                        />
+                      </picture>
+                    </div>
+                    <div class="searchbar-products__text-container">
+                      <p class="searchbar-products__product-name">
+                        Фервекс для дорослих (з вітаміном С) №8, саше
+                      </p>
+                      <p class="searchbar-products__product-price">
+                        154,53 грн
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li class="top-panel-searchbar-products__list-item">
+                  <a href="#" class="top-panel-searchbar-products__link">
+                    <div class="top-panel-searchbar-products__image-container">
+                      <picture>
+                        <source
+                          srcset="
+                            ./images/products/product-1-small.webp    1x,
+                            ./images/products/product-1-small@2x.webp 2x
+                          "
+                          type="image/webp"
+                        />
+                        <source
+                          srcset="
+                            ./images/products/product-1-small.png    1x,
+                            ./images/products/product-1-small@2x.png 2x
+                          "
+                          type="image/jpeg"
+                        />
+                        <img
+                          src="./images/products/product-1-small.png"
+                          width="60"
+                          height="60"
+                          alt="Фервекс"
+                        />
+                      </picture>
+                    </div>
+                    <div class="searchbar-products__text-container">
+                      <p class="searchbar-products__product-name">
+                        Фервекс для дорослих (з вітаміном С) №8, саше
+                      </p>
+                      <p class="searchbar-products__product-price">
+                        154,53 грн
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li class="top-panel-searchbar-products__list-item">
+                  <a href="#" class="top-panel-searchbar-products__link">
+                    <div class="top-panel-searchbar-products__image-container">
+                      <picture>
+                        <source
+                          srcset="
+                            ./images/products/product-1-small.webp    1x,
+                            ./images/products/product-1-small@2x.webp 2x
+                          "
+                          type="image/webp"
+                        />
+                        <source
+                          srcset="
+                            ./images/products/product-1-small.png    1x,
+                            ./images/products/product-1-small@2x.png 2x
+                          "
+                          type="image/jpeg"
+                        />
+                        <img
+                          src="./images/products/product-1-small.png"
+                          width="60"
+                          height="60"
+                          alt="Фервекс"
+                        />
+                      </picture>
+                    </div>
+                    <div class="searchbar-products__text-container">
+                      <p class="searchbar-products__product-name">
+                        Фервекс для дорослих (з вітаміном С) №8, саше
+                      </p>
+                      <p class="searchbar-products__product-price">
+                        154,53 грн
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li class="top-panel-searchbar-products__list-item">
+                  <a href="#" class="top-panel-searchbar-products__link">
+                    <div class="top-panel-searchbar-products__image-container">
+                      <picture>
+                        <source
+                          srcset="
+                            ./images/products/product-1-small.webp    1x,
+                            ./images/products/product-1-small@2x.webp 2x
+                          "
+                          type="image/webp"
+                        />
+                        <source
+                          srcset="
+                            ./images/products/product-1-small.png    1x,
+                            ./images/products/product-1-small@2x.png 2x
+                          "
+                          type="image/jpeg"
+                        />
+                        <img
+                          src="./images/products/product-1-small.png"
+                          width="60"
+                          height="60"
+                          alt="Фервекс"
+                        />
+                      </picture>
+                    </div>
+                    <div class="searchbar-products__text-container">
+                      <p class="searchbar-products__product-name">
+                        Фервекс для дорослих (з вітаміном С) №8, саше
+                      </p>
+                      <p class="searchbar-products__product-price">
+                        154,53 грн
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li class="top-panel-searchbar-products__list-item">
+                  <a href="#" class="top-panel-searchbar-products__link">
+                    <div class="top-panel-searchbar-products__image-container">
+                      <picture>
+                        <source
+                          srcset="
+                            ./images/products/product-1-small.webp    1x,
+                            ./images/products/product-1-small@2x.webp 2x
+                          "
+                          type="image/webp"
+                        />
+                        <source
+                          srcset="
+                            ./images/products/product-1-small.png    1x,
+                            ./images/products/product-1-small@2x.png 2x
+                          "
+                          type="image/jpeg"
+                        />
+                        <img
+                          src="./images/products/product-1-small.png"
+                          width="60"
+                          height="60"
+                          alt="Фервекс"
+                        />
+                      </picture>
+                    </div>
+                    <div class="searchbar-products__text-container">
+                      <p class="searchbar-products__product-name">
+                        Фервекс для дорослих (з вітаміном С) №8, саше
+                      </p>
+                      <p class="searchbar-products__product-price">
+                        154,53 грн
+                      </p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <a href="#" class="search-products__all-results-link">
+                Всі результати пошуку
+              </a>
+            </div> -->
+
+            <!-- <div class="searchbar-product-list__content"></div>
+              <div class="searchbar-product-list__content"></div>
+              <div class="searchbar-product-list__content"></div> -->
+          </div>
+        </div>
+
+        <button type="button" class="top-panel__phone-button">
+          0 800 303 111
+        </button>
+        <ul class="header__menu">
+          <li class="header__menu-item">
+            <a
+              href="#"
+              class="header__menu-link"
+              aria-label="профіль користувача"
+            >
+              <svg class="header__menu-icon" width="20" height="20">
+                <use href="images/icons.svg#icon-account"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link" aria-label="обране">
+              <svg class="header__menu-icon" width="24" height="24">
+                <use href="images/icons.svg#icon-heart"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link" aria-label="кошик">
+              <svg class="header__menu-icon" width="20" height="20">
+                <use href="images/icons.svg#icon-bag"></use>
+              </svg>
+              <div class="header__menu-label">2</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./main-page.js" type="module"></script>
+  </body>
+</html>

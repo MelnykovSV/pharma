@@ -1,0 +1,46 @@
+.banner-section {
+  padding-top: 32px;
+  margin-bottom: 32px;
+}
+
+.banner-swiper {
+  width: 100%;
+  height: 100%;
+  .slider-section {
+    height: 500px;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 40px;
+    overflow: hidden;
+  }
+  .main-page-swiper__img-thumb {
+    height: 500px;
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    width: 18px;
+    height: 18px;
+    border-radius: 40%;
+    background-color: #c8c8c8;
+  }
+
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #0d727e;
+  }
+  .swiper-pagination {
+    bottom: 12px;
+  }
+}
