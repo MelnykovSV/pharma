@@ -1,0 +1,51 @@
+.bestsellers {
+  margin-bottom: 32px;
+}
+
+.bestsellers__top-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 54px;
+  gap: 10px;
+  margin-bottom: 32px;
+
+  .bestsellers__title {
+    color: #1e1e1e;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: calc(30 / 24);
+    margin: 0;
+  }
+  .bestsellers__view-all-link {
+    color: #76737d;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: calc(30 / 16);
+    text-decoration-line: underline;
+  }
+}
+
+.bestsellers-body__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  height: 440px;
+}
+
+.bestsellers-body__link {
+  display: block;
+  width: 282px;
+  height: 412px;
+  transform-origin: top;
+  transition: transform 0.3s linear;
+  &:hover {
+    transform: scaleY(1.068);
+  }
+  .img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
