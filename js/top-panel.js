@@ -5,10 +5,10 @@ var options = {
 };
 var callback = function (entries, observer) {
   if (window.scrollY <= 140) {
-    topPanel.classList.add('hidden');
+    topPanel.classList.add('panel-hidden');
   }
   if (window.scrollY > 140) {
-    topPanel.classList.remove('hidden');
+    topPanel.classList.remove('panel-hidden');
   }
 };
 var observer = new IntersectionObserver(callback, options);

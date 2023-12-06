@@ -1540,11 +1540,17 @@
               </div>
             </div>
 
-            <div class="info-body__buttons">
-              <button type="button" class="info-button-show-more-js">
+            <div class="info-body__buttons show-gradient">
+              <button
+                type="button"
+                class="info-body__button info-button-show-more-js"
+              >
                 Читати повністю
               </button>
-              <button type="button" class="info-button-show-less-js hidden">
+              <button
+                type="button"
+                class="info-body__button info-button-show-less-js hidden"
+              >
                 Приховати
               </button>
             </div>
@@ -1553,7 +1559,94 @@
       </section>
     </main>
 
-    <footer class="footer-placeholder"></footer>
+    <footer class="footer">
+      <div class="container footer-top">
+        <div class="footer__first-block">
+          <a href="index.html" class="top-panel__logo">
+            <picture>
+              <source
+                srcset="./images/Logo.webp 1x, ./images/Logo@2x.webp 2x"
+                type="image/webp"
+              />
+              <source
+                srcset="./images/Logo.png 1x, ./images/Logo@2x.png 2x"
+                type="image/jpeg"
+              />
+              <img src="./images/Logo.png" width="167" height="50" alt="лого" />
+            </picture>
+          </a>
+          <div class="footer__info">
+            <h3 class="footer__info-title">Інформація</h3>
+            <ul class="footer__info-list">
+              <li class="footer__info-list-item">
+                <a href="#" class="footer__info-link">ATCO</a>
+              </li>
+              <li class="footer__info-list-item">
+                <a href="#" class="footer__info-link">Про нас</a>
+              </li>
+              <li class="footer__info-list-item">
+                <a href="#" class="footer__info-link">Класифікація</a>
+              </li>
+              <li class="footer__info-list-item">
+                <a href="#" class="footer__info-link">Оплата та доставка</a>
+              </li>
+              <li class="footer__info-list-item">
+                <a href="#" class="footer__info-link">Акції</a>
+              </li>
+              <li class="footer__info-list-item">
+                <a href="#" class="footer__info-link">Контакти</a>
+              </li>
+
+         
+             
+            
+           
+            
+            </ul>
+          </div>
+        </div>
+        <div class="footer__second-block">
+          <p class="footer__copyright">&#169 «Твоя надійна Аптека» 2020-2024</p>
+          <ul class="footer__socials-list">
+            <li class="footer__socials-list-item">
+              <a href="#" target="_blank" rel="noopener noreferrer" class="footer__socials-link"><svg class="footer__socials-icon" width="24" height="24"><use  href="images/icons.svg#icon-insta"></use></svg></a>
+            </li>
+            <li class="footer__socials-list-item">
+              <a href="#" target="_blank" rel="noopener noreferrer" class="footer__socials-link"><svg class="footer__socials-icon" width="24" height="24"><use  href="images/icons.svg#icon-facebookMessengersvg"></use></svg></a>
+            </li>
+            <li class="footer__socials-list-item">
+              <a href="#" target="_blank" rel="noopener noreferrer" class="footer__socials-link"><svg class="footer__socials-icon" width="24" height="24"><use  href="images/icons.svg#icon-facebook"></use></svg></a>
+            </li>
+            <li class="footer__socials-list-item">
+              <a href="#" target="_blank" rel="noopener noreferrer" class="footer__socials-link"><svg class="footer__socials-icon" width="24" height="24"><use  href="images/icons.svg#icon-viber"></use></svg></a>
+            </li>
+            <li class="footer__socials-list-item">
+              <a href="#" target="_blank" rel="noopener noreferrer" class="footer__socials-link"><svg class="footer__socials-icon" width="24" height="24"><use  href="images/icons.svg#icon-linkedin"></use></svg></a>
+            </li>
+            <li class="footer__socials-list-item">
+              <a href="#" target="_blank" rel="noopener noreferrer" class="footer__socials-link"><svg class="footer__socials-icon" width="24" height="24"><use  href="images/icons.svg#icon-tiktok"></use></svg></a>
+            </li>
+            
+           
+            
+            
+            
+          </ul>
+        </div>
+
+     
+      
+      
+      </div>
+
+      <div class="container footer-bottom">
+        <div class="footer__consult-container">
+          <svg class="footer__consult-first" width="1138" height="93"><use  href="images/icons.svg#icon-self-medication-desktop"></use></svg>
+          <svg class="footer__consult-second" width="1138" height="64"><use  href="images/icons.svg#icon-consult-desktop"></use></svg>
+        </div>
+      </div>
+     
+    </footer>
 
     <div class="top-panel">
       <div class="top-panel__container">
@@ -1602,203 +1695,13 @@
           <div
             class="top-panel-searchbar__products-container top-panel-searchbar__products-container--hidden"
           >
-            <!-- <div class="top-panel-searchbar-products">
-              <p class="top-panel-searchbar-products__search-type">За назвою</p>
-              <ul class="top-panel-searchbar-products__list">
-                <li class="top-panel-searchbar-products__list-item">
-                  <a href="#" class="top-panel-searchbar-products__link">
-                    <div class="top-panel-searchbar-products__image-container">
-                      <picture>
-                        <source
-                          srcset="
-                            ./images/products/product-1-small.webp    1x,
-                            ./images/products/product-1-small@2x.webp 2x
-                          "
-                          type="image/webp"
-                        />
-                        <source
-                          srcset="
-                            ./images/products/product-1-small.png    1x,
-                            ./images/products/product-1-small@2x.png 2x
-                          "
-                          type="image/jpeg"
-                        />
-                        <img
-                          src="./images/products/product-1-small.png"
-                          width="60"
-                          height="60"
-                          alt="Фервекс"
-                        />
-                      </picture>
-                    </div>
-                    <div class="searchbar-products__text-container">
-                      <p class="searchbar-products__product-name">
-                        Фервекс для дорослих (з вітаміном С) №8, саше
-                      </p>
-                      <p class="searchbar-products__product-price">
-                        154,53 грн
-                      </p>
-                    </div>
-                  </a>
-                </li>
-                <li class="top-panel-searchbar-products__list-item">
-                  <a href="#" class="top-panel-searchbar-products__link">
-                    <div class="top-panel-searchbar-products__image-container">
-                      <picture>
-                        <source
-                          srcset="
-                            ./images/products/product-1-small.webp    1x,
-                            ./images/products/product-1-small@2x.webp 2x
-                          "
-                          type="image/webp"
-                        />
-                        <source
-                          srcset="
-                            ./images/products/product-1-small.png    1x,
-                            ./images/products/product-1-small@2x.png 2x
-                          "
-                          type="image/jpeg"
-                        />
-                        <img
-                          src="./images/products/product-1-small.png"
-                          width="60"
-                          height="60"
-                          alt="Фервекс"
-                        />
-                      </picture>
-                    </div>
-                    <div class="searchbar-products__text-container">
-                      <p class="searchbar-products__product-name">
-                        Фервекс для дорослих (з вітаміном С) №8, саше
-                      </p>
-                      <p class="searchbar-products__product-price">
-                        154,53 грн
-                      </p>
-                    </div>
-                  </a>
-                </li>
-                <li class="top-panel-searchbar-products__list-item">
-                  <a href="#" class="top-panel-searchbar-products__link">
-                    <div class="top-panel-searchbar-products__image-container">
-                      <picture>
-                        <source
-                          srcset="
-                            ./images/products/product-1-small.webp    1x,
-                            ./images/products/product-1-small@2x.webp 2x
-                          "
-                          type="image/webp"
-                        />
-                        <source
-                          srcset="
-                            ./images/products/product-1-small.png    1x,
-                            ./images/products/product-1-small@2x.png 2x
-                          "
-                          type="image/jpeg"
-                        />
-                        <img
-                          src="./images/products/product-1-small.png"
-                          width="60"
-                          height="60"
-                          alt="Фервекс"
-                        />
-                      </picture>
-                    </div>
-                    <div class="searchbar-products__text-container">
-                      <p class="searchbar-products__product-name">
-                        Фервекс для дорослих (з вітаміном С) №8, саше
-                      </p>
-                      <p class="searchbar-products__product-price">
-                        154,53 грн
-                      </p>
-                    </div>
-                  </a>
-                </li>
-                <li class="top-panel-searchbar-products__list-item">
-                  <a href="#" class="top-panel-searchbar-products__link">
-                    <div class="top-panel-searchbar-products__image-container">
-                      <picture>
-                        <source
-                          srcset="
-                            ./images/products/product-1-small.webp    1x,
-                            ./images/products/product-1-small@2x.webp 2x
-                          "
-                          type="image/webp"
-                        />
-                        <source
-                          srcset="
-                            ./images/products/product-1-small.png    1x,
-                            ./images/products/product-1-small@2x.png 2x
-                          "
-                          type="image/jpeg"
-                        />
-                        <img
-                          src="./images/products/product-1-small.png"
-                          width="60"
-                          height="60"
-                          alt="Фервекс"
-                        />
-                      </picture>
-                    </div>
-                    <div class="searchbar-products__text-container">
-                      <p class="searchbar-products__product-name">
-                        Фервекс для дорослих (з вітаміном С) №8, саше
-                      </p>
-                      <p class="searchbar-products__product-price">
-                        154,53 грн
-                      </p>
-                    </div>
-                  </a>
-                </li>
-                <li class="top-panel-searchbar-products__list-item">
-                  <a href="#" class="top-panel-searchbar-products__link">
-                    <div class="top-panel-searchbar-products__image-container">
-                      <picture>
-                        <source
-                          srcset="
-                            ./images/products/product-1-small.webp    1x,
-                            ./images/products/product-1-small@2x.webp 2x
-                          "
-                          type="image/webp"
-                        />
-                        <source
-                          srcset="
-                            ./images/products/product-1-small.png    1x,
-                            ./images/products/product-1-small@2x.png 2x
-                          "
-                          type="image/jpeg"
-                        />
-                        <img
-                          src="./images/products/product-1-small.png"
-                          width="60"
-                          height="60"
-                          alt="Фервекс"
-                        />
-                      </picture>
-                    </div>
-                    <div class="searchbar-products__text-container">
-                      <p class="searchbar-products__product-name">
-                        Фервекс для дорослих (з вітаміном С) №8, саше
-                      </p>
-                      <p class="searchbar-products__product-price">
-                        154,53 грн
-                      </p>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-              <a href="#" class="search-products__all-results-link">
-                Всі результати пошуку
-              </a>
-            </div> -->
-
-            <!-- <div class="searchbar-product-list__content"></div>
-              <div class="searchbar-product-list__content"></div>
-              <div class="searchbar-product-list__content"></div> -->
           </div>
         </div>
 
         <button type="button" class="top-panel__phone-button">
+          <svg class="top-panel__phone-button-icon" width="24" height="24"><use  href="images/icons.svg#icon-phone"></use></svg>
           0 800 303 111
+          <svg class="top-panel__phone-button-chevron-icon" width="24" height="24"><use  href="images/icons.svg#icon-angle-down"></use></svg>
         </button>
         <ul class="header__menu">
           <li class="header__menu-item">
