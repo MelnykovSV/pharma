@@ -6,9 +6,9 @@ if (pageTabs.length) {
 }
 
 function handleTabClick(e) {
-  e.preventDefault();
+  // e.preventDefault();
 
-  e.stopPropagation();
+  // e.stopPropagation();
 
   if (
     e.target.classList.contains('tabs-bar__link') &&

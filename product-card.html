@@ -441,22 +441,28 @@
             <div class="tabs-bar">
               <ul class="tabs-bar__list">
                 <li class="tabs-bar__list-item">
-                  <a href="#" class="tabs-bar__link current" data-tab-id="1">
+                  <button
+                    type="button"
+                    class="tabs-bar__link current"
+                    data-tab-id="1"
+                  >
                     Все про товар
-                  </a>
+                  </button>
                 </li>
                 <li class="tabs-bar__list-item">
-                  <a href="#" class="tabs-bar__link" data-tab-id="2">
+                  <button type="button" class="tabs-bar__link" data-tab-id="2">
                     фарм опіка
-                  </a>
+                  </button>
                 </li>
                 <li class="tabs-bar__list-item">
-                  <a href="#" class="tabs-bar__link" data-tab-id="3">
+                  <button type="button" class="tabs-bar__link" data-tab-id="3">
                     Інструкція
-                  </a>
+                  </button>
                 </li>
                 <li class="tabs-bar__list-item">
-                  <a href="#" class="tabs-bar__link" data-tab-id="4">Аналоги</a>
+                  <button type="button" class="tabs-bar__link" data-tab-id="4">
+                    Аналоги
+                  </button>
                 </li>
               </ul>
             </div>
@@ -1983,5 +1989,11 @@
     <footer class="footer-placeholder-product"></footer>
 
     <script src="./product-card.js" type="module"></script>
+    <script>
+      console.log('script');
+      document.addEventListener('click', (e) => {
+        console.log(e.target);
+      });
+    </script>
   </body>
 </html>

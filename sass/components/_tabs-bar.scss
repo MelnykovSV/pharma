@@ -9,9 +9,10 @@
     display: flex;
     gap: 30px;
   }
-  .tabs-bar__list-item {
-  }
+  // .tabs-bar__list-item {
+  // }
   .tabs-bar__link {
+    cursor: pointer;
     display: block;
     font-weight: 600;
     font-size: 12px;

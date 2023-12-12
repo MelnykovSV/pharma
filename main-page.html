@@ -422,7 +422,7 @@
           <div class="swiper banner-swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="banner-swiper__img-thumb">
+                <a href="./product-card.html" class="banner-swiper__img-thumb">
                   <picture>
                     <source
                       srcset="
@@ -443,10 +443,10 @@
                       class="banner-image"
                     />
                   </picture>
-                </div>
+                </a>
               </div>
               <div class="swiper-slide">
-                <div class="banner-swiper__img-thumb">
+                <a href="./product-card.html" class="banner-swiper__img-thumb">
                   <picture>
                     <source
                       srcset="
@@ -467,10 +467,10 @@
                       class="banner-image"
                     />
                   </picture>
-                </div>
+                </a>
               </div>
               <div class="swiper-slide">
-                <div class="banner-swiper__img-thumb">
+                <a href="./product-card.html" class="banner-swiper__img-thumb">
                   <picture>
                     <source
                       srcset="
@@ -491,10 +491,10 @@
                       class="banner-image"
                     />
                   </picture>
-                </div>
+                </a>
               </div>
               <div class="swiper-slide">
-                <div class="banner-swiper__img-thumb">
+                <a href="./product-card.html" class="banner-swiper__img-thumb">
                   <picture>
                     <source
                       srcset="
@@ -515,10 +515,10 @@
                       class="banner-image"
                     />
                   </picture>
-                </div>
+                </a>
               </div>
               <div class="swiper-slide">
-                <div class="banner-swiper__img-thumb">
+                <a href="./product-card.html" class="banner-swiper__img-thumb">
                   <picture>
                     <source
                       srcset="
@@ -539,13 +539,14 @@
                       class="banner-image"
                     />
                   </picture>
-                </div>
+                </a>
               </div>
             </div>
             <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>
+
       <section class="special-offers">
         <div class="container">
           <h2 class="special-offers__title">Акційні пропозиції</h2>
@@ -554,40 +555,188 @@
             <div class="tabs-bar">
               <ul class="tabs-bar__list">
                 <li class="tabs-bar__list-item">
-                  <a href="#" class="tabs-bar__link current" data-tab-id="1">
+                  <button type="button" class="tabs-bar__link current" data-tab-id="1">
                     Акції на медикаменти
-                  </a>
+                  </button>
                 </li>
                 <li class="tabs-bar__list-item">
-                  <a href="#" class="tabs-bar__link" data-tab-id="2">
+                  <button type="button" class="tabs-bar__link" data-tab-id="2">
                     Акціх на косметику
-                  </a>
+                  </button>
                 </li>
                 <li class="tabs-bar__list-item">
-                  <a href="#" class="tabs-bar__link" data-tab-id="3">
+                  <button type="button" class="tabs-bar__link" data-tab-id="3">
                     Акції на дитячі товари
-                  </a>
+                  </button>
                 </li>
                 <li class="tabs-bar__list-item">
-                  <a href="#" class="tabs-bar__link" data-tab-id="4">
+                  <button type="button" class="tabs-bar__link" data-tab-id="4">
                     Акції на товари медтехніки
-                  </a>
+                  </button>
                 </li>
                 <li class="tabs-bar__list-item">
-                  <a href="#" class="tabs-bar__link" data-tab-id="5">
+                  <button type="button" class="tabs-bar__link" data-tab-id="5">
                     Акції на Вітаміни та Бади
-                  </a>
+                  </button>
                 </li>
                 <li class="tabs-bar__list-item">
-                  <a href="#" class="tabs-bar__link" data-tab-id="6">
+                  <button type="button" class="tabs-bar__link" data-tab-id="6">
                     Акції на медикаменти
-                  </a>
+                  </button>
                 </li>
               </ul>
             </div>
             <div class="special-offers__content tabs-content">
               <div class="tab-body" data-tab-id="1">
                 <ul class="special-offers__cards cards-container">
+                  <li class="special-offers__cards-item">
+                    <div class="special-offers-card">
+                      <a
+                        href="./product-card.html"
+                        class="special-offers-card__product-link"
+                      >
+                        <div class="special-offers-card__image-thumb">
+                          <picture>
+                            <source
+                              srcset="
+                                ./images/products/card-5.webp    1x,
+                                ./images/products/card-5@2x.webp 2x
+                              "
+                              type="image/webp"
+                            />
+                            <source
+                              srcset="
+                                ./images/products/card-5.jpg    1x,
+                                ./images/products/card-5@2x.jpg 2x
+                              "
+                              type="image/jpeg"
+                            />
+                            <img
+                              src="./images/products/card-5.jpg"
+                              width="151"
+                              height="151"
+                              alt="корвалмент"
+                              class="special-offers-card__image"
+                            />
+                          </picture>
+                        </div>
+
+                        <h3 class="special-offers-card__title">
+                          Корвалмент 0,1 г капсули №80 f sdf sdfdfdfdf d
+                        </h3>
+
+                        <p class="special-offers-card__producer">
+                          Вітамінний завод ПАТ (Україна)
+                        </p>
+
+                        <p class="special-offers-card__price">206,70 грн</p>
+                        <p class="special-offers-card__status">В наявності</p>
+                      </a>
+
+                      <div class="special-offers-card__buttons">
+                        <button
+                          class="special-offers-card__like-button"
+                          aria-label="додати в обране"
+                        >
+                          <svg
+                            class="special-offers-card__like-button-icon"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="images/icons.svg#icon-heart"></use>
+                          </svg>
+                        </button>
+                        <button
+                          type="button"
+                          class="special-offers-card__cart-button"
+                        >
+                          <svg
+                            class="special-offers-card__cart-button-icon"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="images/icons.svg#icon-bag"></use>
+                          </svg>
+
+                          до кошика
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="special-offers__cards-item">
+                    <div class="special-offers-card">
+                      <a
+                        href="./product-card.html"
+                        class="special-offers-card__product-link"
+                      >
+                        <div class="special-offers-card__image-thumb">
+                          <picture>
+                            <source
+                              srcset="
+                                ./images/products/card-5.webp    1x,
+                                ./images/products/card-5@2x.webp 2x
+                              "
+                              type="image/webp"
+                            />
+                            <source
+                              srcset="
+                                ./images/products/card-5.jpg    1x,
+                                ./images/products/card-5@2x.jpg 2x
+                              "
+                              type="image/jpeg"
+                            />
+                            <img
+                              src="./images/products/card-5.jpg"
+                              width="151"
+                              height="151"
+                              alt="корвалмент"
+                              class="special-offers-card__image"
+                            />
+                          </picture>
+                        </div>
+
+                        <h3 class="special-offers-card__title">
+                          Корвалмент 0,1 г капсули №80 f sdf sdfdfdfdf d
+                        </h3>
+
+                        <p class="special-offers-card__producer">
+                          Вітамінний завод ПАТ (Україна)
+                        </p>
+
+                        <p class="special-offers-card__price">206,70 грн</p>
+                        <p class="special-offers-card__status">В наявності</p>
+                      </a>
+
+                      <div class="special-offers-card__buttons">
+                        <button
+                          class="special-offers-card__like-button"
+                          aria-label="додати в обране"
+                        >
+                          <svg
+                            class="special-offers-card__like-button-icon"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="images/icons.svg#icon-heart"></use>
+                          </svg>
+                        </button>
+                        <button
+                          type="button"
+                          class="special-offers-card__cart-button"
+                        >
+                          <svg
+                            class="special-offers-card__cart-button-icon"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="images/icons.svg#icon-bag"></use>
+                          </svg>
+
+                          до кошика
+                        </button>
+                      </div>
+                    </div>
+                  </li>
                   <li class="special-offers__cards-item">
                     <div class="special-offers-card">
                       <a
@@ -928,7 +1077,7 @@
           <div class="bestsellers-body">
             <ul class="bestsellers-body__list">
               <li class="bestsellers-body__list-tem">
-                <a href="#" class="bestsellers-body__link">
+                <a href="./product-card.html" class="bestsellers-body__link">
                   <picture>
                     <source
                       srcset="
@@ -955,86 +1104,87 @@
                 </a>
               </li>
               <li class="bestsellers-body__list-tem">
-                <a href="#" class="bestsellers-body__link">
+                <a href="./product-card.html" class="bestsellers-body__link">
                   <picture>
                     <source
                       srcset="
-                        ./images/bestsellers/bestseller2.webp    1x,
-                        ./images/bestsellers/bestseller2@2x.webp 2x
+                        ./images/bestsellers/bestseller1.webp    1x,
+                        ./images/bestsellers/bestseller1@2x.webp 2x
                       "
                       type="image/webp"
                     />
                     <source
                       srcset="
-                        ./images/bestsellers/bestseller2.jpg    1x,
-                        ./images/bestsellers/bestseller2@2x.jpg 2x
+                        ./images/bestsellers/bestseller1.jpg    1x,
+                        ./images/bestsellers/bestseller1@2x.jpg 2x
                       "
                       type="image/jpeg"
                     />
                     <img
-                      src="./images/bestsellers/bestseller2.jpg"
+                      src="./images/bestsellers/bestseller1.jpg"
                       width="282"
                       height="412"
-                      alt="Libresse"
+                      alt="Пантестин"
                       class="bestsellers-body__image"
                     />
                   </picture>
                 </a>
               </li>
               <li class="bestsellers-body__list-tem">
-                <a href="#" class="bestsellers-body__link">
+                <a href="./product-card.html" class="bestsellers-body__link">
                   <picture>
                     <source
                       srcset="
-                        ./images/bestsellers/bestseller3.webp    1x,
-                        ./images/bestsellers/bestseller3@2x.webp 2x
+                        ./images/bestsellers/bestseller1.webp    1x,
+                        ./images/bestsellers/bestseller1@2x.webp 2x
                       "
                       type="image/webp"
                     />
                     <source
                       srcset="
-                        ./images/bestsellers/bestseller3.jpg    1x,
-                        ./images/bestsellers/bestseller3@2x.jpg 2x
+                        ./images/bestsellers/bestseller1.jpg    1x,
+                        ./images/bestsellers/bestseller1@2x.jpg 2x
                       "
                       type="image/jpeg"
                     />
                     <img
-                      src="./images/bestsellers/bestseller3.jpg"
+                      src="./images/bestsellers/bestseller1.jpg"
                       width="282"
                       height="412"
-                      alt="Кальцемін"
+                      alt="Пантестин"
                       class="bestsellers-body__image"
                     />
                   </picture>
                 </a>
               </li>
               <li class="bestsellers-body__list-tem">
-                <a href="#" class="bestsellers-body__link">
+                <a href="./product-card.html" class="bestsellers-body__link">
                   <picture>
                     <source
                       srcset="
-                        ./images/bestsellers/bestseller4.webp    1x,
-                        ./images/bestsellers/bestseller4@2x.webp 2x
+                        ./images/bestsellers/bestseller1.webp    1x,
+                        ./images/bestsellers/bestseller1@2x.webp 2x
                       "
                       type="image/webp"
                     />
                     <source
                       srcset="
-                        ./images/bestsellers/bestseller4.jpg    1x,
-                        ./images/bestsellers/bestseller4@2x.jpg 2x
+                        ./images/bestsellers/bestseller1.jpg    1x,
+                        ./images/bestsellers/bestseller1@2x.jpg 2x
                       "
                       type="image/jpeg"
                     />
                     <img
-                      src="./images/bestsellers/bestseller4.jpg"
+                      src="./images/bestsellers/bestseller1.jpg"
                       width="282"
                       height="412"
-                      alt="Доппельгерц"
+                      alt="Пантестин"
                       class="bestsellers-body__image"
                     />
                   </picture>
                 </a>
               </li>
+
             </ul>
           </div>
         </div>
@@ -1664,20 +1814,78 @@
           </picture>
         </a>
 
-        <button type="button" class="top-panel__catalog-button">
-          <svg class="top-panel__catalog-icon" width="24" height="24">
-            <use href="images/icons.svg#icon-burger"></use>
-          </svg>
+        <div class="catalog-menu dropdown-menu-js">
+          <button type="button" class="catalog-menu__button dropdown-menu-button-js select-btn">
+            <svg class="catalog-menu__button-icon" width="24" height="24">
+              <use href="images/icons.svg#icon-burger"></use>
+            </svg>
+  
+            Каталог товарів
+          </button>
+        
+          <ul class="catalog-menu__options dropdown-menu-options-js">
+            <li class="catalog-menu__option dropdown-menu-option-js">
+              <a class="catalog-menu__option-link" href="#">
+                <img
+                src="./images/category-icon-light.svg"
+                alt="category-icon"
+                width="24"
+                height="24"
+                class="catalog-menu__option-icon"
+              />
+              <span class="option-text">Лікарські засоби</span></a>
+            </li>
+            <li  class="catalog-menu__option dropdown-menu-option-js">
+              <a class="catalog-menu__option-link" href="#"> <img
+                src="./images/category-icon-light.svg"
+                alt="category-icon"
+                width="24"
+                height="24"
+                class="catalog-menu__option-icon"
+              />
+              <span class="option-text">Косметика</span></a>
+            </li>
+            <li class="catalog-menu__option dropdown-menu-option-js">
+              <a class="catalog-menu__option-link" href="#"> <img
+                src="./images/category-icon-light.svg"
+                alt="category-icon"
+                width="24"
+                height="24"
+                class="catalog-menu__option-icon"
+              />
+              <span class="option-text">Дитячі товари</span></a>
+            </li>
+            <li class="catalog-menu__option dropdown-menu-option-js">
+              <a class="catalog-menu__option-link" href="#"> <img
+                src="./images/category-icon-light.svg"
+                alt="category-icon"
+                width="24"
+                height="24"
+                class="catalog-menu__option-icon"
+              />
+              <span class="option-text">Медтехніка</span></a>
+            </li>
+            <li class="catalog-menu__option dropdown-menu-option-js">
+              <a class="catalog-menu__option-link" href="#"> <img
+                src="./images/category-icon-light.svg"
+                alt="category-icon"
+                width="24"
+                height="24"
+                class="catalog-menu__option-icon"
+              />
+              <span class="option-text">Вітаміни і БАДИ</span></a>
+            </li>
 
-          Каталог товарів
-        </button>
+          </ul>
+        </div>
 
         <div class="top-panel-searchbar">
           <input class="top-panel-searchbar__input" tabindex="-1" type="text" />
           <button
             type="button"
             tabindex="-1"
-            class="top-panel-searchbar__close-button"
+            class="top-panel-searchbar__close-button visually-hidden"
+
           >
             <svg
               class="top-panel-searchbar__close-button-icon"
@@ -1695,14 +1903,239 @@
           <div
             class="top-panel-searchbar__products-container top-panel-searchbar__products-container--hidden"
           >
+          <div class="searchbar-products">
+            <p class="searchbar-products__search-type">За назвою</p>
+            <ul class="searchbar-products__list">
+              <li class="searchbar-products__list-item">
+                <a href="#" class="searchbar-products__link">
+                  <div class="searchbar-products__image-container">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/products/product-1-small.webp    1x,
+                          ./images/products/product-1-small@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/products/product-1-small.png    1x,
+                          ./images/products/product-1-small@2x.png 2x
+                        "
+                        type="image/jpeg"
+                      />
+                      <img
+                        src="./images/products/product-1-small.png"
+                        width="60"
+                        height="60"
+                        alt="Фервекс"
+                      />
+                    </picture>
+                  </div>
+                  <div class="searchbar-products__text-container">
+                    <p class="searchbar-products__product-name">
+                      Фервекс для дорослих (з вітаміном С) №8, саше
+                    </p>
+                    <p class="searchbar-products__product-price">
+                      154,53 грн
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="searchbar-products__list-item">
+                <a href="#" class="searchbar-products__link">
+                  <div class="searchbar-products__image-container">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/products/product-1-small.webp    1x,
+                          ./images/products/product-1-small@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/products/product-1-small.png    1x,
+                          ./images/products/product-1-small@2x.png 2x
+                        "
+                        type="image/jpeg"
+                      />
+                      <img
+                        src="./images/products/product-1-small.png"
+                        width="60"
+                        height="60"
+                        alt="Фервекс"
+                      />
+                    </picture>
+                  </div>
+                  <div class="searchbar-products__text-container">
+                    <p class="searchbar-products__product-name">
+                      Фервекс для дорослих (з вітаміном С) №8, саше
+                    </p>
+                    <p class="searchbar-products__product-price">
+                      154,53 грн
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="searchbar-products__list-item">
+                <a href="#" class="searchbar-products__link">
+                  <div class="searchbar-products__image-container">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/products/product-1-small.webp    1x,
+                          ./images/products/product-1-small@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/products/product-1-small.png    1x,
+                          ./images/products/product-1-small@2x.png 2x
+                        "
+                        type="image/jpeg"
+                      />
+                      <img
+                        src="./images/products/product-1-small.png"
+                        width="60"
+                        height="60"
+                        alt="Фервекс"
+                      />
+                    </picture>
+                  </div>
+                  <div class="searchbar-products__text-container">
+                    <p class="searchbar-products__product-name">
+                      Фервекс для дорослих (з вітаміном С) №8, саше
+                    </p>
+                    <p class="searchbar-products__product-price">
+                      154,53 грн
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="searchbar-products__list-item">
+                <a href="#" class="searchbar-products__link">
+                  <div class="searchbar-products__image-container">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/products/product-1-small.webp    1x,
+                          ./images/products/product-1-small@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/products/product-1-small.png    1x,
+                          ./images/products/product-1-small@2x.png 2x
+                        "
+                        type="image/jpeg"
+                      />
+                      <img
+                        src="./images/products/product-1-small.png"
+                        width="60"
+                        height="60"
+                        alt="Фервекс"
+                      />
+                    </picture>
+                  </div>
+                  <div class="searchbar-products__text-container">
+                    <p class="searchbar-products__product-name">
+                      Фервекс для дорослих (з вітаміном С) №8, саше
+                    </p>
+                    <p class="searchbar-products__product-price">
+                      154,53 грн
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="searchbar-products__list-item">
+                <a href="#" class="searchbar-products__link">
+                  <div class="searchbar-products__image-container">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/products/product-1-small.webp    1x,
+                          ./images/products/product-1-small@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/products/product-1-small.png    1x,
+                          ./images/products/product-1-small@2x.png 2x
+                        "
+                        type="image/jpeg"
+                      />
+                      <img
+                        src="./images/products/product-1-small.png"
+                        width="60"
+                        height="60"
+                        alt="Фервекс"
+                      />
+                    </picture>
+                  </div>
+                  <div class="searchbar-products__text-container">
+                    <p class="searchbar-products__product-name">
+                      Фервекс для дорослих (з вітаміном С) №8, саше
+                    </p>
+                    <p class="searchbar-products__product-price">
+                      154,53 грн
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <a href="#" class="search-products__all-results-link">
+              Всі результати пошуку
+            </a>
+          </div>
           </div>
         </div>
 
-        <button type="button" class="top-panel__phone-button">
-          <svg class="top-panel__phone-button-icon" width="24" height="24"><use  href="images/icons.svg#icon-phone"></use></svg>
-          0 800 303 111
-          <svg class="top-panel__phone-button-chevron-icon" width="24" height="24"><use  href="images/icons.svg#icon-angle-down"></use></svg>
-        </button>
+        <div class="phone-menu dropdown-menu-js">
+          <button type="button" class="phone-menu__button dropdown-menu-button-js">
+            <svg class="phone-menu__button-icon" width="24" height="24"><use  href="images/icons.svg#icon-phone"></use></svg>
+            0 800 303 111
+            <svg class="phone-menu__chevron-icon" width="24" height="24"><use  href="images/icons.svg#icon-angle-down"></use></svg>
+          </button>
+        
+          <ul class="phone-menu__options dropdown-menu-options-js">
+            <li class="phone-menu__option dropdown-menu-option-js">
+              <a class="phone-menu__option-link" href="tel:0800303111"><img
+                src="./images/whatsup.svg"
+                alt="category-icon"
+                width="24"
+                height="24"
+                class="catalog-menu__option-icon"
+              />
+              <span class="option-text">0 800 303 111</span></a>
+            </li>
+            <li class="phone-menu__option dropdown-menu-option-js">
+              <a class="phone-menu__option-link" href="tel:0800303111"><img
+                src="./images/telegram.svg"
+                alt="category-icon"
+                width="24"
+                height="24"
+                class="catalog-menu__option-icon"
+              />
+              <span class="option-text">0 800 303 111</span></a>
+            </li>
+            <li class="phone-menu__option dropdown-menu-option-js">
+              <a class="phone-menu__option-link" href="tel:0800303111"><img
+                src="./images/viber.svg"
+                alt="category-icon"
+                width="24"
+                height="24"
+                class="catalog-menu__option-icon"
+              />
+              <span class="option-text">0 800 303 111</span></a>
+            </li>
+            
+          </ul>
+        </div>
+      
         <ul class="header__menu">
           <li class="header__menu-item">
             <a
@@ -1735,5 +2168,9 @@
     </div>
 
     <script src="./main-page.js" type="module"></script>
+    <script>
+    console.log('script')
+      document.addEventListener('click', (e)=>{console.log(e.target)})
+    </script>
   </body>
 </html>

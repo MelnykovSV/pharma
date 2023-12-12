@@ -755,21 +755,6 @@ a {
   padding-right: 16px;
 }
 
-.top-panel__catalog-button {
-  cursor: pointer;
-  background-color: #0d727e;
-  border-radius: 8px;
-  padding: 12px 24px;
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  border: none;
-  color: #fff;
-}
-.top-panel__catalog-button .top-panel__catalog-icon {
-  stroke: #fff;
-}
-
 .top-panel-searchbar {
   border: 1px solid rgba(118, 115, 125, 0.5);
   z-index: 1;
@@ -821,7 +806,151 @@ a {
   display: block;
 }
 
-.top-panel__phone-button {
+.top-panel-searchbar__products-container {
+  border-radius: 5px;
+  border: 1px solid #c8c8c8;
+  background-color: #ffffff;
+  position: absolute;
+  top: 52px;
+  left: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s linear, border 0.3s linear;
+}
+.top-panel-searchbar__products-container.top-panel-searchbar__products-container--hidden {
+  border: 1px solid white;
+}
+.top-panel-searchbar__products-container .searchbar-products {
+  padding: 12px 8px;
+}
+.top-panel-searchbar__products-container .searchbar-products .searchbar-products__search-type {
+  padding: 8px;
+  color: #76737d;
+  font-family: "Gilroy";
+  font-size: 16px;
+  line-height: normal;
+  margin-bottom: 12px;
+}
+.top-panel-searchbar__products-container .searchbar-products .searchbar-products__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.top-panel-searchbar__products-container .searchbar-products .searchbar-products__list .searchbar-products__list-item .searchbar-products__link {
+  display: flex;
+  gap: 12px;
+  padding: 8px;
+  background-color: #ffffff;
+  transition: background-color 0.3s linear;
+}
+.top-panel-searchbar__products-container .searchbar-products .searchbar-products__list .searchbar-products__list-item .searchbar-products__link:hover {
+  background-color: #ebf7f8;
+}
+.top-panel-searchbar__products-container .searchbar-products .searchbar-products__list .searchbar-products__list-item .searchbar-products__link .searchbar-products__image-container {
+  width: 60px;
+  height: 60px;
+}
+.top-panel-searchbar__products-container .searchbar-products .searchbar-products__list .searchbar-products__list-item .searchbar-products__link .searchbar-products__text-container .searchbar-products__product-name {
+  color: #76737d;
+  font-family: "Gilroy";
+  font-size: 18px;
+  line-height: normal;
+  margin-bottom: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 350px;
+}
+.top-panel-searchbar__products-container .searchbar-products .searchbar-products__list .searchbar-products__list-item .searchbar-products__link .searchbar-products__text-container .searchbar-products__product-price {
+  color: #3a3a3a;
+  font-family: "Gilroy";
+  font-size: 22px;
+  font-weight: 500;
+  line-height: normal;
+}
+.top-panel-searchbar__products-container .searchbar-products .searchbar-products__problematics-list .searchbar-products__problematics-item .searchbar-products__problematics-item-label {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 8px;
+  transition: background-color 0.3s linear;
+}
+.top-panel-searchbar__products-container .searchbar-products .searchbar-products__problematics-list .searchbar-products__problematics-item .searchbar-products__problematics-item-label:hover {
+  background-color: #ebf7f8;
+}
+.top-panel-searchbar__products-container .searchbar-products .searchbar-products__problematics-list .searchbar-products__problematics-item .searchbar-products__problematics-item-label .searchbar-products__problematics-item-label-icon-container {
+  width: 24px;
+  height: 24px;
+}
+.top-panel-searchbar__products-container .searchbar-products .searchbar-products__problematics-list .searchbar-products__problematics-item .searchbar-products__problematics-item-label .searchbar-products__problematics-item-label-icon-container .searchbar-products__problematics-item-label-icon {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.top-panel-searchbar__products-container .searchbar-products .searchbar-products__problematics-list .searchbar-products__problematics-item .searchbar-products__problematics-item-label .searchbar-products__problematics-item-label-text .searchbar-products__problematics-item-label-aim {
+  color: #76737d;
+  font-family: "Gilroy";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+}
+.top-panel-searchbar__products-container .searchbar-products .searchbar-products__problematics-list .searchbar-products__problematics-item .searchbar-products__problematics-item-label .searchbar-products__problematics-item-label-text .searchbar-products__problematics-item-label-description {
+  color: #76737d;
+  font-family: "Gilroy";
+  font-size: 16px;
+  line-height: normal;
+}
+.top-panel-searchbar__products-container .searchbar-products .searchbar-products__problematics-list .searchbar-products__problematics-item .searchbar-products__problematics-item-content {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.top-panel-searchbar__products-container .searchbar-products .searchbar-products__problematics-list .searchbar-products__problematics-item .searchbar-products__problematics-item-content .searchbar-products__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.top-panel-searchbar__products-container .searchbar-products .searchbar-products__problematics-list .searchbar-products__problematics-item .searchbar-products__problematics-item-content .searchbar-products__list .searchbar-products__list-item .searchbar-products__link {
+  display: flex;
+  gap: 12px;
+  padding: 8px;
+  background-color: #ffffff;
+  transition: background-color 0.3s linear;
+}
+.top-panel-searchbar__products-container .searchbar-products .searchbar-products__problematics-list .searchbar-products__problematics-item .searchbar-products__problematics-item-content .searchbar-products__list .searchbar-products__list-item .searchbar-products__link:hover {
+  background-color: #ebf7f8;
+}
+.top-panel-searchbar__products-container .searchbar-products .searchbar-products__problematics-list .searchbar-products__problematics-item .searchbar-products__problematics-item-content .searchbar-products__list .searchbar-products__list-item .searchbar-products__link .searchbar-products__image-container {
+  width: 60px;
+  height: 60px;
+}
+.top-panel-searchbar__products-container .searchbar-products .searchbar-products__problematics-list .searchbar-products__problematics-item .searchbar-products__problematics-item-content .searchbar-products__list .searchbar-products__list-item .searchbar-products__link .searchbar-products__text-container .searchbar-products__product-name {
+  color: #76737d;
+  font-family: "Gilroy";
+  font-size: 18px;
+  line-height: normal;
+  margin-bottom: 12px;
+}
+.top-panel-searchbar__products-container .searchbar-products .searchbar-products__problematics-list .searchbar-products__problematics-item .searchbar-products__problematics-item-content .searchbar-products__list .searchbar-products__list-item .searchbar-products__link .searchbar-products__text-container .searchbar-products__product-price {
+  color: #3a3a3a;
+  font-family: "Gilroy";
+  font-size: 22px;
+  font-weight: 500;
+  line-height: normal;
+}
+.top-panel-searchbar__products-container .searchbar-products .search-products__all-results-link {
+  padding: 8px;
+  color: #76737d;
+  font-family: "Gilroy";
+  font-size: 16px;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+.phone-menu {
+  position: relative;
+}
+.phone-menu .phone-menu__button {
   background-color: #fff;
   border: none;
   cursor: pointer;
@@ -830,17 +959,110 @@ a {
   display: flex;
   align-items: center;
   gap: 8px;
+  flex-shrink: 0;
   color: #1e1e1e;
   font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.2857142857;
 }
-.top-panel__phone-button .top-panel__phone-button-icon {
+.phone-menu .phone-menu__button .phone-menu__button-icon {
   fill: #76737d;
 }
-.top-panel__phone-button .top-panel__phone-button-chevron-icon {
+.phone-menu .phone-menu__button .phone-menu__chevron-icon {
   fill: #2f384c;
+  transition: transform 0.3s linear;
+}
+.phone-menu .phone-menu__options {
+  display: flex;
+  flex-direction: column;
+  pointer-events: none;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.3s linear;
+  position: absolute;
+  width: 100%;
+  top: 49px;
+  background-color: #fff;
+}
+.phone-menu .phone-menu__options .phone-menu__option .phone-menu__option-link {
+  padding: 12px 16px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: #1e1e1e;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2857142857;
+}
+.phone-menu.active .phone-menu__options {
+  opacity: 1;
+  pointer-events: all;
+}
+.phone-menu.active .phone-menu__chevron-icon {
+  transform: rotate(180deg);
+}
+
+.catalog-menu {
+  position: relative;
+}
+.catalog-menu .catalog-menu__button {
+  cursor: pointer;
+  height: 48px;
+  width: 233px;
+  background-color: #0d727e;
+  border-radius: 8px;
+  padding: 12px 24px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  border: none;
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.125;
+}
+.catalog-menu .catalog-menu__button .catalog-menu__button-icon {
+  stroke: #fff;
+  display: block;
+}
+.catalog-menu .catalog-menu__options {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s linear;
+  position: absolute;
+  width: 100%;
+  height: fit-content;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  top: 49px;
+  bottom: -1px;
+  border-radius: 8px;
+  background-color: #0d727e;
+}
+.catalog-menu .catalog-menu__options .catalog-menu__option .catalog-menu__option-link {
+  padding: 8px 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.125;
+}
+.catalog-menu.active .catalog-menu__options {
+  opacity: 1;
+  pointer-events: all;
 }
 
 .banner-section {
@@ -868,6 +1090,7 @@ a {
 }
 .banner-swiper .main-page-swiper__img-thumb {
   height: 500px;
+  display: block;
 }
 .banner-swiper .main-page-swiper__img-thumb .swiper-slide img {
   display: block;
@@ -910,6 +1133,7 @@ a {
   overflow-x: hidden;
 }
 .tabs-special-offers .tabs-bar__link {
+  cursor: pointer;
   display: block;
   font-size: 14px;
   font-style: normal;
@@ -951,10 +1175,10 @@ a {
 
 .special-offers__cards {
   display: flex;
-  gap: 10px;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 13px;
+  justify-content: start;
   align-items: start;
-  height: 379px;
   margin-bottom: 20px;
 }
 
@@ -987,7 +1211,7 @@ a {
   opacity: 1;
 }
 .special-offers-card:hover .special-offers-card__buttons {
-  height: 45px;
+  height: 48px;
   margin-top: 15px;
 }
 .special-offers-card .special-offers-card__image-thumb {
@@ -1053,8 +1277,8 @@ a {
 }
 .special-offers-card .special-offers-card__like-button {
   cursor: pointer;
-  width: 45px;
-  height: 45px;
+  min-width: 48px;
+  min-height: 48px;
   background: #77c9cc;
   border-radius: 10px;
   border: none;
@@ -1078,8 +1302,8 @@ a {
   justify-content: center;
   align-items: center;
   border: none;
-  width: 155px;
-  height: 45px;
+  width: 100%;
+  height: 48px;
   background: #0d727e;
   border-radius: 10px;
   font-weight: 700;
@@ -1304,6 +1528,7 @@ a {
   gap: 30px;
 }
 .tabs-product .tabs-bar__link {
+  cursor: pointer;
   display: block;
   font-weight: 600;
   font-size: 12px;
