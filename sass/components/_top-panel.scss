@@ -146,7 +146,7 @@
               white-space: nowrap;
               overflow: hidden;
               text-overflow: ellipsis;
-              max-width: 350px;
+              max-width: 400px;
             }
             .searchbar-products__product-price {
               color: #3a3a3a;
@@ -276,7 +276,8 @@
       fill: #76737d;
     }
     .phone-menu__chevron-icon {
-      fill: #2f384c;
+      stroke: #2f384c;
+      fill: none;
       transition: transform 0.3s linear;
     }
   }

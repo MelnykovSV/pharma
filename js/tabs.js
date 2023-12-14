@@ -6,17 +6,14 @@ if (pageTabs.length) {
 }
 
 function handleTabClick(e) {
-  // e.preventDefault();
-
-  // e.stopPropagation();
-
   if (
     e.target.classList.contains('tabs-bar__link') &&
     !e.target.classList.contains('current')
   ) {
     const tabs = e.currentTarget.querySelectorAll(
-      ':scope >.tabs-bar>.tabs-bar__list>.tabs-bar__list-item>.tabs-bar__link'
+      ':scope >.tabs-bar .tabs-bar__list>.tabs-bar__list-item>.tabs-bar__link'
     );
+
     const pages = e.currentTarget.querySelectorAll(
       ':scope >.tabs-content > .tab-body'
     );

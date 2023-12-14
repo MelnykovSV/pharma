@@ -1,3 +1,11 @@
+.info {
+  margin-bottom: 32px;
+  .container {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px 0px rgba(214, 214, 214, 0.25);
+  }
+}
 .info__title {
   margin: 0;
   margin-bottom: 32px;
@@ -15,10 +23,8 @@
   font-weight: 400;
   line-height: 150%;
   overflow: hidden;
+  padding-bottom: 24px;
 
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0px 5px 20px 0px rgba(214, 214, 214, 0.25);
   .info-body__text-container {
     overflow: hidden;
     transition: height 0.3s linear;
@@ -82,4 +88,3 @@
     opacity: 1;
   }
 }
-

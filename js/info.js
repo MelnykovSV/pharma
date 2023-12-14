@@ -1,5 +1,4 @@
 const infoBody = document.querySelectorAll('.info-js');
-console.log(infoBody);
 
 document
   .querySelectorAll('.info-body__text-container')
@@ -10,7 +9,6 @@ infoBody.forEach((item) =>
     if (e.target.classList.contains('info-button-show-more-js')) {
       e.target.classList.add('hidden');
       e.target.parentNode.classList.remove('show-gradient');
-      console.log(e.currentTarget.offsetHeight);
       e.currentTarget.querySelector(
         '.info-body__text-container'
       ).style.height = `${

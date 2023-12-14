@@ -1,11 +1,18 @@
+
+
 const topPanel = document.querySelector('.top-panel');
 const optionMenuList = topPanel.querySelectorAll('.dropdown-menu-js');
-const searchbarContainer = document.querySelector('.top-panel-searchbar');
-const input = searchbarContainer.querySelector('.top-panel-searchbar__input');
-const productsContainer = searchbarContainer.querySelector(
+const topPanelSearchbar = document.querySelector('.top-panel-searchbar');
+const searchbarProductsContainer = document.querySelector(
+  '.searchbar-products-container'
+);
+
+const input = topPanelSearchbar.querySelector('.top-panel-searchbar__input');
+
+const productsContainer = topPanelSearchbar.querySelector(
   '.top-panel-searchbar__products-container'
 );
-const clearButton = searchbarContainer.querySelector(
+const clearButton = topPanelSearchbar.querySelector(
   '.top-panel-searchbar__close-button'
 );
 
@@ -31,6 +38,10 @@ var callback = function (entries, observer) {
   }
   if (window.scrollY > 140) {
     topPanel.classList.remove('panel-hidden');
+    searchbarProductsContainer.classList.add(
+      'searchbar-products-container--hidden'
+    );
+    searchbarProductsContainer.style.height = 0;
   }
 };
 var observer = new IntersectionObserver(callback, options);

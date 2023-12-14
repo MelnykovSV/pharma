@@ -20,7 +20,6 @@ clearButton.addEventListener('click', () => {
 });
 
 input.addEventListener('input', (e) => {
-  console.log(e.target.value);
   if (e.target.value) {
     productsContainer.classList.remove(
       'top-panel-searchbar__products-container--hidden'

@@ -13,11 +13,13 @@
 .tabs-special-offers {
   .tabs-bar {
     border-bottom: 1px solid #e7e6e6;
+    overflow-x: auto;
   }
   .tabs-bar__list {
+    height: 48px;
     display: flex;
     gap: 48px;
-    overflow-x: hidden;
+    justify-content: start;
   }
   .tabs-bar__link {
     cursor: pointer;
@@ -35,7 +37,8 @@
     border: 0;
     background: transparent;
     padding: 12px 0;
-    text-wrap: nowrap;
+    white-space: nowrap;
+    flex-shrink: 0;
 
     transition: color 0.3s linear;
     &::before {
@@ -64,13 +67,14 @@
   }
 }
 .special-offers__cards {
-  display: flex;
-  flex-wrap: wrap;
   gap: 13px;
   justify-content: start;
   align-items: start;
-  // height: 379px;
   margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 320px;
+  margin-bottom: 80px;
 }
 
 .special-offers__content {
@@ -83,26 +87,13 @@
   position: relative;
 
   background: #fff;
+  transition: box-shadow 0.3s linear;
   box-shadow: 0px 5px 20px 0px rgba(213, 213, 213, 0.25);
   border-radius: 12px;
   overflow: hidden;
 
-  &::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    z-index: -100;
-    transition: opacity 0.3s linear;
-    box-shadow: 0px 5px 20px 0px rgba(67, 67, 67, 0.25);
-  }
   &:hover {
-    &::after {
-      opacity: 1;
-    }
+    box-shadow: 0px 5px 20px 0px rgba(67, 67, 67, 0.25);
 
     .special-offers-card__buttons {
       height: 48px;
@@ -131,7 +122,7 @@
     margin-bottom: 12px;
     overflow: hidden;
     text-overflow: ellipsis;
-    text-wrap: nowrap;
+    white-space: nowrap;
   }
   .special-offers-card__producer {
     color: #76737d;
@@ -257,5 +248,6 @@
 }
 
 .special-offers__more-button-icon {
-  fill: #ffffff;
+  fill: #0d727e;
+  stroke: #ffffff;
 }

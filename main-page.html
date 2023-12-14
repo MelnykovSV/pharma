@@ -24,8 +24,17 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
+    
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+
+
+    
     <link rel="stylesheet" href="css/styles.css" />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/2.4.5/slimselect.min.js"
@@ -552,8 +561,8 @@
           <h2 class="special-offers__title">Акційні пропозиції</h2>
           <div class="product__body tabs tabs-special-offers tabs1">
             <!-- TAB BAR -->
-            <div class="tabs-bar">
-              <ul class="tabs-bar__list">
+            <div class="tabs-bar" data-simplebar>
+              <ul class="tabs-bar__list" >
                 <li class="tabs-bar__list-item">
                   <button type="button" class="tabs-bar__link current" data-tab-id="1">
                     Акції на медикаменти
@@ -588,9 +597,9 @@
             </div>
             <div class="special-offers__content tabs-content">
               <div class="tab-body" data-tab-id="1">
-                <ul class="special-offers__cards cards-container">
+                <ul class="special-offers__cards cards-container cards-container-js" >
                   <li class="special-offers__cards-item">
-                    <div class="special-offers-card">
+                    <div class="special-offers-card card-js">
                       <a
                         href="./product-card.html"
                         class="special-offers-card__product-link"
@@ -622,7 +631,7 @@
                         </div>
 
                         <h3 class="special-offers-card__title">
-                          Корвалмент 0,1 г капсули №80 f sdf sdfdfdfdf d
+                          Корвалмент 0,1 г капсули №80
                         </h3>
 
                         <p class="special-offers-card__producer">
@@ -664,7 +673,7 @@
                     </div>
                   </li>
                   <li class="special-offers__cards-item">
-                    <div class="special-offers-card">
+                    <div class="special-offers-card card-js">
                       <a
                         href="./product-card.html"
                         class="special-offers-card__product-link"
@@ -696,7 +705,7 @@
                         </div>
 
                         <h3 class="special-offers-card__title">
-                          Корвалмент 0,1 г капсули №80 f sdf sdfdfdfdf d
+                          Корвалмент 0,1 г капсули №80
                         </h3>
 
                         <p class="special-offers-card__producer">
@@ -738,7 +747,7 @@
                     </div>
                   </li>
                   <li class="special-offers__cards-item">
-                    <div class="special-offers-card">
+                    <div class="special-offers-card card-js">
                       <a
                         href="./product-card.html"
                         class="special-offers-card__product-link"
@@ -770,7 +779,7 @@
                         </div>
 
                         <h3 class="special-offers-card__title">
-                          Корвалмент 0,1 г капсули №80 f sdf sdfdfdfdf d
+                          Корвалмент 0,1 г капсули №80
                         </h3>
 
                         <p class="special-offers-card__producer">
@@ -812,7 +821,7 @@
                     </div>
                   </li>
                   <li class="special-offers__cards-item">
-                    <div class="special-offers-card">
+                    <div class="special-offers-card card-js">
                       <a
                         href="./product-card.html"
                         class="special-offers-card__product-link"
@@ -844,7 +853,7 @@
                         </div>
 
                         <h3 class="special-offers-card__title">
-                          Корвалмент 0,1 г капсули №80 f sdf sdfdfdfdf d
+                          Корвалмент 0,1 г капсули №80
                         </h3>
 
                         <p class="special-offers-card__producer">
@@ -886,7 +895,7 @@
                     </div>
                   </li>
                   <li class="special-offers__cards-item">
-                    <div class="special-offers-card">
+                    <div class="special-offers-card card-js">
                       <a
                         href="./product-card.html"
                         class="special-offers-card__product-link"
@@ -918,7 +927,7 @@
                         </div>
 
                         <h3 class="special-offers-card__title">
-                          Корвалмент 0,1 г капсули №80 f sdf sdfdfdfdf d
+                          Корвалмент 0,1 г капсули №80
                         </h3>
 
                         <p class="special-offers-card__producer">
@@ -960,7 +969,7 @@
                     </div>
                   </li>
                   <li class="special-offers__cards-item">
-                    <div class="special-offers-card">
+                    <div class="special-offers-card card-js">
                       <a
                         href="./product-card.html"
                         class="special-offers-card__product-link"
@@ -992,7 +1001,7 @@
                         </div>
 
                         <h3 class="special-offers-card__title">
-                          Корвалмент 0,1 г капсули №80 f sdf sdfdfdfdf d
+                          Корвалмент 0,1 г капсули №80
                         </h3>
 
                         <p class="special-offers-card__producer">
@@ -1042,7 +1051,7 @@
                     width="20"
                     height="20"
                   >
-                    <use href="images/icons.svg#icon-angle-down"></use>
+                    <use href="images/icons.svg#icon-chevrons"></use>
                   </svg>
                 </button>
               </div>
@@ -1192,192 +1201,233 @@
       <section class="brands">
         <div class="container">
           <h2 class="brands__title">Популяні бренди</h2>
+          <div class="brands-list-container" data-simplebar  >
+            <ul class="brands-list"  >
+              <li class="brands-list__item">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="brands-list__link">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/brands/brand1.webp    1x,
+                        ./images/brands/brand1@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/brands/brand1.jpg    1x,
+                        ./images/brands/brand1@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/brands/brand1.jpg"
+                      height="64"
+                      width="64"
+                      alt="brand1"
+                      class="brands-list__image"
+                    />
+                  </picture>
+                </a>
+              </li>
+              <li class="brands-list__item">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="brands-list__link">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/brands/brand2.webp    1x,
+                        ./images/brands/brand2@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/brands/brand2.jpg    1x,
+                        ./images/brands/brand2@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/brands/brand2.jpg"
+                      height="64"
+                      width="216"
+                      alt="brand2"
+                      class="brands-list__image"
+                    />
+                  </picture>
+                </a>
+              </li>
+              <li class="brands-list__item">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="brands-list__link">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/brands/brand3.webp    1x,
+                        ./images/brands/brand3@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/brands/brand3.jpg    1x,
+                        ./images/brands/brand3@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/brands/brand3.jpg"
+                      height="64"
+                      width="216"
+                      alt="brand3"
+                      class="brands-list__image"
+                    />
+                  </picture>
+                </a>
+              </li>
+              <li class="brands-list__item">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="brands-list__link">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/brands/brand4.webp    1x,
+                        ./images/brands/brand4@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/brands/brand4.jpg    1x,
+                        ./images/brands/brand4@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/brands/brand4.jpg"
+                      height="64"
+                      width="216"
+                      alt="brand4"
+                      class="brands-list__image"
+                    />
+                  </picture>
+                </a>
+              </li>
+              <li class="brands-list__item">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="brands-list__link">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/brands/brand7.webp    1x,
+                        ./images/brands/brand7@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/brands/brand7.jpg    1x,
+                        ./images/brands/brand7@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/brands/brand7.jpg"
+                      height="64"
+                      width="52"
+                      alt="brand7"
+                      class="brands-list__image"
+                    />
+                  </picture>
+                </a>
+              </li>
+              <li class="brands-list__item">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="brands-list__link">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/brands/brand5.webp    1x,
+                        ./images/brands/brand5@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/brands/brand5.jpg    1x,
+                        ./images/brands/brand5@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/brands/brand5.jpg"
+                      height="64"
+                      width="75"
+                      alt="brand5"
+                      class="brands-list__image"
+                    />
+                  </picture>
+                </a>
+              </li>
+        
+              <li class="brands-list__item">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="brands-list__link">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/brands/brand6.webp    1x,
+                        ./images/brands/brand6@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/brands/brand6.jpg    1x,
+                        ./images/brands/brand6@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/brands/brand6.jpg"
+                      height="64"
+                      width="217"
+                      alt="brand6"
+                      class="brands-list__image"
+                    />
+                  </picture>
+                </a>
+              </li>
+              <li class="brands-list__item">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="brands-list__link">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/brands/brand6.webp    1x,
+                        ./images/brands/brand6@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/brands/brand6.jpg    1x,
+                        ./images/brands/brand6@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/brands/brand6.jpg"
+                      height="64"
+                      width="217"
+                      alt="brand6"
+                      class="brands-list__image"
+                    />
+                  </picture>
+                </a>
+              </li>
+            </ul>
+          </div>
 
-          <ul class="brands-list">
-            <li class="brands-list__item">
-              <a href="#" class="brands-list__link">
-                <picture>
-                  <source
-                    srcset="
-                      ./images/brands/brand1.webp    1x,
-                      ./images/brands/brand1@2x.webp 2x
-                    "
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="
-                      ./images/brands/brand1.jpg    1x,
-                      ./images/brands/brand1@2x.jpg 2x
-                    "
-                    type="image/jpeg"
-                  />
-                  <img
-                    src="./images/brands/brand1.jpg"
-                    height="64"
-                    alt="brand1"
-                    class="brands-list__image"
-                  />
-                </picture>
-              </a>
-            </li>
-            <li class="brands-list__item">
-              <a href="#" class="brands-list__link">
-                <picture>
-                  <source
-                    srcset="
-                      ./images/brands/brand2.webp    1x,
-                      ./images/brands/brand2@2x.webp 2x
-                    "
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="
-                      ./images/brands/brand2.jpg    1x,
-                      ./images/brands/brand2@2x.jpg 2x
-                    "
-                    type="image/jpeg"
-                  />
-                  <img
-                    src="./images/brands/brand2.jpg"
-                    height="64"
-                    alt="brand2"
-                    class="brands-list__image"
-                  />
-                </picture>
-              </a>
-            </li>
-            <li class="brands-list__item">
-              <a href="#" class="brands-list__link">
-                <picture>
-                  <source
-                    srcset="
-                      ./images/brands/brand3.webp    1x,
-                      ./images/brands/brand3@2x.webp 2x
-                    "
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="
-                      ./images/brands/brand3.jpg    1x,
-                      ./images/brands/brand3@2x.jpg 2x
-                    "
-                    type="image/jpeg"
-                  />
-                  <img
-                    src="./images/brands/brand3.jpg"
-                    height="64"
-                    alt="brand3"
-                    class="brands-list__image"
-                  />
-                </picture>
-              </a>
-            </li>
-            <li class="brands-list__item">
-              <a href="#" class="brands-list__link">
-                <picture>
-                  <source
-                    srcset="
-                      ./images/brands/brand4.webp    1x,
-                      ./images/brands/brand4@2x.webp 2x
-                    "
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="
-                      ./images/brands/brand4.jpg    1x,
-                      ./images/brands/brand4@2x.jpg 2x
-                    "
-                    type="image/jpeg"
-                  />
-                  <img
-                    src="./images/brands/brand4.jpg"
-                    height="64"
-                    alt="brand4"
-                    class="brands-list__image"
-                  />
-                </picture>
-              </a>
-            </li>
-            <li class="brands-list__item">
-              <a href="#" class="brands-list__link">
-                <picture>
-                  <source
-                    srcset="
-                      ./images/brands/brand5.webp    1x,
-                      ./images/brands/brand5@2x.webp 2x
-                    "
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="
-                      ./images/brands/brand5.jpg    1x,
-                      ./images/brands/brand5@2x.jpg 2x
-                    "
-                    type="image/jpeg"
-                  />
-                  <img
-                    src="./images/brands/brand5.jpg"
-                    height="64"
-                    alt="brand5"
-                    class="brands-list__image"
-                  />
-                </picture>
-              </a>
-            </li>
-            <li class="brands-list__item">
-              <a href="#" class="brands-list__link">
-                <picture>
-                  <source
-                    srcset="
-                      ./images/brands/brand6.webp    1x,
-                      ./images/brands/brand6@2x.webp 2x
-                    "
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="
-                      ./images/brands/brand6.jpg    1x,
-                      ./images/brands/brand6@2x.jpg 2x
-                    "
-                    type="image/jpeg"
-                  />
-                  <img
-                    src="./images/brands/brand6.jpg"
-                    height="64"
-                    alt="brand6"
-                    class="brands-list__image"
-                  />
-                </picture>
-              </a>
-            </li>
-            <li class="brands-list__item">
-              <a href="#" class="brands-list__link">
-                <picture>
-                  <source
-                    srcset="
-                      ./images/brands/brand6.webp    1x,
-                      ./images/brands/brand6@2x.webp 2x
-                    "
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="
-                      ./images/brands/brand6.jpg    1x,
-                      ./images/brands/brand6@2x.jpg 2x
-                    "
-                    type="image/jpeg"
-                  />
-                  <img
-                    src="./images/brands/brand6.jpg"
-                    height="64"
-                    width="218"
-                    alt="brand6"
-                    class="brands-list__image"
-                  />
-                </picture>
-              </a>
-            </li>
-          </ul>
+      
+
+       
+
+         
         </div>
       </section>
       <section class="info">
@@ -1904,193 +1954,214 @@
             class="top-panel-searchbar__products-container top-panel-searchbar__products-container--hidden"
           >
           <div class="searchbar-products">
-            <p class="searchbar-products__search-type">За назвою</p>
-            <ul class="searchbar-products__list">
-              <li class="searchbar-products__list-item">
-                <a href="#" class="searchbar-products__link">
-                  <div class="searchbar-products__image-container">
-                    <picture>
-                      <source
-                        srcset="
-                          ./images/products/product-1-small.webp    1x,
-                          ./images/products/product-1-small@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <source
-                        srcset="
-                          ./images/products/product-1-small.png    1x,
-                          ./images/products/product-1-small@2x.png 2x
-                        "
-                        type="image/jpeg"
-                      />
-                      <img
-                        src="./images/products/product-1-small.png"
-                        width="60"
-                        height="60"
-                        alt="Фервекс"
-                      />
-                    </picture>
+            <p class="searchbar-products__search-type">
+              За проблематикою
+            </p>
+
+            <ul class="searchbar-products__problematics-list">
+              <li class="searchbar-products__problematics-item">
+                <a
+                  href="#"
+                  class="searchbar-products__problematics-item-label"
+                >
+                  <div
+                    class="searchbar-products__problematics-item-label-icon-container"
+                  >
+                    <img
+                      src="./images/category-icon.svg"
+                      alt="category-icon"
+                    />
                   </div>
-                  <div class="searchbar-products__text-container">
-                    <p class="searchbar-products__product-name">
-                      Фервекс для дорослих (з вітаміном С) №8, саше
+                  <div
+                    class="searchbar-products__problematics-item-label-text"
+                  >
+                    <p
+                      class="searchbar-products__problematics-item-label-aim"
+                    >
+                      Від вологого кашлю
                     </p>
-                    <p class="searchbar-products__product-price">
-                      154,53 грн
+                    <p
+                      class="searchbar-products__problematics-item-label-description"
+                    >
+                      Категорії
                     </p>
                   </div>
                 </a>
+                <div
+                  class="searchbar-products__problematics-item-content"
+                >
+                  <ul class="searchbar-products__list">
+                    <li class="searchbar-products__list-item">
+                      <a href="#" class="searchbar-products__link">
+                        <div
+                          class="searchbar-products__image-container"
+                        >
+                          <picture>
+                            <source
+                              srcset="
+                                ./images/products/product-1-small.webp    1x,
+                                ./images/products/product-1-small@2x.webp 2x
+                              "
+                              type="image/webp"
+                            />
+                            <source
+                              srcset="
+                                ./images/products/product-1-small.png    1x,
+                                ./images/products/product-1-small@2x.png 2x
+                              "
+                              type="image/jpeg"
+                            />
+                            <img
+                              src="./images/products/product-1-small.png"
+                              width="60"
+                              height="60"
+                              alt="Фервекс"
+                            />
+                          </picture>
+                        </div>
+                        <div
+                          class="searchbar-products__text-container"
+                        >
+                          <p class="searchbar-products__product-name">
+                            Фервекс для дорослих (з вітаміном С) №8,
+                            саше
+                          </p>
+                          <p
+                            class="searchbar-products__product-price"
+                          >
+                            154,53 грн
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="searchbar-products__list-item">
+                      <a href="#" class="searchbar-products__link">
+                        <div
+                          class="searchbar-products__image-container"
+                        >
+                          <picture>
+                            <source
+                              srcset="
+                                ./images/products/product-1-small.webp    1x,
+                                ./images/products/product-1-small@2x.webp 2x
+                              "
+                              type="image/webp"
+                            />
+                            <source
+                              srcset="
+                                ./images/products/product-1-small.png    1x,
+                                ./images/products/product-1-small@2x.png 2x
+                              "
+                              type="image/jpeg"
+                            />
+                            <img
+                              src="./images/products/product-1-small.png"
+                              width="60"
+                              height="60"
+                              alt="Фервекс"
+                            />
+                          </picture>
+                        </div>
+                        <div
+                          class="searchbar-products__text-container"
+                        >
+                          <p class="searchbar-products__product-name">
+                            Фервекс для дорослих (з вітаміном С) №8,
+                            саше
+                          </p>
+                          <p
+                            class="searchbar-products__product-price"
+                          >
+                            154,53 грн
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="searchbar-products__list-item">
+                      <a href="#" class="searchbar-products__link">
+                        <div
+                          class="searchbar-products__image-container"
+                        >
+                          <picture>
+                            <source
+                              srcset="
+                                ./images/products/product-1-small.webp    1x,
+                                ./images/products/product-1-small@2x.webp 2x
+                              "
+                              type="image/webp"
+                            />
+                            <source
+                              srcset="
+                                ./images/products/product-1-small.png    1x,
+                                ./images/products/product-1-small@2x.png 2x
+                              "
+                              type="image/jpeg"
+                            />
+                            <img
+                              src="./images/products/product-1-small.png"
+                              width="60"
+                              height="60"
+                              alt="Фервекс"
+                            />
+                          </picture>
+                        </div>
+                        <div
+                          class="searchbar-products__text-container"
+                        >
+                          <p class="searchbar-products__product-name">
+                            Фервекс для дорослих (з вітаміном С) №8,
+                            саше
+                          </p>
+                          <p
+                            class="searchbar-products__product-price"
+                          >
+                            154,53 грн
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </li>
-              <li class="searchbar-products__list-item">
-                <a href="#" class="searchbar-products__link">
-                  <div class="searchbar-products__image-container">
-                    <picture>
-                      <source
-                        srcset="
-                          ./images/products/product-1-small.webp    1x,
-                          ./images/products/product-1-small@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <source
-                        srcset="
-                          ./images/products/product-1-small.png    1x,
-                          ./images/products/product-1-small@2x.png 2x
-                        "
-                        type="image/jpeg"
-                      />
-                      <img
-                        src="./images/products/product-1-small.png"
-                        width="60"
-                        height="60"
-                        alt="Фервекс"
-                      />
-                    </picture>
+              <li class="searchbar-products__problematics-item">
+                <a
+                  href="#"
+                  class="searchbar-products__problematics-item-label"
+                >
+                  <div
+                    class="searchbar-products__problematics-item-label-icon-container"
+                  >
+                    <img
+                      src="./images/category-icon.svg"
+                      alt="category-icon"
+                    />
                   </div>
-                  <div class="searchbar-products__text-container">
-                    <p class="searchbar-products__product-name">
-                      Фервекс для дорослих (з вітаміном С) №8, саше
+                  <div
+                    class="searchbar-products__problematics-item-label-text"
+                  >
+                    <p
+                      class="searchbar-products__problematics-item-label-aim"
+                    >
+                      Від сухого кашлю
                     </p>
-                    <p class="searchbar-products__product-price">
-                      154,53 грн
+                    <p
+                      class="searchbar-products__problematics-item-label-description"
+                    >
+                      Категорії
                     </p>
                   </div>
                 </a>
-              </li>
-              <li class="searchbar-products__list-item">
-                <a href="#" class="searchbar-products__link">
-                  <div class="searchbar-products__image-container">
-                    <picture>
-                      <source
-                        srcset="
-                          ./images/products/product-1-small.webp    1x,
-                          ./images/products/product-1-small@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <source
-                        srcset="
-                          ./images/products/product-1-small.png    1x,
-                          ./images/products/product-1-small@2x.png 2x
-                        "
-                        type="image/jpeg"
-                      />
-                      <img
-                        src="./images/products/product-1-small.png"
-                        width="60"
-                        height="60"
-                        alt="Фервекс"
-                      />
-                    </picture>
-                  </div>
-                  <div class="searchbar-products__text-container">
-                    <p class="searchbar-products__product-name">
-                      Фервекс для дорослих (з вітаміном С) №8, саше
-                    </p>
-                    <p class="searchbar-products__product-price">
-                      154,53 грн
-                    </p>
-                  </div>
-                </a>
-              </li>
-              <li class="searchbar-products__list-item">
-                <a href="#" class="searchbar-products__link">
-                  <div class="searchbar-products__image-container">
-                    <picture>
-                      <source
-                        srcset="
-                          ./images/products/product-1-small.webp    1x,
-                          ./images/products/product-1-small@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <source
-                        srcset="
-                          ./images/products/product-1-small.png    1x,
-                          ./images/products/product-1-small@2x.png 2x
-                        "
-                        type="image/jpeg"
-                      />
-                      <img
-                        src="./images/products/product-1-small.png"
-                        width="60"
-                        height="60"
-                        alt="Фервекс"
-                      />
-                    </picture>
-                  </div>
-                  <div class="searchbar-products__text-container">
-                    <p class="searchbar-products__product-name">
-                      Фервекс для дорослих (з вітаміном С) №8, саше
-                    </p>
-                    <p class="searchbar-products__product-price">
-                      154,53 грн
-                    </p>
-                  </div>
-                </a>
-              </li>
-              <li class="searchbar-products__list-item">
-                <a href="#" class="searchbar-products__link">
-                  <div class="searchbar-products__image-container">
-                    <picture>
-                      <source
-                        srcset="
-                          ./images/products/product-1-small.webp    1x,
-                          ./images/products/product-1-small@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <source
-                        srcset="
-                          ./images/products/product-1-small.png    1x,
-                          ./images/products/product-1-small@2x.png 2x
-                        "
-                        type="image/jpeg"
-                      />
-                      <img
-                        src="./images/products/product-1-small.png"
-                        width="60"
-                        height="60"
-                        alt="Фервекс"
-                      />
-                    </picture>
-                  </div>
-                  <div class="searchbar-products__text-container">
-                    <p class="searchbar-products__product-name">
-                      Фервекс для дорослих (з вітаміном С) №8, саше
-                    </p>
-                    <p class="searchbar-products__product-price">
-                      154,53 грн
-                    </p>
-                  </div>
-                </a>
+                <!-- <div
+                  class="searchbar-products__problematics-item-content"
+                ></div> -->
               </li>
             </ul>
+
             <a href="#" class="search-products__all-results-link">
               Всі результати пошуку
             </a>
           </div>
+
           </div>
         </div>
 
@@ -2098,7 +2169,7 @@
           <button type="button" class="phone-menu__button dropdown-menu-button-js">
             <svg class="phone-menu__button-icon" width="24" height="24"><use  href="images/icons.svg#icon-phone"></use></svg>
             0 800 303 111
-            <svg class="phone-menu__chevron-icon" width="24" height="24"><use  href="images/icons.svg#icon-angle-down"></use></svg>
+            <svg class="phone-menu__chevron-icon" width="24" height="24"><use  href="images/icons.svg#icon-chevrons"></use></svg>
           </button>
         
           <ul class="phone-menu__options dropdown-menu-options-js">
@@ -2168,9 +2239,5 @@
     </div>
 
     <script src="./main-page.js" type="module"></script>
-    <script>
-    console.log('script')
-      document.addEventListener('click', (e)=>{console.log(e.target)})
-    </script>
   </body>
 </html>

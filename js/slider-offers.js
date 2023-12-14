@@ -3,15 +3,11 @@ const MAX_SLIDES_PER_VIEW = 4;
 const swiper = new Swiper('.swiper-offers', {
   // Optional parameters
   direction: 'horizontal',
-  // loop: false,
-  // rewind: true,
+
   watchSlidesProgress: true,
 
   speed: 400,
   spaceBetween: 30,
-  // slidesPerView: "auto",
-  // loopedSlides: 1,
-  // loopedSlidesLimit: false,
 
   breakpoints: {
     270: {

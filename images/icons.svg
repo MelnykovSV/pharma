@@ -183,6 +183,9 @@
 <symbol id="icon-phone" viewBox="0 0 33 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M22.050 19.361c-3.193 3.361-11.339-4.711-8.133-8.084 1.957-2.060-0.253-4.413-1.477-6.145-2.297-3.247-7.339 1.236-7.187 4.088 0.484 8.995 10.213 19.653 19.635 18.723 2.947-0.291 6.333-5.613 2.952-7.559-1.689-0.973-4.011-2.893-5.789-1.023z"></path>
 </symbol>
+<symbol id="icon-chevrons" viewBox="0 0 24 24">
+<path d="M6.9375 9L12.9375 15L18.9375 9"    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
 
 </defs>
 </svg>

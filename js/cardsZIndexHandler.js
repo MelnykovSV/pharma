@@ -1,7 +1,7 @@
-const cardsContainer = document.querySelector('.cards-container');
+const cardsContainer = document.querySelector('.cards-container-js');
 let zIndex = 400;
 
-const cards = cardsContainer.querySelectorAll('.product-card');
+const cards = cardsContainer.querySelectorAll('.card-js');
 
 cards.forEach((card) => {
   card.style.zIndex = String(zIndex);

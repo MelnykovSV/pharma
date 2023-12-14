@@ -11,13 +11,13 @@ function accordion() {
           Array.prototype.reduce.call(
             accordion.nextElementSibling.childNodes,
             function (p, c) {
-              // console.log(accordion.nextElementSibling.childNodes);
+   
               return p + (c.offsetHeight || 0);
             },
             0
           ) + 'px';
 
-        //   console.log(accordion.nextElementSibling.style.height);
+
       }
       accordion.addEventListener('click', (e) => {
         if (e.target.classList.contains('dropdownlink')) {

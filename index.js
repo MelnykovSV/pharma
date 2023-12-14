@@ -6,3 +6,4 @@ import './js/tabs.js';
 import './js/cardsZIndexHandler.js';
 import './js/pagination.js';
 import './js/searchbar.js';
+
