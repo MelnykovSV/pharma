@@ -1,8 +1,11 @@
 .footer {
   .footer-top {
-    background-color: #77c9cc;
     padding-top: 20px;
   }
+}
+
+.footer-first-block-wrapper {
+  background-color: #77c9cc;
 }
 
 .footer__first-block {
@@ -16,11 +19,12 @@
   color: #fff;
 
   font-size: 16px;
-  font-weight: 800;
+  font-weight: 600;
   line-height: calc(19 / 16);
   padding-top: 10px;
   .footer__info-title {
     margin-bottom: 15px;
+    font-weight: 800;
   }
   .footer__info-list {
     display: flex;
