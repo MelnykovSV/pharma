@@ -7,3 +7,4 @@ import './js/searchbar.js';
 import './js/dropdown-menu.js';
 import './js/top-panel-searchbar.js';
 import './js/styled-scrollbars.js';
+import './js/show-more-cards.js';
