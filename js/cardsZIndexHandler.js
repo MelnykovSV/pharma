@@ -1,10 +1,13 @@
-const cardsContainer = document.querySelector('.cards-container-js');
-let zIndex = 400;
+const cardsContainers = document.querySelectorAll('.cards-container-js');
 
-const cards = cardsContainer.querySelectorAll('.card-js');
+cardsContainers.forEach((container) => {
+  let zIndex = 400;
 
-cards.forEach((card) => {
-  card.style.zIndex = String(zIndex);
+  const cards = container.querySelectorAll('.card-js');
 
-  zIndex -= 1;
+  cards.forEach((card) => {
+    card.style.zIndex = String(zIndex);
+
+    zIndex -= 1;
+  });
 });
